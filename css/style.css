@@ -1,0 +1,467 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif, Helvetica;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: auto;
+    margin: auto;
+    width: 1200px;
+}
+
+
+/* start header header */
+
+.header {
+    /* Sizing */
+    /* width: 100vw; */
+    height: 100vh;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* Background styles */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    /* Text styles */
+    font-size: 5em;
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-family: "Sacramento", cursive;
+}
+
+.header .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 15rem;
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Text styles */
+    color: white;
+    /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    /* Border styles */
+    border: 3px solid white;
+    /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+
+/* end header header */
+
+
+/*  start navbar*/
+
+.navbar-container .navbar-logo {
+    width: 40%;
+    padding: 5px;
+    float: left;
+}
+
+.navbar-container .navbar-list {
+    width: 60%;
+    padding: 5px;
+    float: left;
+}
+
+.navbar-container .container {
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    background-color: #313132;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+/* .navbar {
+    height: 3rem;
+} */
+
+.navbar-container .navbar .container {
+    width: 100vw;
+    height: 8.5vh;
+    background-color: #313132;
+    display: flex;
+    align-items: center;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+}
+
+.navbar-container .navbar h2 {
+    display: block;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-left: 10%;
+    float: left;
+}
+
+.navbar-container .navbar h2 span {
+    color: #2ecc71;
+}
+
+.navbar-container .navbar ul {
+    padding-right: 10%;
+    float: right;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.navbar-container .navbar ul li {
+    padding: 20px 0;
+    float: left;
+}
+
+.navbar-container .navbar ul li a {
+    padding: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navbar-container .navbar ul li:hover {
+    cursor: pointer;
+    background-color: #555;
+    color: wheat;
+}
+
+
+/*  end navbar*/
+
+
+/*   start features*/
+
+.features {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.features .container .feature-item {
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    /* border-top: 1px solid #cccccc; */
+    border-left: 1px solid #cccccc;
+    box-shadow: 4px 4px 2px 1px #cccccc;
+    float: left;
+    width: 30%;
+    height: 230px;
+    /*  to be changed later */
+}
+
+.features .container .feature-item p,
+.features .container .feature-item h2 {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.features .feature-item h2 {
+    text-transform: uppercase;
+}
+
+
+/*  end features */
+
+
+/* start about me  */
+
+.about-me,
+.resume,
+.testimony {
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.about-me .image {
+    height: 300px;
+    width: 40%;
+    float: left;
+}
+
+.about-me .image img {
+    width: 100%;
+}
+
+.about-me .details {
+    float: left;
+    width: 60%;
+}
+
+.about-me .details .services {
+    overflow: hidden;
+    margin: 20px;
+}
+
+.about-me .details .services>div {
+    float: left;
+    width: 50%;
+    min-height: 150px;
+}
+
+
+/* end about me  */
+
+
+/* start skills */
+
+.skills,
+.education,
+.portfolio,
+.contact-me,
+.portfolio-items {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.skills .skills-details,
+.skills .skills-progress,
+.education .education-information,
+.education .education-details,
+.education .experience-information,
+.education .experience-details,
+.contact-me .contact-info,
+.contact-me .contact-form {
+    width: 50%;
+    float: left;
+}
+
+
+/* end skills */
+
+
+/* start resume */
+
+.resume {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.resume .resume-content {
+    text-align: center;
+}
+
+
+/* end resume */
+
+
+/* start education  & experience*/
+
+.clear {
+    clear: both;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* end education & experience */
+
+
+/* start testimony */
+
+.testimony-content {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+/* end testimony */
+
+
+/* start portfolio */
+
+.portfolio {
+    text-align: center;
+}
+
+
+/* .portfolio .portfolio-items {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} */
+
+.portfolio .portfolio-items>div {
+    width: 33.333%;
+    float: left;
+    min-height: 250px;
+    max-height: 250px;
+    padding: 10px;
+}
+
+.portfolio-images {
+    height: 250px;
+    width: 250px;
+}
+
+.portfolio-images img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* start portfolio */
+
+
+/*  start contact-me"*/
+
+.contact-me {
+    background-color: #313132;
+    color: white;
+}
+
+.contact-me .contact-info {
+    padding: 20px;
+}
+
+.contact-me .contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-me .contact-info .contact-me-address {
+    margin-top: 20px;
+}
+
+.contact-me .contact-info .contact-me-details {
+    margin-top: 20px;
+}
+
+.contact-me .contact-info .contact-me-details span {
+    padding-left: 30px;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type="text"],
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type="submit"] {
+    background-color: #191e22;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type="submit"]:hover {
+    /* background-color: #2ecc71; */
+    background-color: wheat;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* Add a background color and some padding around the form */
+
+.contact-form {
+    border-radius: 5px;
+    background-color: #f2f2f217;
+    padding: 20px;
+}
+
+
+/*  end contact-me"*/
+
+
+/* start footer*/
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    min-height: 100px;
+    background-color: #191e22;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer .footer-icon-list ul {
+    list-style: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.footer .footer-icon-list ul li {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+}
+
+.footer .footer-icon-list ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #555;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
