@@ -16,9 +16,8 @@ body {
 }
 
 .container {
-    height: auto;
     margin: auto;
-    width: 1200px;
+    width: 80vw;
 }
 
 
@@ -168,8 +167,21 @@ body {
     padding-bottom: 60px;
 }
 
-.features .container .feature-item {
+
+/*  جرب تسوي نفس مع باقي الكونتيرات */
+
+.features .container {
+    margin: 0 auto;
     text-align: center;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.features .container .feature-item {
     margin: 15px;
     padding: 5px;
     /* border-top: 1px solid #cccccc; */
