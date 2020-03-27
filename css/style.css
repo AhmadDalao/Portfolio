@@ -391,15 +391,16 @@ progress {
     display: flex;
     width: 100%;
     align-items: center;
-    text-align: right;
     background-color: #2ecc71;
 }
 
 .skills .skills-progress .myBar-span {
+    width: 100%;
     padding: 0 5px;
     display: flex;
     align-items: flex-end;
     text-align: right;
+    justify-content: flex-end;
 }
 
 .skills .skills-progress .html5 {
