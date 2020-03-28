@@ -70,10 +70,19 @@ progress {
     background-image: url("../images/search.svg");
 }
 
+#about {
+    padding: 30px;
+    background-color: #2ecc71;
+    opacity: 0.9;
+    background: #2ecc71;
+}
+
 
 /* ============================ IDs ============================ */
 
 .custom-button {
+    text-decoration: none;
+    text-align: center;
     background-color: transparent;
     /* Positioning and sizing */
     display: block;
@@ -255,6 +264,10 @@ progress {
 /* ============================  start features ============================*/
 
 .features {
+    background-image: url("../images/wave.svg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -285,6 +298,7 @@ progress {
 }
 
 .features .container>div {
+    background-color: white;
     margin: 15px;
     padding: 5px;
     border-left: 1px solid #cccccc;
@@ -540,7 +554,7 @@ progress {
 
 .education-details h2,
 .experience-details h2 {
-    padding-top: 80px;
+    padding-top: 70px;
 }
 
 .education .education-information .education-p1,
@@ -549,8 +563,14 @@ progress {
 }
 
 .education .education-information,
-.education .experience-information {
-    padding: 20px;
+.education .education-details,
+.education .experience-information,
+.education .experience-details {
+    padding: 3%;
+}
+
+.education .education-container {
+    padding: 5px;
 }
 
 .clear {
