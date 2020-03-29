@@ -355,13 +355,13 @@
             </div>
             <div class="contact-form">
                 <!-- action="action_page.php" -->
-                <form method="POST" enctype="multipart/form-data" action="contact-form-handler.php">
+                <form id="my-contact-form" method="POST" action="contact-form-handler.php">
                     <label for="name">Name <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Your name.." required autocomplete="off">
+                    <input type="text" name="name" placeholder="Your name.." required autocomplete="off">
                     <label for="email">Email <span>*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Your email.." required autocomplete="off">
+                    <input type="email" name="email" placeholder="Your email.." required autocomplete="off">
                     <label for="message">Your message <span>*</span> </label>
-                    <textarea id="message" name="message" placeholder="Write your message.." style="height:200px" required autocomplete="off"></textarea>
+                    <textarea name="message" placeholder="Write your message.." style="height:200px" required autocomplete="off"></textarea>
                     <input type="submit" value="Submit">
 
                 </form>
