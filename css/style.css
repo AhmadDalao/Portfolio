@@ -128,6 +128,9 @@ progress {
     position: absolute;
 }
 
+
+/*  the animation on the logo */
+
 .navbar-logo:hover {
     animation: color-rotate 1s;
     animation-iteration-count: infinite;
@@ -346,6 +349,8 @@ progress {
 
 .about-me {
     overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .about-me .container,
@@ -371,12 +376,9 @@ progress {
     width: 60%;
 }
 
-.about-me .details h2 {
-    padding-bottom: 20px;
-}
-
 .about-me .details .details-p1,
-.about-me .details .details-p2 {
+.about-me .details .details-p2,
+.about-me .details h2 {
     padding-bottom: 20px;
 }
 
@@ -596,6 +598,7 @@ progress {
 /* Slideshow container */
 
 .slideshow-container {
+    transition: all 1s ease-in-out;
     position: relative;
     background: #f1f1f1f1;
 }
@@ -779,6 +782,7 @@ q {
 /* Style inputs with type="text", and textareas */
 
 input[type="text"],
+input[type="email"],
 textarea {
     width: 100%;
     /* Full width */
@@ -831,6 +835,21 @@ input[type="submit"]:hover {
     padding: 20px;
 }
 
+.contact-form form label span {
+    color: #2ecc71;
+    position: relative;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+
+/* Selects any valid <input> */
+
+
+/* input:valid:not(:last-child) {
+    background-color: powderblue;
+} */
+
 
 /*============================ start footer ============================*/
 
@@ -854,17 +873,18 @@ input[type="submit"]:hover {
 }
 
 .footer .footer-icon-list {
-    overflow: hidden;
     display: inline-block;
     color: #ffffff;
+    height: 100%;
+    text-align: center;
     font-size: 1rem;
     margin: 5px 30px;
 }
 
-.footer .footer-icon-list>div {
+.footer .footer-icon-list a {
     margin: 0 10px;
-    padding: 0 10px;
     overflow: hidden;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -875,18 +895,20 @@ input[type="submit"]:hover {
     width: 60px;
     height: 60px;
     float: left;
-    opacity: 0.4;
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
 }
 
-.footer .footer-icon-list>div a {
+.footer .footer-icon-list>a span {
     width: 100%;
     text-align: center;
     height: 100%;
 }
 
-.footer .footer-icon-list>div:hover {
+.footer .footer-icon-list>a:hover {
     opacity: 1;
     background-color: white;
+    transform: scale(1.2);
 }
 
 .footer .social-background {

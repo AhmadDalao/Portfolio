@@ -18,6 +18,8 @@
     <title>Ahmad Dalao - Web Developer</title>
     <!-- Place your kit's  "font-awesome" to use the icons -->
     <script src="https://kit.fontawesome.com/5a0dddbca3.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#resume">Resume</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <!-- <li><a href="#education">Education</a></li> -->
                         <!-- <li><a href="#testimony">Testimony</a></li> -->
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -107,7 +109,7 @@
                         <div class="services-image" id="web-development">
                         </div>
                         <div class="services-details">
-                            <h3>Web Development</h3>
+                            <h3>Web Developer</h3>
                             <p>Talked him people valley add use her depend letter.</p>
                         </div>
                     </div>
@@ -360,16 +362,24 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="action_page.php">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email..">
-                    <label for="message">Your message</label>
-                    <textarea id="message" name="message" placeholder="Write your message.." style="height:200px"></textarea>
+                <!-- action="action_page.php" -->
+                <form method="POST" enctype="multipart/form-data" action="contact-form-handler.php">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Your name.." required autocomplete="off">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required autocomplete="off">
+                    <label for="message">Your message <span>*</span> </label>
+                    <textarea id="message" name="message" placeholder="Write your message.." style="height:200px" required autocomplete="off"></textarea>
                     <input type="submit" value="Submit">
 
                 </form>
+                <!-- <script language="JavaScript">
+                    var formValidator = new Validator("contactform");
+                    formValidator.addValidation("name", "req", "Please provide your name");
+                    formValidator.addValidation("email", "req", "Please provide your email");
+                    formValidator.addValidation("email", "email", "Please enter a valid email address");
+                    formValidator.addValidation("message", "req", "Please enter your message")
+                </script> -->
 
             </div>
 
@@ -382,15 +392,15 @@
         <div class="container">
             <p>Copyright &copy; 2020 Ahmad Dalao </p>
             <div class="footer-icon-list">
-                <div>
-                    <a id="twitter" class="circle social-background" href="https://twitter.com/AhmadDalao" class=""></a>
-                </div>
-                <div>
-                    <a id="linkedin" class="circle social-background" href="https://www.linkedin.com/in/ahmad-dalao/" class=""></a>
-                </div>
-                <div>
-                    <a id="github" class="circle social-background" href="https://github.com/AhmadDalao" class=""></a>
-                </div>
+                <a class="circle " href="https://twitter.com/AhmadDalao">
+                    <span id="twitter" class="social-background"></span>
+                </a>
+                <a class="circle " href="https://www.linkedin.com/in/ahmad-dalao/">
+                    <span id="linkedin" class="social-background"></span>
+                </a>
+                <a class="circle " href="https://github.com/AhmadDalao">
+                    <span id="github" class="social-background"></span>
+                </a>
             </div>
         </div>
     </footer>
