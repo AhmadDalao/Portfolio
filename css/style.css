@@ -124,8 +124,27 @@ progress {
 /* ============================ start navbar ============================*/
 
 .navbar-container {
+    height: 8.5vh;
     z-index: 2;
     position: absolute;
+}
+
+.navbar .container {
+    width: 100%;
+    position: fixed;
+    background-color: #313132;
+    display: flex;
+    align-items: center;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+}
+
+.navbar-container .navbar-logo {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    float: left;
 }
 
 
@@ -137,66 +156,40 @@ progress {
     animation-direction: alternate;
 }
 
-.navbar-container .navbar-logo {
-    width: 40%;
+.navbar h2 {
+    color: white;
+    display: block;
+    padding: 0;
     align-items: center;
-    /* horizontal */
-    float: left;
+    justify-content: center;
+    text-transform: uppercase;
+    padding: 0 10%;
+}
+
+.navbar h2 span {
+    color: #2ecc71;
 }
 
 .navbar-container .navbar-list {
     width: 60%;
-    float: left;
-}
-
-.navbar-container .container h2 {
-    color: white;
-}
-
-.navbar-container .navbar .container {
-    height: 8.5vh;
-    overflow: hidden;
-    width: 100%;
-    color: #ffffff;
-    position: fixed;
-    background-color: #313132;
-    display: flex;
     align-items: center;
-    /* horizontal */
-    justify-content: center;
-    /* vertical */
-}
-
-.navbar-container .navbar h2 {
-    display: block;
-    margin: 5px auto;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    padding-left: 10%;
-    float: left;
-}
-
-.navbar-container .navbar h2 span {
-    color: #2ecc71;
-}
-
-.navbar-container .navbar ul {
-    padding-right: 20px;
+    justify-content: right;
     float: right;
-    display: flex;
-    justify-content: space-between;
+}
+
+.navbar ul {
+    padding-right: 5%;
+    float: right;
     list-style: none;
     overflow: hidden;
-    padding-left: 0;
 }
 
-.navbar-container .navbar ul li {
+.navbar ul li {
     padding: 20px 0;
     float: left;
 }
 
-.navbar-container .navbar ul li a {
+.navbar ul li a {
     padding: 20px;
     color: #ffffff;
     font-weight: bold;
@@ -204,10 +197,11 @@ progress {
     text-decoration: none;
 }
 
-.navbar-container .navbar ul li:hover {
+.navbar ul li:hover a {
     cursor: pointer;
     background-color: #555;
-    color: wheat;
+    color: #2ecc71;
+    font-weight: bold;
 }
 
 
