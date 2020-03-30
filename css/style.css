@@ -109,6 +109,11 @@ progress {
 }
 
 .custom-button:hover {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.custom-button:hover {
     cursor: pointer;
 }
 
