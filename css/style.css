@@ -139,6 +139,7 @@ progress {
 }
 
 .navbar .container {
+    float: left;
     width: 100%;
     position: fixed;
     background-color: #313132;
@@ -151,7 +152,7 @@ progress {
 
 .navbar-container .navbar-logo {
     width: 40%;
-    display: flex;
+    display: block;
     align-items: center;
     float: left;
 }
@@ -893,6 +894,7 @@ input[type="submit"] {
     color: white;
     padding: 12px 20px;
     border: none;
+    width: 150px;
     border-radius: 4px;
     font-weight: bold;
     text-transform: uppercase;
