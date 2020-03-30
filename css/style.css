@@ -19,6 +19,10 @@ body {
     padding: 0;
 }
 
+form {
+    margin-top: 15px;
+}
+
 p,
 h2,
 h3,
@@ -756,7 +760,6 @@ q {
 
 .card-text h2 {
     margin-top: 0px;
-    font-size: 28px;
 }
 
 .card-stats {
