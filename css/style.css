@@ -51,7 +51,7 @@ hr {
 
 p,
 q {
-    font-size: larger;
+    font-size: 1.1em;
 }
 
 progress {
@@ -512,12 +512,12 @@ progress {
 /* ============================  start resume ============================ */
 
 .resume {
+    perspective: 500px;
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.resume .resume-content {
     text-align: center;
+    align-items: center;
+    position: relative;
 }
 
 .resume .resume-content h2 {
@@ -526,6 +526,21 @@ progress {
 
 
 /* ============================ start education  & experience  ============================*/
+
+.education {
+    position: relative;
+}
+
+.education .cube {
+    background-color: #f2f2f2;
+    height: 60px;
+    width: 60px;
+    right: 47%;
+    transform: rotate(45deg);
+    transform-style: preserve-3d;
+    position: absolute;
+    top: -50px;
+}
 
 .education .education-container {
     display: flex;
