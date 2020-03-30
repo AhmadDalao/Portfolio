@@ -283,37 +283,43 @@ progress {
 /*  جرب تسوي نفس مع باقي الكونتيرات */
 
 .features .container {
-    margin: 0 auto;
-    text-align: center;
-    height: 100%;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    grid-row: 3;
+    grid-gap: 2rem;
 }
 
 .features .container .feature-item:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
-.features .container>div {
+.feature-warper {
     background-color: white;
     margin: 18px;
     padding: 5px;
-    border-left: 1px solid #cccccc;
-    box-shadow: 4px 4px 2px 1px #cccccc;
-    float: left;
-    width: 30%;
     transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -ms-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
+}
+
+.features .container .feature-item {
+    overflow: hidden;
+    justify-content: center;
+    display: grid;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 18px;
+    background: white;
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 20px;
 }
 
 .features .container .feature-item p,
@@ -709,6 +715,7 @@ q {
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    grid-row: 3;
     grid-gap: 2rem;
 }
 
@@ -716,8 +723,6 @@ q {
 /*  change the card here */
 
 .warper {
-    /* overflow: hidden; */
-    /* display: flex; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -726,19 +731,19 @@ q {
     overflow: hidden;
     justify-content: center;
     display: grid;
-    /* border: 1px solid #cccccc;
-    border-bottom: none;
-    border-left: none;
-    border-right: none; */
     flex-wrap: wrap;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
-    /* grid-template-columns: 350px; */
+    grid-template-columns: auto;
     grid-template-rows: 210px 250px 60px;
     border-radius: 18px;
     background: white;
     text-align: center;
     transition: 0.5s ease;
     margin: 20px;
+}
+
+.portfolio .card:hover {
+    transform: scale(1.02);
 }
 
 .card-image {
@@ -750,17 +755,12 @@ q {
 }
 
 .card-text {
-    margin: 25px;
+    padding: 25px;
 }
 
 .card-text p {
-    color: grey;
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.card-text h2 {
-    margin-top: 0px;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 .card-stats {
@@ -780,7 +780,6 @@ q {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /* margin-bottom: -5px; */
     margin-top: -5px;
     /* Padding and margins */
     padding: 1em;
