@@ -691,51 +691,118 @@ q {
 /*============================ start portfolio ============================ */
 
 .portfolio {
-    overflow: hidden;
+    /* overflow: hidden; */
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio .portfolio-items {
+    /* overflow: hidden; */
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    grid-gap: 2rem;
+}
+
+
+/*  change the card here */
+
+.warper {
+    /* overflow: hidden; */
+    /* display: flex; */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 
-.portfolio .portfolio-content p {
-    padding: 30px 5%;
-}
-
-.portfolio .portfolio-items>div {
+.portfolio .card {
     overflow: hidden;
-    width: 33.333%;
-    float: left;
-    max-height: 300px;
-    padding: 15px;
-    /* Apply to all changed properties */
-    transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
+    justify-content: center;
+    display: grid;
+    border: 2px solid #cccccc;
+    flex-wrap: wrap;
+    /* grid-template-columns: 350px; */
+    grid-template-rows: 210px 250px 60px;
+    grid-template-areas: "image""text""stats";
+    border-radius: 18px;
+    background: white;
+    text-align: center;
+    transition: 0.5s ease;
+    margin: 20px;
 }
 
-.portfolio .portfolio-items>div:hover {
-    opacity: 0.5;
+.card-image {
+    width: 100%;
+    grid-area: image;
+    background: url("../images/coding-1170x780.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
 }
 
-.portfolio-images {
-    height: 300px;
-    width: 300px;
+.card-text {
+    grid-area: text;
+    margin: 25px;
 }
 
-.portfolio-images img {
-    padding: 2px;
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #313132;
+}
+
+.custom-button2 {
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    background-color: transparent;
+    /* Positioning and sizing */
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-bottom: -5px; */
+    margin-top: -5px;
+    /* Padding and margins */
+    padding: 1em;
+    /* Text styles */
+    color: #2ecc71;
+    justify-content: center;
+    align-items: center;
+    /* Border styles */
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.portfolio-items .card .value:hover .custom-button2 {
+    color: white;
+    background-color: #2ecc71;
+}
+
+.portfolio .portfolio-content .portfolio-intro {
+    padding: 40px 5%;
+}
+
+.card img {
     height: 100%;
     width: 100%;
-    border: 2px solid #cccccc;
 }
 
 
@@ -837,13 +904,9 @@ input[type="submit"]:hover {
     padding: 0 10px;
 }
 
-
-/* Selects any valid <input> */
-
-
-/* input:valid:not(:last-child) {
-    background-color: powderblue;
-} */
+.hidden {
+    display: none;
+}
 
 
 /*============================ start footer ============================*/
