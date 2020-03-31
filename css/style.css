@@ -841,8 +841,9 @@ q {
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
-    /* background-color: #313132; */
+    color: white;
     background-color: #ffffff;
+    background-color: #313132;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
@@ -852,7 +853,7 @@ q {
 
 .contact-me .contact-info {
     padding: 30px;
-    background-image: url("../images/undraw_contact_us_15o2\ \(1\).svg");
+    background-image: url("../images/undraw_contact_us_15o2.svg");
     float: left;
     background-size: 80% 80%;
     background-repeat: no-repeat;
