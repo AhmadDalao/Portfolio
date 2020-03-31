@@ -858,7 +858,8 @@ q {
     /* background-position: left 50% bottom 60%; */
 }
 
-.contact-me .contact-info h2 {
+
+/* .contact-me .contact-info h2 {
     margin-bottom: 20px;
     color: #2ecc71;
 }
@@ -870,11 +871,12 @@ q {
 .contact-me .contact-info .contact-me-address,
 .contact-me .contact-info .contact-me-details {
     margin-top: 20px;
-}
+} */
 
-.contact-me .contact-info .contact-me-details span {
+
+/* .contact-me .contact-info .contact-me-details span {
     padding-left: 30px;
-}
+} */
 
 
 /* Style inputs with type="text", and textareas */
@@ -928,7 +930,8 @@ input[type="submit"]:hover {
 .contact-form {
     border-radius: 5px;
     background-color: rgba(242, 242, 242, 0.09);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.175);
     padding: 20px;
 }
 
