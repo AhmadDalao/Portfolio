@@ -85,7 +85,7 @@ progress {
 }
 
 
-/* ============================ IDs ============================ */
+/* ============================ reusable classes ============================ */
 
 .custom-button {
     text-decoration: none;
@@ -111,10 +111,15 @@ progress {
 .custom-button:hover {
     background-color: #2ecc71;
     color: white;
+    cursor: pointer;
 }
 
-.custom-button:hover {
-    cursor: pointer;
+.custom-transition {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .skills .skills-details,
@@ -285,9 +290,6 @@ progress {
     padding-bottom: 60px;
 }
 
-
-/*  جرب تسوي نفس مع باقي الكونتيرات */
-
 .features .container {
     display: grid;
     flex-wrap: wrap;
@@ -296,36 +298,32 @@ progress {
     grid-gap: 2rem;
 }
 
-.features .container .feature-item:hover {
-    transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-}
-
 .feature-warper {
     background-color: white;
     margin: 18px;
     padding: 5px;
-    transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
 }
 
 .features .container .feature-item {
     overflow: hidden;
     justify-content: center;
     display: grid;
+    border: 1px solid #cccccc;
     flex-wrap: wrap;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
     border-radius: 18px;
     background: white;
     text-align: center;
-    transition: 0.5s ease;
     margin: 20px;
+}
+
+.features .container .feature-item:hover {
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 .features .container .feature-item p,
@@ -623,7 +621,11 @@ progress {
 /* Slideshow container */
 
 .slideshow-container {
-    transition: all 1s ease-in-out;
+    transition: all 1s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -ms-transition: 1s ease;
+    -o-transition: 1s ease;
     position: relative;
     background: #f1f1f1f1;
 }
@@ -693,6 +695,10 @@ progress {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
 }
 
 
@@ -753,18 +759,18 @@ q {
     justify-content: center;
     display: grid;
     flex-wrap: wrap;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border: 0.5px solid #cccccc;
     grid-template-columns: auto;
     grid-template-rows: 210px 250px 60px;
     border-radius: 18px;
     background: white;
     text-align: center;
-    transition: 0.5s ease;
     margin: 20px;
 }
 
 .portfolio .card:hover {
     transform: scale(1.02);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .card-image {
@@ -835,13 +841,21 @@ q {
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
-    background-color: #313132;
-    color: white;
+    /* background-color: #313132; */
+    background-color: #ffffff;
+}
+
+.contact-me .container {
+    display: flex;
 }
 
 .contact-me .contact-info {
     padding: 30px;
-    color: white;
+    background-image: url("../images/undraw_contact_us_15o2\ \(1\).svg");
+    float: left;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    /* background-position: left 50% bottom 60%; */
 }
 
 .contact-me .contact-info h2 {
@@ -905,10 +919,7 @@ input[type="submit"] {
 /* When moving the mouse over the submit button, add a darker green color */
 
 input[type="submit"]:hover {
-    /* background-color: #2ecc71; */
     background-color: #2ecc71;
-    color: black;
-    font-weight: bolder;
 }
 
 
@@ -916,8 +927,8 @@ input[type="submit"]:hover {
 
 .contact-form {
     border-radius: 5px;
-    /* background-color: #f2f2f217; */
     background-color: rgba(242, 242, 242, 0.09);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     padding: 20px;
 }
 
@@ -978,7 +989,6 @@ input[type="submit"]:hover {
     height: 60px;
     float: left;
     opacity: 0.3;
-    transition: all 0.5s ease-in-out;
 }
 
 .footer .footer-icon-list>a span {
