@@ -283,19 +283,17 @@ progress {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     overflow: hidden;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .features .container {
+    display: flex;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     grid-row: 3;
     grid-gap: 2rem;
-    display: flex;
-    /* if you add flex wrap it will destroy the design */
 }
 
 .feature-warper {
