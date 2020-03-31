@@ -845,6 +845,10 @@ q {
     background-color: #ffffff;
     background-color: #313132;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    background-image: url("../images/undraw_contact_us_15o2-green.svg");
+    background-size: 43% 53%;
+    background-repeat: no-repeat;
+    background-position: left 5% bottom 50%;
 }
 
 .contact-me .container {
@@ -853,10 +857,10 @@ q {
 
 .contact-me .contact-info {
     padding: 30px;
-    background-image: url("../images/undraw_contact_us_15o2.svg");
+    /* background-image: url("../images/undraw_contact_us_15o2\ \(1\).svg"); */
     float: left;
-    background-size: 80% 80%;
-    background-repeat: no-repeat;
+    /* background-size: 80% 80%;
+    background-repeat: no-repeat; */
     /* background-position: left 50% bottom 60%; */
 }
 
