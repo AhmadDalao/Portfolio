@@ -841,9 +841,9 @@ q {
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
-    color: white;
+    /* color: bl; */
     background-color: #ffffff;
-    background-color: #313132;
+    /* background-color: #313132; */
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     background-image: url("../images/undraw_contact_us_15o2-green.svg");
     background-size: 43% 53%;
