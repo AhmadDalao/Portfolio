@@ -284,6 +284,9 @@ progress {
     background-position: bottom center;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
     flex-wrap: wrap;
     overflow: hidden;
     padding-top: 60px;
