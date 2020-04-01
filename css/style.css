@@ -148,9 +148,12 @@ progress {
     width: 100%;
     position: fixed;
     background-color: #313132;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
     /* horizontal */
+    -webkit-box-pack: center;
     justify-content: center;
     /* vertical */
 }
@@ -158,6 +161,7 @@ progress {
 .navbar-container .navbar-logo {
     width: 40%;
     display: block;
+    -webkit-box-align: center;
     align-items: center;
     float: left;
 }
@@ -166,8 +170,11 @@ progress {
 /*  the animation on the logo */
 
 .navbar-logo:hover {
+    -webkit-animation: color-rotate 1s;
     animation: color-rotate 1s;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
 }
 
@@ -175,7 +182,9 @@ progress {
     color: white;
     display: block;
     padding: 0;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
     text-transform: uppercase;
     padding: 0 10%;
@@ -187,7 +196,9 @@ progress {
 
 .navbar-container .navbar-list {
     width: 60%;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: right;
     justify-content: right;
     float: right;
 }
@@ -227,8 +238,11 @@ progress {
     /* width: 100vw; */
     height: 100vh;
     /* Flexbox stuff */
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     /* Text styles */
     text-align: center;
@@ -290,6 +304,7 @@ progress {
 }
 
 .features .container {
+    display: -webkit-box;
     display: flex;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     grid-row: 3;
@@ -304,6 +319,7 @@ progress {
 
 .features .container .feature-item {
     overflow: hidden;
+    -webkit-box-pack: center;
     justify-content: center;
     display: grid;
     border: 1px solid #cccccc;
@@ -362,6 +378,7 @@ progress {
 .about-me .container,
 .services-container {
     height: 100%;
+    display: -webkit-box;
     display: flex;
     overflow: hidden;
     flex-wrap: wrap;
@@ -392,8 +409,10 @@ progress {
     overflow: hidden;
     margin: 20px;
     width: 100%;
+    -webkit-box-pack: center;
     justify-content: center;
     text-align: left;
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
 }
@@ -429,6 +448,7 @@ progress {
     padding: 5px;
     width: 100%;
     height: 100%;
+    display: -webkit-box;
     display: flex;
 }
 
@@ -436,6 +456,7 @@ progress {
 /* ============================  start skills  ============================*/
 
 .skills .container {
+    display: -webkit-box;
     display: flex;
 }
 
@@ -468,6 +489,7 @@ progress {
 }
 
 .skills .skills-progress .myProgress {
+    display: -webkit-box;
     display: flex;
     margin-bottom: 20px;
     height: 30px;
@@ -479,8 +501,10 @@ progress {
     font-weight: bold;
     color: #ffffff;
     height: 30px;
+    display: -webkit-box;
     display: flex;
     width: 100%;
+    -webkit-box-align: center;
     align-items: center;
     background-color: #2ecc71;
 }
@@ -488,9 +512,12 @@ progress {
 .skills .skills-progress .myBar-span {
     width: 100%;
     padding: 0 5px;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: end;
     align-items: flex-end;
     text-align: right;
+    -webkit-box-pack: end;
     justify-content: flex-end;
 }
 
@@ -514,10 +541,12 @@ progress {
 /* ============================  start resume ============================ */
 
 .resume {
+    -webkit-perspective: 500px;
     perspective: 500px;
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    -webkit-box-align: center;
     align-items: center;
     position: relative;
 }
@@ -538,13 +567,16 @@ progress {
     height: 60px;
     width: 60px;
     right: 47%;
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: absolute;
     top: -50px;
 }
 
 .education .education-container {
+    display: -webkit-box;
     display: flex;
     height: 100%;
     background-image: url("../images/graduation.svg");
@@ -554,6 +586,7 @@ progress {
 }
 
 .education .experience-container {
+    display: -webkit-box;
     display: flex;
     height: 100%;
     background-image: url("../images/work2.svg");
@@ -619,6 +652,7 @@ progress {
 /* Slideshow container */
 
 .slideshow-container {
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -652,6 +686,9 @@ progress {
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
@@ -730,8 +767,11 @@ q {
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    -webkit-box-pack: center;
     justify-content: center;
 }
 
@@ -748,12 +788,14 @@ q {
 /*  change the card here */
 
 .warper {
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
 }
 
 .portfolio .card {
     overflow: hidden;
+    -webkit-box-pack: center;
     justify-content: center;
     display: grid;
     flex-wrap: wrap;
@@ -768,6 +810,7 @@ q {
 }
 
 .portfolio .card:hover {
+    -webkit-transform: scale(1.02);
     transform: scale(1.02);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
@@ -815,7 +858,9 @@ q {
     padding: 1em;
     /* Text styles */
     color: #2ecc71;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     /* Border styles */
     font-weight: bold;
@@ -850,6 +895,7 @@ q {
 }
 
 .contact-me .container {
+    display: -webkit-box;
     display: flex;
 }
 
@@ -961,7 +1007,9 @@ input[type="submit"]:hover {
     background-color: #191e22;
     /* background-color: #313132; */
     text-align: center;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -986,8 +1034,11 @@ input[type="submit"]:hover {
     margin: 0 10px;
     overflow: hidden;
     padding: 0 10px;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
     align-items: center;
     text-decoration: none;
     text-align: center;
@@ -1008,6 +1059,7 @@ input[type="submit"]:hover {
 .footer .footer-icon-list>a:hover {
     opacity: 1;
     background-color: white;
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -1033,11 +1085,24 @@ input[type="submit"]:hover {
 
 /*============================ animation ============================*/
 
-@keyframes color-rotate {
+@-webkit-keyframes color-rotate {
     from {
+        -webkit-filter: hue-rotate(0deg);
         filter: hue-rotate(0deg);
     }
     to {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes color-rotate {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        -webkit-filter: hue-rotate(360deg);
         filter: hue-rotate(360deg);
     }
 }
