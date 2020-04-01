@@ -1096,11 +1096,7 @@ input[type="submit"]:hover {
         overflow: hidden;
         min-height: 200px;
     }
-    .contact-me .contact-info {
-        background-size: 164% 40%;
-        background-repeat: no-repeat;
-        background-position: left 60% bottom 56%;
-    } */
+*/
     .portfolio .portfolio-items>div {
         margin: 0 auto;
         width: 60%;
@@ -1133,7 +1129,6 @@ input[type="submit"]:hover {
         margin: 0 auto;
         display: block;
         width: 80%;
-        height: 80%;
     }
     .portfolio .portfolio-items>div {
         margin: 0 auto;
@@ -1167,6 +1162,10 @@ input[type="submit"]:hover {
         width: 50%;
         float: left;
     }
+    .contact-form {
+        display: block;
+        width: 100%;
+    }
     .contact-info-image {
         display: block;
         width: 100%;
@@ -1174,7 +1173,7 @@ input[type="submit"]:hover {
     }
     .portfolio .portfolio-items>div {
         margin: 0 auto;
-        width: 80%;
+        width: 75%;
     }
 }
 
@@ -1196,6 +1195,8 @@ input[type="submit"]:hover {
         padding: 0;
     }
     .contact-me .contact-info {
+        display: flex;
+        flex-wrap: wrap;
         padding: 30px;
         width: 50%;
     }
@@ -1211,6 +1212,9 @@ input[type="submit"]:hover {
     }
     .portfolio .portfolio-items>div {
         grid-template-columns: auto;
+    }
+    #contactform {
+        height: 100%;
     }
 }
 
