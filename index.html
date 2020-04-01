@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/normalize.css" />
     <!--- main css file-->
     <link rel="stylesheet" href="css/style.css" />
@@ -11,7 +12,6 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <!--adding fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet" />
-
     <!--[if lt IE 9]>
       <script src="../project-1/js/html5shiv.js"></script>
     <![endif]-->
@@ -108,15 +108,17 @@
                 </p>
                 <div class="services">
                     <div class="services-container">
-                        <div class="services-image" id="web-development"></div>
+                        <div class="services-image-container" id="web-development">
+                            <img class="services-image" src="images/programming.svg" alt="programmer-image">
+                        </div>
                         <div class="services-details">
                             <h3>Web Developer</h3>
                             <p>Talked him people valley add use her depend letter.</p>
                         </div>
                     </div>
                     <div class="services-container">
-                        <div class="services-image" id="design">
-                            <!-- <img src="../project-1/images/development.svg" alt="web"> -->
+                        <div class="services-image-container" id="design">
+                            <img class="services-image" src="images/design.svg" alt="web designer image">
                         </div>
                         <div class="services-details">
                             <h3>
@@ -126,8 +128,8 @@
                         </div>
                     </div>
                     <div class="services-container">
-                        <div class="services-image" id="marketing">
-                            <!-- <img src="../project-1/images/development.svg" alt="web"> -->
+                        <div class="services-image-container" id="marketing">
+                            <img class="services-image" src="images/online.svg" alt="online market image">
                         </div>
                         <div class="services-details">
                             <h3>Online marketing</h3>
@@ -135,8 +137,8 @@
                         </div>
                     </div>
                     <div class="services-container">
-                        <div class="services-image" id="ceo">
-                            <!-- <img src="../project-1/images/development.svg" alt="web"> -->
+                        <div class="services-image-container" id="ceo">
+                            <img class="services-image" src="images/search.svg" alt="search icon">
                         </div>
                         <div class="services-details">
                             <h3>CEO</h3>
@@ -455,23 +457,10 @@
     <section class="contact-me" id="contact">
         <div class="container">
             <div class="contact-info">
-                <!-- <h2>Contact me</h2>
-                <p>
-                    You vexed shy mirth now noise. Talked him people valley add use her depend letter. Allowance too applauded now way something
-                </p>
-                <div class="contact-me-address">
-                    <p>hah address</p>
-                    <p>also more address</p>
-                    <p>some code address</p>
-                </div>
-                <div class="contact-me-details">
-                    <p>email: <span>ahmodmyd@gmail.com</span></p>
-                    <p>Phone: <span>00966553527880</span></p>
-                </div> -->
-
+                <img class="contact-info-image" src="images\undraw_contact_us_15o2-green.svg" alt="image-contact-us" title="contact-us">
             </div>
             <div class="contact-form">
-                <form name="contactform" id="contactform" method="POST" action="mail.php" netlify-honeypot="bot-field" data-netlify="true">
+                <form name="contactform" id="contactform" method="POST" netlify-honeypot="bot-field" data-netlify="true">
                     <p class="hidden">
                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                     </p>

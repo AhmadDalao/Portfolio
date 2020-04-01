@@ -61,29 +61,6 @@ progress {
 
 /* ============================ IDs ============================ */
 
-#web-development {
-    background-image: url("../images/programming.svg");
-}
-
-#design {
-    background-image: url("../images/design.svg");
-}
-
-#marketing {
-    background-image: url("../images/online.svg");
-}
-
-#ceo {
-    background-image: url("../images/search.svg");
-}
-
-#about {
-    padding: 30px;
-    background-color: #2ecc71;
-    opacity: 0.9;
-    background: #2ecc71;
-}
-
 
 /* ============================ reusable classes ============================ */
 
@@ -238,7 +215,6 @@ progress {
     /* width: 100vw; */
     height: 100vh;
     /* Flexbox stuff */
-    display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -304,8 +280,7 @@ progress {
 }
 
 .features .container {
-    display: -webkit-box;
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     grid-row: 3;
     grid-gap: 2rem;
@@ -407,7 +382,7 @@ progress {
 
 .about-me .details .services {
     overflow: hidden;
-    margin: 20px;
+    /* margin: 20px; */
     width: 100%;
     -webkit-box-pack: center;
     justify-content: center;
@@ -424,11 +399,16 @@ progress {
     min-height: 200px;
 }
 
-.services-image {
+.services-image-container {
+    display: block;
     width: 30%;
-    background-size: 50% 50%;
-    background-repeat: no-repeat;
-    background-position: left 20% bottom 110%;
+}
+
+.services-image {
+    display: block;
+    width: 50%;
+    height: 40%;
+    margin: 5px auto;
 }
 
 .about-me h4 {
@@ -889,8 +869,8 @@ q {
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
-    background-color: #ffffff;
     /* background-color: #313132; */
+    background-color: #ffffff;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
@@ -900,33 +880,9 @@ q {
 }
 
 .contact-me .contact-info {
-    background-image: url(../images/undraw_contact_us_15o2-green.svg);
-    background-size: 120% 58%;
-    background-repeat: no-repeat;
-    background-position: left 59% bottom 50%;
     padding: 30px;
-    float: left;
+    width: 50%;
 }
-
-
-/* .contact-me .contact-info h2 {
-    margin-bottom: 20px;
-    color: #2ecc71;
-}
-
-.contact-me .contact-info p {
-    color: white;
-}
-
-.contact-me .contact-info .contact-me-address,
-.contact-me .contact-info .contact-me-details {
-    margin-top: 20px;
-} */
-
-
-/* .contact-me .contact-info .contact-me-details span {
-    padding-left: 30px;
-} */
 
 
 /* Style inputs with type="text", and textareas */
@@ -950,6 +906,12 @@ textarea {
     /* Bottom margin */
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+.contact-info-image {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -1081,6 +1043,58 @@ input[type="submit"]:hover {
 .footer #github {
     background-image: url("../images/github-logo.svg");
 }
+
+
+/* ============================  media query   ============================ */
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    /* 
+    about me here 
+    */
+    /* .about-me .details .services {
+        overflow: hidden;
+        width: 100%;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: left;
+        display: grid;
+        flex-wrap: wrap;
+    }
+    .about-me .details .services>div {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        min-height: 200px;
+    }
+    .contact-me .contact-info {
+        background-size: 164% 40%;
+        background-repeat: no-repeat;
+        background-position: left 60% bottom 56%;
+    } */
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
 
 
 /*============================ animation ============================*/
