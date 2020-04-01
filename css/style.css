@@ -1,8 +1,6 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif, Helvetica;
     padding: 0;
@@ -213,6 +211,7 @@ progress {
     /* width: 100vw; */
     height: 100vh;
     /* Flexbox stuff */
+    display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -222,6 +221,7 @@ progress {
     text-align: center;
     color: white;
     /* Background styles */
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/image.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-size: cover;
     background-position: center center;
@@ -1195,6 +1195,7 @@ input[type="submit"]:hover {
         padding: 0;
     }
     .contact-me .contact-info {
+        display: -webkit-box;
         display: flex;
         flex-wrap: wrap;
         padding: 30px;
