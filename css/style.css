@@ -104,9 +104,7 @@ progress {
 .education .education-information,
 .education .education-details,
 .education .experience-information,
-.education .experience-details,
-.contact-me .contact-info,
-.contact-me .contact-form {
+.education .experience-details {
     width: 50%;
     float: left;
 }
@@ -865,25 +863,6 @@ q {
 
 /*============================  start contact-me= ===========================*/
 
-.contact-me {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    overflow: hidden;
-    /* background-color: #313132; */
-    background-color: #ffffff;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-}
-
-.contact-me .container {
-    display: -webkit-box;
-    display: flex;
-}
-
-.contact-me .contact-info {
-    padding: 30px;
-    width: 50%;
-}
-
 
 /* Style inputs with type="text", and textareas */
 
@@ -1050,12 +1029,50 @@ input[type="submit"]:hover {
 
 /* Extra small devices (phones, 600px and down) */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90vw;
+    }
+    .contact-me {
+        padding: 40px 10px;
+        background-color: #ffffff;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
+    }
+    .contact-me .contact-info {
+        padding: 20px 0;
+    }
+    .portfolio .portfolio-items>div {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .label {
+        text-align: left;
+    }
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 90vw;
+    }
+    .contact-me {
+        padding: 40px 10px;
+        background-color: #ffffff;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
+    }
+    .contact-me .contact-info {
+        padding: 20px 0;
+    }
+    .portfolio .portfolio-items>div {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .label {
+        text-align: left;
+    }
+}
 
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -1084,17 +1101,118 @@ input[type="submit"]:hover {
         background-repeat: no-repeat;
         background-position: left 60% bottom 56%;
     } */
+    .portfolio .portfolio-items>div {
+        margin: 0 auto;
+        width: 60%;
+    }
+    .label {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .container {
+        width: 90vw;
+    }
+    .contact-me {
+        padding: 40px 10px;
+        background-color: #ffffff;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
+    }
+    .contact-me .contact-info {
+        padding: 20px 0;
+    }
+    .contact-info-image {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        width: 80%;
+        height: 80%;
+    }
+    .contact-form {
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        height: 80%;
+    }
+    .portfolio .portfolio-items>div {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .contact-me {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        overflow: hidden;
+        /* background-color: #313132; */
+        background-color: #ffffff;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
+    .contact-me .container {
+        display: -webkit-box;
+        display: flex;
+        padding: 0;
+    }
+    .contact-me .contact-info {
+        padding: 15px;
+        width: 50%;
+    }
+    .contact-me .contact-info,
+    .contact-me .contact-form {
+        width: 50%;
+        float: left;
+    }
+    .contact-info-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio .portfolio-items>div {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .contact-me {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        overflow: hidden;
+        /* background-color: #313132; */
+        background-color: #ffffff;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    }
+    .contact-me .container {
+        display: -webkit-box;
+        display: flex;
+        padding: 0;
+    }
+    .contact-me .contact-info {
+        padding: 30px;
+        width: 50%;
+    }
+    .contact-me .contact-info,
+    .contact-me .contact-form {
+        width: 50%;
+        float: left;
+    }
+    .contact-info-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .portfolio .portfolio-items>div {
+        grid-template-columns: auto;
+    }
+}
 
 
 /*============================ animation ============================*/
