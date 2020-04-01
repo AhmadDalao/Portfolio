@@ -281,33 +281,41 @@ progress {
 /* ============================  start features ============================*/
 
 .features {
-    background-image: url("../images/wave.svg");
+    background-image: url(../images/wave.svg);
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    display: -ms-grid;
-    display: grid;
+    display: flex;
+    text-align: center;
     overflow: hidden;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .features .container {
-    /* display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    justify-content: center;
+    text-align: center;
+    /* text-align: -webkit-center; */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
     -ms-grid-row: 3;
-    grid-row: 3;
-    grid-gap: 2rem; */
+    grid-gap: 2rem;
+    grid-row: auto;
+    display: flex;
 }
 
 .features-outer-warper {
-    display: -ms-grid;
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-    -ms-grid-row: 3;
+    /* grid-row: auto; */
+    flex-flow: column;
+    /* change this line with media query */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-row: 3;
     grid-gap: 2rem;
+    text-align: center;
 }
 
 .feature-warper {
