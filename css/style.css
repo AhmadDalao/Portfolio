@@ -1,6 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 *,
 *:before,
 *:after {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif, Helvetica;
     padding: 0;
@@ -122,11 +125,14 @@ progress {
     position: fixed;
     background-color: #313132;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* horizontal */
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     /* vertical */
 }
@@ -135,6 +141,7 @@ progress {
     width: 40%;
     display: block;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     float: left;
 }
@@ -156,8 +163,10 @@ progress {
     display: block;
     padding: 0;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-transform: uppercase;
     padding: 0 10%;
@@ -170,8 +179,10 @@ progress {
 .navbar-container .navbar-list {
     width: 60%;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: right;
+    -ms-flex-pack: right;
     justify-content: right;
     float: right;
 }
@@ -212,17 +223,22 @@ progress {
     height: 100vh;
     /* Flexbox stuff */
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* Text styles */
     text-align: center;
     color: white;
     /* Background styles */
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/image.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
+    -webkit-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -271,6 +287,7 @@ progress {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+    display: -ms-grid;
     display: grid;
     overflow: hidden;
     padding-top: 60px;
@@ -278,8 +295,10 @@ progress {
 }
 
 .features .container {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    -ms-grid-row: 3;
     grid-row: 3;
     grid-gap: 2rem;
 }
@@ -293,9 +312,12 @@ progress {
 .features .container .feature-item {
     overflow: hidden;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -ms-grid;
     display: grid;
     border: 1px solid #cccccc;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     border-radius: 18px;
     background: white;
@@ -305,6 +327,7 @@ progress {
 
 .features .container .feature-item:hover {
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
@@ -352,8 +375,10 @@ progress {
 .services-container {
     height: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -383,10 +408,13 @@ progress {
     /* margin: 20px; */
     width: 100%;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-align: left;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -427,6 +455,7 @@ progress {
     width: 100%;
     height: 100%;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -435,6 +464,7 @@ progress {
 
 .skills .container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -468,6 +498,7 @@ progress {
 
 .skills .skills-progress .myProgress {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px;
     height: 30px;
@@ -480,9 +511,11 @@ progress {
     color: #ffffff;
     height: 30px;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background-color: #2ecc71;
 }
@@ -491,11 +524,14 @@ progress {
     width: 100%;
     padding: 0 5px;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     text-align: right;
     -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
@@ -525,6 +561,7 @@ progress {
     padding-bottom: 60px;
     text-align: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -546,6 +583,7 @@ progress {
     width: 60px;
     right: 47%;
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -555,6 +593,7 @@ progress {
 
 .education .education-container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
     background-image: url("../images/graduation.svg");
@@ -565,6 +604,7 @@ progress {
 
 .education .experience-container {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100%;
     background-image: url("../images/work2.svg");
@@ -631,6 +671,7 @@ progress {
 
 .slideshow-container {
     -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
     transition: all 1s ease;
     -webkit-transition: 1s ease;
     -moz-transition: 1s ease;
@@ -746,18 +787,24 @@ q {
     padding-bottom: 60px;
     text-align: center;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .portfolio .portfolio-items {
     /* overflow: hidden; */
+    display: -ms-grid;
     display: grid;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    -ms-grid-row: 3;
     grid-row: 3;
     grid-gap: 2rem;
 }
@@ -767,18 +814,25 @@ q {
 
 .warper {
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .portfolio .card {
     overflow: hidden;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    display: -ms-grid;
     display: grid;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     border: 0.5px solid #cccccc;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
+    -ms-grid-rows: 210px 250px 60px;
     grid-template-rows: 210px 250px 60px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
@@ -789,11 +843,15 @@ q {
 
 .portfolio .card:hover {
     -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
     transform: scale(1.02);
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 .card-image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
     grid-area: image;
     width: 100%;
     background: url("../images/coding-1170x780.jpg");
@@ -803,6 +861,8 @@ q {
 }
 
 .card-text {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
     grid-area: text;
     padding: 25px;
     width: 100%;
@@ -814,6 +874,8 @@ q {
 }
 
 .card-stats {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
     grid-area: stats;
     width: 100%;
     border-bottom-left-radius: 15px;
@@ -837,8 +899,10 @@ q {
     /* Text styles */
     color: #2ecc71;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     /* Border styles */
     font-weight: bold;
@@ -877,6 +941,7 @@ textarea {
     /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     /* Make sure that padding and width stays in place */
     margin-top: 6px;
@@ -922,6 +987,7 @@ input[type="submit"]:hover {
     border-radius: 5px;
     background-color: rgba(242, 242, 242, 0.09);
     /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); */
+    -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.175);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.175);
     padding: 20px;
 }
@@ -949,8 +1015,10 @@ input[type="submit"]:hover {
     /* background-color: #313132; */
     text-align: center;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -976,10 +1044,13 @@ input[type="submit"]:hover {
     overflow: hidden;
     padding: 0 10px;
     display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
     text-align: center;
@@ -1001,6 +1072,7 @@ input[type="submit"]:hover {
     opacity: 1;
     background-color: white;
     -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -1036,6 +1108,7 @@ input[type="submit"]:hover {
     .contact-me {
         padding: 40px 10px;
         background-color: #ffffff;
+        -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .contact-info {
@@ -1060,6 +1133,7 @@ input[type="submit"]:hover {
     .contact-me {
         padding: 40px 10px;
         background-color: #ffffff;
+        -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .contact-info {
@@ -1113,6 +1187,7 @@ input[type="submit"]:hover {
     .contact-me {
         padding: 40px 10px;
         background-color: #ffffff;
+        -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .contact-info {
@@ -1146,10 +1221,12 @@ input[type="submit"]:hover {
         overflow: hidden;
         /* background-color: #313132; */
         background-color: #ffffff;
+        -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .container {
         display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
@@ -1187,16 +1264,20 @@ input[type="submit"]:hover {
         overflow: hidden;
         /* background-color: #313132; */
         background-color: #ffffff;
+        -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .container {
         display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
     .contact-me .contact-info {
         display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 30px;
         width: 50%;
@@ -1212,6 +1293,7 @@ input[type="submit"]:hover {
         height: 100%;
     }
     .portfolio .portfolio-items>div {
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
     }
     #contactform {
