@@ -1045,6 +1045,24 @@ input[type="submit"]:hover {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    /* 
+    about me here 
+    */
+    .about-me .details .services {
+        overflow: hidden;
+        width: 100%;
+        -webkit-box-pack: center;
+        justify-content: center;
+        text-align: left;
+        display: grid;
+        flex-wrap: wrap;
+    }
+    .about-me .details .services>div {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        min-height: 100px;
+    }
     .container {
         width: 90vw;
     }
@@ -1067,10 +1085,10 @@ input[type="submit"]:hover {
     .about-me .image {
         display: none;
     }
-    .services-image {
-        width: 50%;
+    .about-me .services-image {
+        width: 40%;
         height: 40%;
-        margin: 5px auto;
+        margin: 20px auto;
     }
     .about-me .services {
         display: block;
