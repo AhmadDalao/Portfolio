@@ -1235,19 +1235,25 @@ The navbar toggle appears at this breakpoint */
     .container {
         width: 90vw;
     }
-    .services-image-container {
-        display: block;
-        width: 15%;
+    .about-me .details .services>div {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        min-height: 200px;
     }
     .services-image {
+        display: flex;
+        width: 70%;
+        height: 29%;
+        margin: 13% auto;
+    }
+    .services-image-container {
         display: block;
-        width: 40%;
-        /* height: 30%; */
-        margin: 17% auto;
+        width: 30%;
     }
     .about-me .services-details {
         float: left;
-        width: 85%;
+        width: 70%;
     }
     .contact-me {
         padding: 40px 10px;
