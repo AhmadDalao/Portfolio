@@ -1189,33 +1189,27 @@ input[type="submit"]:hover {
 The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
-    /* 
-    about me here 
-    */
-    .about-me .details .image-holder {
-        margin: 0 auto;
-        text-align: center;
-    }
-    .about-me .details .image-holder img {
-        width: 70%;
-        height: 70%;
-    }
-    .label {
-        text-align: left;
+    /* about me */
+    /*   change it from  media query*/
+    .about-me .details .services>div {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        min-height: 200px;
     }
     .services-image {
-        display: block;
-        width: 40%;
-        /* height: 30%; */
-        margin: 17% auto;
+        display: flex;
+        width: 70%;
+        height: 29%;
+        margin: 18% auto;
     }
     .services-image-container {
         display: block;
-        width: 15%;
+        width: 30%;
     }
     .about-me .services-details {
         float: left;
-        width: 85%;
+        width: 70%;
     }
     .portfolio .portfolio-items>div {
         margin: 30px auto;
