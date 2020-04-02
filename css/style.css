@@ -999,7 +999,7 @@ input[type="submit"]:hover {
     width: 60px;
     height: 60px;
     float: left;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .footer .footer-icon-list>a span {
@@ -1098,7 +1098,7 @@ input[type="submit"]:hover {
         display: block;
         width: 40%;
         height: 40%;
-        margin: 20px auto;
+        margin: 15% auto;
     }
     .about-me .services {
         display: block;
@@ -1119,6 +1119,7 @@ input[type="submit"]:hover {
     .footer .footer-icon-list a {
         width: 50px;
         height: 50px;
+        opacity: 0.5;
     }
 }
 
@@ -1173,10 +1174,13 @@ input[type="submit"]:hover {
         display: block;
         width: 40%;
         height: 40%;
-        margin: 20px auto;
+        margin: 12% auto;
     }
     .about-me .services {
         padding-top: 20px;
+    }
+    .footer .footer-icon-list a {
+        opacity: 0.5;
     }
 }
 
@@ -1202,8 +1206,16 @@ The navbar toggle appears at this breakpoint */
     .services-image {
         display: block;
         width: 40%;
-        height: 30%;
-        margin: 20px auto;
+        /* height: 30%; */
+        margin: 17% auto;
+    }
+    .services-image-container {
+        display: block;
+        width: 15%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 85%;
     }
     .portfolio .portfolio-items>div {
         margin: 30px auto;
@@ -1214,11 +1226,28 @@ The navbar toggle appears at this breakpoint */
         text-align: center;
         margin: 0 auto;
     }
+    .footer .footer-icon-list a {
+        opacity: 0.5;
+    }
 }
 
 @media only screen and (min-width: 850px) {
     .container {
         width: 90vw;
+    }
+    .services-image-container {
+        display: block;
+        width: 15%;
+    }
+    .services-image {
+        display: block;
+        width: 40%;
+        /* height: 30%; */
+        margin: 17% auto;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 85%;
     }
     .contact-me {
         padding: 40px 10px;
@@ -1251,6 +1280,9 @@ The navbar toggle appears at this breakpoint */
     }
     .portfolio .portfolio-items {
         grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    }
+    .footer .footer-icon-list a {
+        opacity: 0.4;
     }
 }
 
@@ -1299,11 +1331,18 @@ The navbar toggle appears at this breakpoint */
     }
     .services-image-container {
         display: block;
-        width: 25%;
+        width: 10%;
     }
     .about-me .services-details {
         float: left;
-        width: 75%;
+        width: 90%;
+    }
+    .services-image {
+        display: flex;
+        /* display: block; */
+        width: 40%;
+        height: 50%;
+        margin: 15% auto;
     }
 }
 
@@ -1369,10 +1408,10 @@ The navbar toggle appears at this breakpoint */
         min-height: 200px;
     }
     .services-image {
-        display: block;
-        width: 50%;
-        height: 40%;
-        margin: 5px auto;
+        display: flex;
+        width: 70%;
+        height: 29%;
+        margin: 20% auto;
     }
     .services-image-container {
         display: block;
