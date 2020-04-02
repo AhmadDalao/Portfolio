@@ -298,10 +298,8 @@ progress {
 .features .container {
     justify-content: center;
     text-align: center;
-    /* text-align: -webkit-center; */
     /* grid-template-columns: repeat(auto-fill, minmax(500px, 2fr)); */
     grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    -ms-grid-row: 3;
     grid-gap: 2rem;
     grid-row: auto;
     display: flex;
@@ -771,9 +769,9 @@ q {
     overflow: hidden;
     display: grid;
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     grid-row: 3;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
 }
 
 .portfolio .container {
@@ -1251,6 +1249,9 @@ The navbar toggle appears at this breakpoint */
         width: 60%;
         height: 60%;
     }
+    .portfolio .portfolio-items {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+    }
 }
 
 
@@ -1339,10 +1340,6 @@ The navbar toggle appears at this breakpoint */
         width: 100%;
         height: 100%;
     }
-    .portfolio .portfolio-items>div {
-        -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    }
     #contactform {
         height: 100%;
     }
@@ -1384,6 +1381,9 @@ The navbar toggle appears at this breakpoint */
     .about-me .services-details {
         float: left;
         width: 70%;
+    }
+    .portfolio .portfolio-items {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     }
 }
 
