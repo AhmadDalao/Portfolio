@@ -299,7 +299,8 @@ progress {
     justify-content: center;
     text-align: center;
     /* text-align: -webkit-center; */
-    grid-template-columns: repeat(auto-fill, minmax(500px, 2fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(500px, 2fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
     -ms-grid-row: 3;
     grid-gap: 2rem;
     grid-row: auto;
@@ -389,27 +390,9 @@ progress {
 .about-me .container,
 .services-container {
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}
-
-.about-me .image {
-    background-image: url("../images/programming1.svg");
-    width: 40%;
-    float: left;
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-    background-position: left 50% bottom 60%;
-}
-
-.about-me .details {
-    padding: 20px 60px;
-    float: left;
-    width: 60%;
 }
 
 .about-me .details .details-p1,
@@ -422,16 +405,14 @@ progress {
     overflow: hidden;
     /* margin: 20px; */
     width: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     text-align: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
+
+/*   change it from  media query*/
 
 .about-me .details .services>div {
     float: left;
@@ -445,20 +426,13 @@ progress {
     width: 30%;
 }
 
-.services-image {
-    display: block;
-    width: 50%;
-    height: 40%;
-    margin: 5px auto;
+.about-me .services-details {
+    float: left;
+    width: 70%;
 }
 
 .about-me h4 {
     font-weight: 900;
-}
-
-.about-me .services-details {
-    float: left;
-    width: 70%;
 }
 
 .about-me .services-details p {
@@ -469,8 +443,6 @@ progress {
     padding: 5px;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -478,8 +450,6 @@ progress {
 /* ============================  start skills  ============================*/
 
 .skills .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 
@@ -512,8 +482,6 @@ progress {
 }
 
 .skills .skills-progress .myProgress {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-bottom: 20px;
     height: 30px;
@@ -525,8 +493,6 @@ progress {
     font-weight: bold;
     color: #ffffff;
     height: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     -webkit-box-align: center;
@@ -538,8 +504,6 @@ progress {
 .skills .skills-progress .myBar-span {
     width: 100%;
     padding: 0 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
     -ms-flex-align: end;
@@ -607,8 +571,6 @@ progress {
 }
 
 .education .education-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 100%;
     background-image: url("../images/graduation.svg");
@@ -618,8 +580,6 @@ progress {
 }
 
 .education .experience-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 100%;
     background-image: url("../images/work2.svg");
@@ -798,8 +758,6 @@ q {
 
 .portfolio {
     /* overflow: hidden;
-    خلص نسخت هي 
-    
     */
     padding-top: 60px;
     padding-bottom: 60px;
@@ -811,12 +769,9 @@ q {
 
 .portfolio .portfolio-items {
     /* overflow: hidden; */
-    display: -ms-grid;
     display: grid;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
-    -ms-grid-row: 3;
     grid-row: 3;
     grid-gap: 2rem;
 }
@@ -829,26 +784,18 @@ q {
 /*  change the card here */
 
 .warper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
 .portfolio .card {
     overflow: hidden;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     display: -ms-grid;
     display: grid;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     border: 0.5px solid #cccccc;
-    -ms-grid-columns: auto;
     grid-template-columns: auto;
-    -ms-grid-rows: 210px 250px 60px;
     grid-template-rows: 210px 250px 60px;
     grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
@@ -866,8 +813,6 @@ q {
 }
 
 .card-image {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: image;
     width: 100%;
     background: url("../images/coding-1170x780.jpg");
@@ -877,8 +822,6 @@ q {
 }
 
 .card-text {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
     grid-area: text;
     padding: 25px;
     width: 100%;
@@ -890,8 +833,6 @@ q {
 }
 
 .card-stats {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
     grid-area: stats;
     width: 100%;
     border-bottom-left-radius: 15px;
@@ -914,11 +855,7 @@ q {
     padding: 1em;
     /* Text styles */
     color: #2ecc71;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* Border styles */
     font-weight: bold;
@@ -1030,11 +967,7 @@ input[type="submit"]:hover {
     background-color: #191e22;
     /* background-color: #313132; */
     text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     position: absolute;
     width: 100%;
@@ -1059,14 +992,8 @@ input[type="submit"]:hover {
     margin: 0 10px;
     overflow: hidden;
     padding: 0 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
     text-align: center;
@@ -1137,6 +1064,30 @@ input[type="submit"]:hover {
     .label {
         text-align: left;
     }
+    .about-me .image {
+        display: none;
+    }
+    .services-image {
+        width: 50%;
+        height: 40%;
+        margin: 5px auto;
+    }
+    .about-me .services {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .about-me .details .image-holder img {
+        width: 50%;
+        height: 50%;
+    }
+    .about-me .details .image-holder {
+        padding: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -1162,6 +1113,28 @@ input[type="submit"]:hover {
     .label {
         text-align: left;
     }
+    .about-me .details .image-holder {
+        padding: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .about-me .details .image-holder img {
+        width: 80%;
+        height: 40%;
+    }
+    .about-me .image {
+        display: none;
+    }
+    .services-image {
+        display: block;
+        width: 50%;
+        height: 40%;
+        margin: 5px auto;
+    }
+    .about-me .services {
+        padding-top: 20px;
+    }
 }
 
 
@@ -1171,28 +1144,22 @@ input[type="submit"]:hover {
     /* 
     about me here 
     */
-    /* .about-me .details .services {
-        overflow: hidden;
-        width: 100%;
-        -webkit-box-pack: center;
-        justify-content: center;
-        text-align: left;
-        display: grid;
-        flex-wrap: wrap;
-    }
-    .about-me .details .services>div {
-        float: left;
-        width: 100%;
-        overflow: hidden;
-        min-height: 200px;
-    }
-*/
-    .portfolio .portfolio-items>div {
+    .about-me .details .image-holder {
         margin: 0 auto;
-        width: 60%;
+        text-align: center;
+    }
+    .about-me .details .image-holder img {
+        width: 70%;
+        height: 70%;
     }
     .label {
         text-align: left;
+    }
+    .services-image {
+        display: block;
+        width: 40%;
+        height: 30%;
+        margin: 5px auto;
     }
 }
 
@@ -1225,6 +1192,10 @@ input[type="submit"]:hover {
         margin: 0 auto;
         width: 90%;
     }
+    .about-me .details .image-holder img {
+        width: 60%;
+        height: 60%;
+    }
 }
 
 
@@ -1241,8 +1212,6 @@ input[type="submit"]:hover {
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
@@ -1268,6 +1237,18 @@ input[type="submit"]:hover {
         margin: 0 auto;
         width: 75%;
     }
+    .about-me .details .image-holder img {
+        width: 50%;
+        height: 50%;
+    }
+    .services-image-container {
+        display: block;
+        width: 25%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 75%;
+    }
 }
 
 
@@ -1284,16 +1265,11 @@ input[type="submit"]:hover {
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     }
     .contact-me .container {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
     .contact-me .contact-info {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 30px;
         width: 50%;
@@ -1314,6 +1290,45 @@ input[type="submit"]:hover {
     }
     #contactform {
         height: 100%;
+    }
+    /* about me */
+    .about-me .image {
+        display: block;
+        width: 40%;
+        float: left;
+    }
+    .about-me .image img {
+        width: 100%;
+        height: 100%;
+    }
+    .about-me .details {
+        padding: 20px 60px;
+        float: left;
+        width: 60%;
+    }
+    .about-me .details .image-holder {
+        display: none;
+    }
+    /*   change it from  media query*/
+    .about-me .details .services>div {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        min-height: 200px;
+    }
+    .services-image {
+        display: block;
+        width: 50%;
+        height: 40%;
+        margin: 5px auto;
+    }
+    .services-image-container {
+        display: block;
+        width: 30%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 70%;
     }
 }
 
