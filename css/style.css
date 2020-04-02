@@ -1048,6 +1048,9 @@ input[type="submit"]:hover {
     /* 
     about me here 
     */
+    .container {
+        width: 90vw;
+    }
     .about-me .details .services {
         overflow: hidden;
         width: 100%;
@@ -1063,8 +1066,12 @@ input[type="submit"]:hover {
         overflow: hidden;
         min-height: 100px;
     }
-    .container {
-        width: 90vw;
+    .services-image-container {
+        width: 20%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 80%;
     }
     .contact-me {
         padding: 40px 10px;
@@ -1079,13 +1086,14 @@ input[type="submit"]:hover {
         margin: 0 auto;
         width: 70%;
     }
-    .label {
+    .portfolio .portfolio-items .label {
         text-align: left;
     }
     .about-me .image {
         display: none;
     }
     .about-me .services-image {
+        display: block;
         width: 40%;
         height: 40%;
         margin: 20px auto;
@@ -1112,6 +1120,12 @@ input[type="submit"]:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
+    .about-me .details .services>div {
+        float: left;
+        width: 100%;
+        overflow: hidden;
+        min-height: 100px;
+    }
     .container {
         width: 90vw;
     }
@@ -1146,9 +1160,9 @@ input[type="submit"]:hover {
     }
     .services-image {
         display: block;
-        width: 50%;
+        width: 40%;
         height: 40%;
-        margin: 5px auto;
+        margin: 20px auto;
     }
     .about-me .services {
         padding-top: 20px;
@@ -1156,7 +1170,8 @@ input[type="submit"]:hover {
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
     /* 
@@ -1177,7 +1192,7 @@ input[type="submit"]:hover {
         display: block;
         width: 40%;
         height: 30%;
-        margin: 5px auto;
+        margin: 20px auto;
     }
 }
 
