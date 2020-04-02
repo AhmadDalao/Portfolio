@@ -768,7 +768,7 @@ q {
 }
 
 .portfolio .portfolio-items {
-    /* overflow: hidden; */
+    overflow: hidden;
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
@@ -791,7 +791,6 @@ q {
 .portfolio .card {
     overflow: hidden;
     justify-content: center;
-    display: -ms-grid;
     display: grid;
     flex-wrap: wrap;
     border: 0.5px solid #cccccc;
@@ -1083,8 +1082,13 @@ input[type="submit"]:hover {
         padding: 20px 0;
     }
     .portfolio .portfolio-items>div {
-        margin: 0 auto;
+        margin: 25px auto;
         width: 70%;
+    }
+    .portfolio .portfolio-items {
+        text-align: center;
+        margin: 15px auto;
+        display: block;
     }
     .portfolio .portfolio-items .label {
         text-align: left;
@@ -1105,7 +1109,7 @@ input[type="submit"]:hover {
         padding-top: 20px;
     }
     .about-me .details .image-holder img {
-        width: 50%;
+        width: 70%;
         height: 50%;
     }
     .about-me .details .image-holder {
@@ -1113,6 +1117,10 @@ input[type="submit"]:hover {
         display: block;
         width: 100%;
         text-align: center;
+    }
+    .footer .footer-icon-list a {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -1139,8 +1147,13 @@ input[type="submit"]:hover {
         padding: 20px 0;
     }
     .portfolio .portfolio-items>div {
+        margin: 30px auto;
+        width: 65%;
+    }
+    .portfolio .portfolio-items {
+        padding: 20px 0;
+        text-align: center;
         margin: 0 auto;
-        width: 70%;
     }
     .label {
         text-align: left;
@@ -1193,6 +1206,15 @@ The navbar toggle appears at this breakpoint */
         width: 40%;
         height: 30%;
         margin: 20px auto;
+    }
+    .portfolio .portfolio-items>div {
+        margin: 30px auto;
+        width: 65%;
+    }
+    .portfolio .portfolio-items {
+        padding: 20px 0;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
