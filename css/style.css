@@ -1287,7 +1287,11 @@ The navbar toggle appears at this breakpoint */
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px and up) 
+
+make changes to about-me section and make it just like 1200px you have got a space for it.
+
+*/
 
 @media only screen and (min-width: 992px) {
     .contact-me {
@@ -1325,24 +1329,28 @@ The navbar toggle appears at this breakpoint */
         margin: 0 auto;
         width: 75%;
     }
-    .about-me .details .image-holder img {
-        width: 50%;
-        height: 50%;
-    }
-    .services-image-container {
-        display: block;
-        width: 10%;
-    }
-    .about-me .services-details {
+    /*=================================================================== */
+    /* about me */
+    /*   change it from  media query*/
+    .about-me .details .services>div {
         float: left;
-        width: 90%;
+        width: 50%;
+        overflow: hidden;
+        min-height: 200px;
     }
     .services-image {
         display: flex;
-        /* display: block; */
-        width: 40%;
-        height: 50%;
-        margin: 15% auto;
+        width: 70%;
+        height: 29%;
+        margin: 13% auto;
+    }
+    .services-image-container {
+        display: block;
+        width: 30%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 70%;
     }
 }
 
