@@ -242,11 +242,14 @@ li a:hover:not(.active-nav) {
     color: white;
     /* Background styles */
     background-image: url("../images/image.jpg");
-    background-size: cover;
-    background-position: center center;
-    position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+    position: relative;
 }
 
 .header .hero-image {
