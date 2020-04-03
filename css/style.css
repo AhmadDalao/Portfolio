@@ -241,9 +241,9 @@ li a:hover:not(.active-nav) {
     text-align: center;
     color: white;
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-size: cover;
     background-position: center center;
     position: relative;
