@@ -211,6 +211,20 @@ progress {
 }
 
 
+/* Add an active-nav class to highlight the current page */
+
+
+/* li a.active-nav {
+    background-color: #555;
+    color: white;
+}
+
+li a:hover:not(.active-nav) {
+    background-color: #555;
+    color: white;
+} */
+
+
 /* ============================ start header header ============================ */
 
 .header {
@@ -218,23 +232,14 @@ progress {
     /* width: 100vw; */
     height: 100vh;
     /* Flexbox stuff */
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* Text styles */
     text-align: center;
     color: white;
     /* Background styles */
-    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/image.jpg");
-    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
-    -webkit-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1029,11 +1034,34 @@ input[type="submit"]:hover {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    /* 
-    about me here 
-    */
+    /*  ============== about me  =================*/
     .container {
         width: 90vw;
+    }
+    .about-me .image {
+        display: none;
+    }
+    .about-me .services-image {
+        display: block;
+        width: 40%;
+        height: 40%;
+        margin: 15% auto;
+    }
+    .about-me .services {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .about-me .details .image-holder img {
+        width: 70%;
+        height: 50%;
+    }
+    .about-me .details .image-holder {
+        padding: 20px;
+        display: block;
+        width: 100%;
+        text-align: center;
     }
     .about-me .details .services {
         overflow: hidden;
@@ -1155,6 +1183,7 @@ input[type="submit"]:hover {
     .contact-me .contact-info {
         padding: 20px 0;
     }
+    /*  ============== portfolio  =================*/
     .portfolio .portfolio-items>div {
         margin: 25px auto;
         width: 70%;
@@ -1167,31 +1196,7 @@ input[type="submit"]:hover {
     .portfolio .portfolio-items .label {
         text-align: left;
     }
-    .about-me .image {
-        display: none;
-    }
-    .about-me .services-image {
-        display: block;
-        width: 40%;
-        height: 40%;
-        margin: 15% auto;
-    }
-    .about-me .services {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 20px;
-    }
-    .about-me .details .image-holder img {
-        width: 70%;
-        height: 50%;
-    }
-    .about-me .details .image-holder {
-        padding: 20px;
-        display: block;
-        width: 100%;
-        text-align: center;
-    }
+    /*  ============== footer  =================*/
     .footer .footer-icon-list a {
         width: 50px;
         height: 50px;
@@ -1490,9 +1495,33 @@ make changes to about-me section and make it just like 1200px you have got a spa
 */
 
 @media only screen and (min-width: 992px) {
+    /* =========================== about me ===========================*/
+    /*   change it from  media query*/
+    .about-me .details .services>div {
+        float: left;
+        width: 50%;
+        overflow: hidden;
+        min-height: 200px;
+    }
+    .services-image {
+        display: flex;
+        width: 70%;
+        height: 29%;
+        margin: 13% auto;
+    }
+    .services-image-container {
+        display: block;
+        width: 30%;
+    }
+    .about-me .services-details {
+        float: left;
+        width: 70%;
+    }
+    /* =========================== skills ===========================*/
     .skills .skills-progress .myProgress {
         width: 80%;
     }
+    /*   =========================== contact me =========================== */
     .contact-me {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -1528,35 +1557,18 @@ make changes to about-me section and make it just like 1200px you have got a spa
         margin: 0 auto;
         width: 75%;
     }
-    /*=================================================================== */
-    /* about me */
-    /*   change it from  media query*/
-    .about-me .details .services>div {
-        float: left;
-        width: 50%;
-        overflow: hidden;
-        min-height: 200px;
-    }
-    .services-image {
-        display: flex;
-        width: 70%;
-        height: 29%;
-        margin: 13% auto;
-    }
-    .services-image-container {
-        display: block;
-        width: 30%;
-    }
-    .about-me .services-details {
-        float: left;
-        width: 70%;
-    }
 }
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    /*  =========================== features ===========================
+    */
+    .features-outer-warper {
+        display: flex;
+    }
+    /*   =========================== contact me =========================== */
     .contact-me {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -1589,7 +1601,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
     #contactform {
         height: 100%;
     }
-    /* about me */
+    /*   =========================== about me =========================== */
     .about-me .image {
         display: block;
         width: 40%;
@@ -1614,6 +1626,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         overflow: hidden;
         min-height: 200px;
     }
+    /*   =========================== skills me =========================== */
     .services-image {
         display: flex;
         width: 70%;
@@ -1628,8 +1641,10 @@ make changes to about-me section and make it just like 1200px you have got a spa
         float: left;
         width: 70%;
     }
+    /*   =========================== portfolio =========================== */
     .portfolio .portfolio-items {
         grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+        /* display: grid; */
     }
 }
 
