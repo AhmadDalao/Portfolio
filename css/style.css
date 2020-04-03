@@ -470,7 +470,7 @@ progress {
     display: flex;
     margin-bottom: 20px;
     height: 30px;
-    width: 80%;
+    width: 90%;
     background-color: #f2f2f2;
 }
 
@@ -1246,6 +1246,7 @@ input[type="submit"]:hover {
         background-color: #2ecc71;
     }
     .skills .skills-progress .myProgress {
+        width: 90%;
         display: flex;
         margin-bottom: 20px;
         height: 30px;
@@ -1421,6 +1422,9 @@ The navbar toggle appears at this breakpoint */
         padding-right: 0;
     }
     .skills .skills-progress-container {}
+    .skills .skills-progress .myProgress {
+        width: 90%;
+    }
     .about-me .details .services>div {
         float: left;
         width: 50%;
@@ -1486,6 +1490,9 @@ make changes to about-me section and make it just like 1200px you have got a spa
 */
 
 @media only screen and (min-width: 992px) {
+    .skills .skills-progress .myProgress {
+        width: 80%;
+    }
     .contact-me {
         padding-top: 60px;
         padding-bottom: 60px;
