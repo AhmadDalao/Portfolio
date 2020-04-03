@@ -244,8 +244,11 @@ li a:hover:not(.active-nav) {
     /* background-image: url('../images/image.png'); */
     background-image: url('../images/image.jpg');
     background-repeat: no-repeat;
-    /* the line below was the issue so far i will get the jpg image back and check it again"
-    /* background-attachment: fixed; */
+    /* the line below was the issue so far i will get the jpg image back and check it again" */
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
