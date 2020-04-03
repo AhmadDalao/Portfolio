@@ -241,9 +241,9 @@ li a:hover:not(.active-nav) {
     text-align: center;
     color: white;
     /* Background styles */
-    background-image: url("../images/image.png");
+    background-image: url('../images/image.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
