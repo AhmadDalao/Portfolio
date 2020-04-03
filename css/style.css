@@ -225,7 +225,7 @@ li a:hover:not(.active-nav) {
 } */
 
 
-/* ============================ start header header ============================ */
+/* ============================ start header  ============================ */
 
 .header {
     /* Sizing */
@@ -233,16 +233,20 @@ li a:hover:not(.active-nav) {
     height: 100vh;
     /* Flexbox stuff */
     display: flex;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
     /* Text styles */
     text-align: center;
     color: white;
     /* Background styles */
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
     background-size: cover;
     background-position: center center;
+    position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -1427,7 +1431,6 @@ The navbar toggle appears at this breakpoint */
         padding-bottom: 0;
         padding-right: 0;
     }
-    .skills .skills-progress-container {}
     .skills .skills-progress .myProgress {
         width: 90%;
     }
