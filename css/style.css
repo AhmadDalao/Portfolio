@@ -98,8 +98,6 @@ progress {
     -o-transition: all 0.5s ease;
 }
 
-.skills .skills-details,
-.skills .skills-progress,
 .education .education-information,
 .education .education-details,
 .education .experience-information,
@@ -298,10 +296,6 @@ progress {
 .features .container {
     justify-content: center;
     text-align: center;
-    /* grid-template-columns: repeat(auto-fill, minmax(500px, 2fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-gap: 2rem;
-    grid-row: auto;
     display: flex;
 }
 
@@ -309,37 +303,30 @@ progress {
     justify-content: center;
     display: grid;
     /* grid-row: auto; */
-    flex-flow: column;
     /* change this line with media query */
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     grid-row: 3;
     grid-gap: 2rem;
     text-align: center;
 }
 
 .feature-warper {
-    background-color: white;
-    margin: 18px;
+    float: left;
     padding: 5px;
-}
-
-.features .container .feature-item {
-    overflow: hidden;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: -ms-grid;
-    display: flex;
-    border: 1px solid #cccccc;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-radius: 18px;
-    background: white;
-    text-align: center;
+    display: block;
     margin: 20px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #cccccc;
+    background: white;
 }
 
-.features .container .feature-item:hover {
+.feature-item {
+    float: left;
+}
+
+.features .container .feature-warper:hover {
     /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); */
     -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
@@ -447,15 +434,15 @@ progress {
 
 /* ============================  start skills  ============================*/
 
-.skills .container {
-    display: flex;
-}
-
 .skills,
 .education {
     overflow: hidden;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.skills .container {
+    display: flex;
 }
 
 .skills .skills-details {
@@ -1070,6 +1057,95 @@ input[type="submit"]:hover {
         float: left;
         width: 80%;
     }
+    /* ================ skills =================== */
+    .skills .container {
+        display: block;
+    }
+    .skills-progress-container,
+    .skills-details-container {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .skills,
+    .education {
+        /* overflow: hidden; */
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .skills .skills-details,
+    .skills .skills-progress {
+        display: block;
+        margin: 0 auto;
+    }
+    .skills .skills-progress {
+        padding: 30px;
+    }
+    .skills .skills-details a {
+        float: left;
+        display: none;
+    }
+    .skills .skills-progress .myBar {
+        font-weight: bold;
+        color: #ffffff;
+        height: 30px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: #2ecc71;
+    }
+    .skills .skills-progress .myProgress {
+        display: flex;
+        margin-bottom: 20px;
+        height: 30px;
+        background-color: #f2f2f2;
+    }
+    .skills .skills-progress .myBar-span {
+        width: 100%;
+        padding: 0 5px;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .skills .skills-details {
+        padding-top: 30px;
+    }
+    .skills .skills-details h2 {
+        text-align: center;
+    }
+    .skills .skills-progress {
+        text-align: left;
+    }
+    .skills .skills-details .details-two {
+        padding-top: 20px;
+    }
+    .skills .skills-details h3 {
+        padding-bottom: 20px;
+    }
+    .skills .skills-details a {
+        float: left;
+        display: none;
+    }
+    .skills .skills-progress {
+        padding-top: 20px;
+    }
+    .skills .skills-progress .html5 {
+        width: 80%;
+    }
+    .skills .skills-progress .css {
+        width: 70%;
+    }
+    .skills .skills-progress .javascript {
+        width: 40%;
+    }
+    .skills .skills-progress .bootstrap {
+        width: 60%;
+    }
+    .contact-button-hidden {
+        margin-top: 60px;
+    }
+    /*  ============== contact me =================*/
     .contact-me {
         padding: 40px 10px;
         background-color: #ffffff;
@@ -1127,6 +1203,94 @@ input[type="submit"]:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
+    /* 
+ skills
+ */
+    .skills .container {
+        display: block;
+    }
+    .skills-progress-container,
+    .skills-details-container {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .skills .skills-progress {
+        padding: 30px;
+    }
+    .skills,
+    .education {
+        /* overflow: hidden; */
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .skills .skills-details,
+    .skills .skills-progress {
+        display: block;
+        margin: 0 auto;
+    }
+    /* .skills .skills-progress {
+        padding: 30px;
+    } */
+    .skills .skills-details a {
+        float: left;
+        display: none;
+    }
+    .skills .skills-progress .myBar {
+        font-weight: bold;
+        color: #ffffff;
+        height: 30px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: #2ecc71;
+    }
+    .skills .skills-progress .myProgress {
+        display: flex;
+        margin-bottom: 20px;
+        height: 30px;
+        background-color: #f2f2f2;
+    }
+    .skills .skills-progress .myBar-span {
+        width: 100%;
+        padding: 0 5px;
+        display: flex;
+        align-items: flex-end;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .skills .skills-details {
+        padding-top: 30px;
+    }
+    .skills .skills-progress {
+        text-align: left;
+    }
+    .skills .skills-details .details-two {
+        padding-top: 20px;
+    }
+    .skills .skills-details h3 {
+        padding-bottom: 20px;
+    }
+    .skills .skills-details a {
+        float: left;
+        display: none;
+    }
+    .skills .skills-progress .html5 {
+        width: 80%;
+    }
+    .skills .skills-progress .css {
+        width: 70%;
+    }
+    .skills .skills-progress .javascript {
+        width: 40%;
+    }
+    .skills .skills-progress .bootstrap {
+        width: 60%;
+    }
+    .contact-button-hidden {
+        margin-top: 60px;
+    }
+    /* about me */
     .about-me .details .services>div {
         float: left;
         width: 100%;
@@ -1189,6 +1353,15 @@ input[type="submit"]:hover {
 The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
+    /* skills */
+    /* .contact-button-hidden {
+        display: none;
+    }
+    .skills .skills-details,
+    .skills .skills-progress {
+        width: 50%;
+        float: left;
+    } */
     /* about me */
     /*   change it from  media query*/
     .about-me .details .services>div {
@@ -1229,6 +1402,25 @@ The navbar toggle appears at this breakpoint */
     .container {
         width: 90vw;
     }
+    /* skills */
+    .contact-button-hidden {
+        display: none;
+    }
+    .skills .skills-details,
+    .skills .skills-progress {
+        width: 50%;
+        float: left;
+    }
+    .skills .skills-details-container a {
+        display: block;
+    }
+    .skills .skills-progress {
+        padding-left: 40px;
+        padding-top: 50px;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .skills .skills-progress-container {}
     .about-me .details .services>div {
         float: left;
         width: 50%;
@@ -1419,7 +1611,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         display: flex;
         width: 70%;
         height: 29%;
-        margin: 20% auto;
+        margin: 16% auto;
     }
     .services-image-container {
         display: block;
