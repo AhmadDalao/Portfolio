@@ -1050,17 +1050,6 @@ input[type="submit"]:hover {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
-    /* hero image */
-    .header .hero-image {
-        background-size: auto !important;
-        -webkit-background-size: auto !important;
-        -moz-background-size: auto !important;
-        -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
-    }
     /*  ============== about me  =================*/
     .container {
         width: 90vw;
@@ -1236,16 +1225,6 @@ input[type="submit"]:hover {
 
 @media only screen and (min-width: 600px) {
     /* hero image */
-    .header .hero-image {
-        background-size: auto !important;
-        -webkit-background-size: auto !important;
-        -moz-background-size: auto !important;
-        -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
-    }
     /* 
  skills
  */
@@ -1397,16 +1376,6 @@ input[type="submit"]:hover {
 The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
-    .header .hero-image {
-        background-size: auto !important;
-        -webkit-background-size: auto !important;
-        -moz-background-size: auto !important;
-        -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
-    }
     /* skills */
     /* .contact-button-hidden {
         display: none;
@@ -1453,16 +1422,6 @@ The navbar toggle appears at this breakpoint */
 }
 
 @media only screen and (min-width: 850px) {
-    .header .hero-image {
-        background-size: auto !important;
-        -webkit-background-size: auto !important;
-        -moz-background-size: auto !important;
-        -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
-    }
     .container {
         width: 90vw;
     }
@@ -1552,17 +1511,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
 */
 
 @media only screen and (min-width: 992px) {
-    /* hero image */
-    .header .hero-image {
-        background-size: auto !important;
-        -webkit-background-size: auto !important;
-        -moz-background-size: auto !important;
-        -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
-    }
     /* =========================== about me ===========================*/
     /*   change it from  media query*/
     .about-me .details .services>div {
@@ -1627,20 +1575,24 @@ make changes to about-me section and make it just like 1200px you have got a spa
     }
 }
 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (min-width: 1200px) {
+@media screen and (max-device-width: 1024px) {
+    /* hero image */
     .header .hero-image {
         background-size: auto !important;
         -webkit-background-size: auto !important;
         -moz-background-size: auto !important;
         -o-background-size: auto !important;
-        background-attachment: fixed !important;
-        -webkit-background-attachment: fixed !important;
-        -moz-background-attachment: fixed !important;
-        -o-background-attachment: fixed !important;
+        background-attachment: scroll !important;
+        -webkit-background-attachment: scroll !important;
+        -moz-background-attachment: scroll !important;
+        -o-background-attachment: scroll !important;
     }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
     /*  =========================== features ===========================
     */
     .features-outer-warper {
