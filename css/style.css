@@ -230,38 +230,39 @@ li a:hover:not(.active-nav) {
 .header {
     /* Sizing */
     /* width: 100vw; */
-    height: 100vh;
+    height: 100vh!important;
     /* Flexbox stuff */
-    display: flex;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    top: 0!important;
+    left: 0!important;
+    justify-content: center!important;
+    align-items: center !important;
     /* Text styles */
-    text-align: center;
-    color: white;
+    text-align: center !important;
+    color: white !important;
+    background-attachment: scroll !important;
 }
 
 .header .hero-image {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
+    display: flex !important;
+    height: 100vh !important;
+    width: 100vw !important;
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
-    -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
-    -moz-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
-    -o-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg");
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-    position: relative;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
+    -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
+    -moz-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
+    -o-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg")!important;
+    background-size: cover!important;
+    -webkit-background-size: cover!important;
+    -moz-background-size: cover!important;
+    -o-background-size: cover !important;
+    background-position: center center !important;
+    position: relative!important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    -webkit-background-attachment: fixed !important;
+    -moz-background-attachment: fixed !important;
+    -o-background-attachment: fixed !important;
 }
 
 .header h1 {
