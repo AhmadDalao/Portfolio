@@ -229,7 +229,7 @@ li a:hover:not(.active-nav) {
 
 .header {
     /* Sizing */
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh !important;
     /* Flexbox stuff */
     display: flex !important;
