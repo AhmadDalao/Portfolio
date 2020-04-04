@@ -230,34 +230,31 @@ li a:hover:not(.active-nav) {
 .header {
     /* Sizing */
     /* width: 100vw; */
-    height: 100vh!important;
+    height: 100vh !important;
     /* Flexbox stuff */
     display: flex !important;
-    top: 0!important;
-    left: 0!important;
-    justify-content: center!important;
-    align-items: center !important;
+    top: 0 !important;
+    left: 0 !important;
     /* Text styles */
     text-align: center !important;
     color: white !important;
-    background-attachment: scroll !important;
+    background-size: auto;
+    background-attachment: initial;
+    overflow: hidden;
+    /* Background styles */
 }
 
 .header .hero-image {
     display: flex !important;
     height: 100vh !important;
     width: 100vw !important;
-    /* Background styles */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
-    -webkit-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
-    -moz-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
-    -o-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg")!important;
-    background-size: cover!important;
-    -webkit-background-size: cover!important;
-    -moz-background-size: cover!important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
     -o-background-size: cover !important;
-    background-position: center center !important;
-    position: relative!important;
+    background-position: scroll !important;
+    position: relative !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
     -webkit-background-attachment: fixed !important;
