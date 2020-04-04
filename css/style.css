@@ -98,12 +98,16 @@ progress {
     -o-transition: all 0.5s ease;
 }
 
+
+/* change it using media query */
+
 .education .education-information,
 .education .education-details,
 .education .experience-information,
 .education .experience-details {
     width: 50%;
     float: left;
+    display: block;
 }
 
 
@@ -576,22 +580,31 @@ li a:hover:not(.active-nav) {
     top: -50px;
 }
 
-.education .education-container {
-    display: flex;
-    height: 100%;
-    background-image: url("../images/graduation.svg");
-    background-size: 40% 40%;
-    background-repeat: no-repeat;
-    background-position: left 5% bottom 10%;
-}
 
+/*  change the display to block in media query */
+
+.education .education-container,
 .education .experience-container {
     display: flex;
     height: 100%;
-    background-image: url("../images/work2.svg");
-    background-size: 40% 40%;
-    background-repeat: no-repeat;
-    background-position: left 5% bottom 10%;
+}
+
+
+/*  end of the  change display to block in media query */
+
+.education .education-container .education-image-warper,
+.education .experience-container .experience-image-warper {
+    /* to control the image size change the width */
+    width: 80%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.education .education-container .education-image-warper img,
+.education .experience-container .experience-image-warper img {
+    height: 100%;
+    width: 100%;
 }
 
 .education .gpa {
@@ -1189,6 +1202,35 @@ input[type="submit"]:hover {
     .contact-button-hidden {
         margin-top: 60px;
     }
+    /* ============== education ============== */
+    /* change it using media query */
+    .education .education-information,
+    .education .education-details,
+    .education .experience-information,
+    .education .experience-details {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    /*  change the display to block in media query */
+    .education .education-container,
+    .education .experience-container {
+        display: block !important;
+        height: 100% !important;
+    }
+    /*  end of the  change display to block in media query */
+    .education .education-container .education-image-warper,
+    .education .experience-container .experience-image-warper {
+        /* to control the image size change the width */
+        display: flex;
+        width: 80%;
+        margin: 20px auto 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .education .experience-container .experience-image-warper {
+        margin: 40px auto 0px auto;
+    }
     /*  ============== contact me =================*/
     .contact-me {
         padding: 40px 10px;
@@ -1313,6 +1355,36 @@ input[type="submit"]:hover {
     .contact-button-hidden {
         margin-top: 60px;
     }
+    /* education */
+    /* ============== education ============== */
+    /* change it using media query */
+    .education .education-information,
+    .education .education-details,
+    .education .experience-information,
+    .education .experience-details {
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    /*  change the display to block in media query */
+    .education .education-container,
+    .education .experience-container {
+        display: block !important;
+        height: 100% !important;
+    }
+    /*  end of the  change display to block in media query */
+    .education .education-container .education-image-warper,
+    .education .experience-container .experience-image-warper {
+        /* to control the image size change the width */
+        display: flex;
+        width: 80%;
+        margin: 20px auto 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .education .experience-container .experience-image-warper {
+        margin: 40px auto 0px auto;
+    }
     /* about me */
     .about-me .details .services>div {
         float: left;
@@ -1385,6 +1457,23 @@ The navbar toggle appears at this breakpoint */
         width: 50%;
         float: left;
     } */
+    /*  education */
+    /*  change the display to block in media query */
+    .education .education-container,
+    .education .experience-container {
+        display: flex !important;
+        height: 100% !important;
+    }
+    /*  end of the  change display to block in media query */
+    .education .education-container .education-image-warper,
+    .education .experience-container .experience-image-warper {
+        /* to control the image size change the width */
+        display: flex;
+        width: 80%;
+        margin: 30% 20% 5% auto;
+        justify-content: center;
+        align-items: center;
+    }
     /* about me */
     /*   change it from  media query*/
     .about-me .details .services>div {
