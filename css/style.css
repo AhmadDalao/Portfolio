@@ -1558,10 +1558,10 @@ make changes to about-me section and make it just like 1200px you have got a spa
         -webkit-background-size: auto !important;
         -moz-background-size: auto !important;
         -o-background-size: auto !important;
-        background-attachment: fixed !important;
-        -webkit-background-attachment: fixed !important;
-        -moz-background-attachment: fixed !important;
-        -o-background-attachment: fixed !important;
+        background-attachment: scroll !important;
+        -webkit-background-attachment: scroll !important;
+        -moz-background-attachment: scroll !important;
+        -o-background-attachment: scroll !important;
     }
     /* =========================== about me ===========================*/
     /*   change it from  media query*/
@@ -1631,6 +1631,16 @@ make changes to about-me section and make it just like 1200px you have got a spa
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {
+    .header .hero-image {
+        background-size: auto !important;
+        -webkit-background-size: auto !important;
+        -moz-background-size: auto !important;
+        -o-background-size: auto !important;
+        background-attachment: fixed !important;
+        -webkit-background-attachment: fixed !important;
+        -moz-background-attachment: fixed !important;
+        -o-background-attachment: fixed !important;
+    }
     /*  =========================== features ===========================
     */
     .features-outer-warper {
