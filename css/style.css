@@ -1582,10 +1582,10 @@ make changes to about-me section and make it just like 1200px you have got a spa
         -webkit-background-size: auto !important;
         -moz-background-size: auto !important;
         -o-background-size: auto !important;
-        background-attachment: scroll !important;
-        -webkit-background-attachment: scroll !important;
-        -moz-background-attachment: scroll !important;
-        -o-background-attachment: scroll !important;
+        background-attachment: fixed !important;
+        -webkit-background-attachment: fixed !important;
+        -moz-background-attachment: fixed !important;
+        -o-background-attachment: fixed !important;
     }
 }
 
