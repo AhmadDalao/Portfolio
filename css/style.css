@@ -229,7 +229,7 @@ li a:hover:not(.active-nav) {
 
 .header {
     /* Sizing */
-    /* width: 100vw; */
+    width: 100vw;
     height: 100vh !important;
     /* Flexbox stuff */
     display: flex !important;
@@ -238,8 +238,8 @@ li a:hover:not(.active-nav) {
     /* Text styles */
     text-align: center !important;
     color: white !important;
-    background-size: auto;
-    background-attachment: initial;
+    /* background-size: auto; */
+    /* background-attachment: initial; */
     overflow: hidden;
     /* Background styles */
 }
@@ -249,11 +249,11 @@ li a:hover:not(.active-nav) {
     height: 100vh !important;
     width: 100vw !important;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
-    background-size: inherit !important;
-    -webkit-background-size: inherit !important;
-    -moz-background-size: inherit !important;
-    -o-background-size: inherit !important;
-    background-position: scroll !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-position: center center !important;
     position: relative !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
@@ -1050,6 +1050,13 @@ input[type="submit"]:hover {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    /* hero image */
+    .header .hero-image {
+        background-size: auto !important;
+        -webkit-background-size: auto !important;
+        -moz-background-size: auto !important;
+        -o-background-size: auto !important;
+    }
     /*  ============== about me  =================*/
     .container {
         width: 90vw;
@@ -1224,6 +1231,13 @@ input[type="submit"]:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
+    /* hero image */
+    .header .hero-image {
+        background-size: auto !important;
+        -webkit-background-size: auto !important;
+        -moz-background-size: auto !important;
+        -o-background-size: auto !important;
+    }
     /* 
  skills
  */
@@ -1510,6 +1524,13 @@ make changes to about-me section and make it just like 1200px you have got a spa
 */
 
 @media only screen and (min-width: 992px) {
+    /* hero image */
+    .header .hero-image {
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+    }
     /* =========================== about me ===========================*/
     /*   change it from  media query*/
     .about-me .details .services>div {
