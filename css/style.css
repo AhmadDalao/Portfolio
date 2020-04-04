@@ -249,10 +249,10 @@ li a:hover:not(.active-nav) {
     height: 100vh !important;
     width: 100vw !important;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/image.jpg") !important;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    background-size: inherit !important;
+    -webkit-background-size: inherit !important;
+    -moz-background-size: inherit !important;
+    -o-background-size: inherit !important;
     background-position: scroll !important;
     position: relative !important;
     background-repeat: no-repeat !important;
