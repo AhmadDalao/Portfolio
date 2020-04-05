@@ -1777,11 +1777,11 @@ make changes to about-me section and make it just like 1200px you have got a spa
     }
     .navbar-container .navbar-logo {
         display: block;
-        width: 30%;
+        width: 25%;
     }
     .navbar-container .navbar-list {
         display: block;
-        width: 70%;
+        width: 75%;
     }
     .bar-container {
         display: none;
@@ -1795,7 +1795,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         /* if you change left: -60% it will disappear */
         left: 0 !important;
         position: relative;
-        width: 80% !important;
+        width: 70% !important;
         background-color: #313132;
         float: right;
         list-style: none;
@@ -1899,14 +1899,14 @@ make changes to about-me section and make it just like 1200px you have got a spa
 @media only screen and (min-width: 1200px) {
     .navbar-container .navbar-logo {
         display: block;
-        width: 40%;
+        width: 20%;
     }
     .navbar-container .navbar-list {
         display: block;
-        width: 60%;
+        width: 80%;
     }
     .navbar-list ul {
-        width: 70% !important;
+        width: 55% !important;
     }
     /*  =========================== features ===========================
     */
