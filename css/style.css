@@ -1148,7 +1148,7 @@ input[type="submit"]:hover {
         left: 0;
     } */
     .navbar ul li {
-        padding: 20px 0;
+        padding: 10px 0;
         /* float: left; */
         display: block;
     }
@@ -1376,7 +1376,7 @@ input[type="submit"]:hover {
         padding: 0 5%;
     }
     .navbar ul li {
-        padding: 20px 0;
+        padding: 10px 0;
         /* float: left; */
         display: block;
     }
@@ -1775,11 +1775,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
     .navbar h2 {
         padding: 0 10%;
     }
-    .navbar ul li {
-        padding: 20px 0;
-        float: left;
-        display: block;
-    }
     .navbar-container .navbar-logo {
         display: block;
         width: 30%;
@@ -1808,8 +1803,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
     }
     .navbar ul li {
         padding: 0;
-        float: right;
-        /* changed it to block */
+        float: left;
         display: block;
     }
     .navbar ul li a {
