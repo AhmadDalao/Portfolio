@@ -140,8 +140,6 @@ progress {
 .navbar-container .navbar-logo {
     width: 40%;
     display: block;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     float: left;
 }
@@ -196,10 +194,14 @@ progress {
 
 .navbar ul li {
     padding: 20px 0;
-    float: left;
+    /* float: left; */
+    /* changed it to block */
+    display: block;
 }
 
 .navbar ul li a {
+    /* added display block here*/
+    display: block;
     padding: 20px;
     color: #ffffff;
     font-weight: bold;
@@ -212,6 +214,27 @@ progress {
     background-color: #555;
     color: #2ecc71;
     font-weight: bold;
+}
+
+
+/* change to none later */
+
+#check {
+    display: none;
+}
+
+.bar-container {
+    display: block;
+    float: right;
+    font-size: 30px;
+    color: white;
+}
+
+.bar-icon-label {
+    cursor: pointer;
+    float: right;
+    line-height: 40px;
+    padding: 0 40px;
 }
 
 
@@ -1063,6 +1086,54 @@ input[type="submit"]:hover {
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    /*  ============== navbar   =================*/
+    .navbar .container {
+        /* display: flex; */
+        display: block;
+    }
+    .navbar-container .navbar-list {
+        display: block;
+    }
+    .navbar ul {
+        padding-right: 0;
+    }
+    .navbar-list ul {
+        top: auto;
+        /* if you change left: -60% it will disappear */
+        left: -50%;
+        right: 0;
+        position: fixed;
+        background-color: #2e2e31bd;
+        /* width: 50%; */
+        width: 50%;
+        height: 100%;
+        float: right;
+        list-style: none;
+        overflow: hidden;
+        display: block;
+        transition: all .5s;
+    }
+    /* its not working for some reason */
+    #check:checked {
+        left: 0;
+    }
+    .navbar ul li {
+        padding: 20px 0;
+        /* float: left; */
+        display: block;
+    }
+    .navbar-container .navbar-logo {
+        width: 80%;
+        display: block;
+        padding-left: 5%;
+    }
+    .bar-container {
+        display: block;
+        width: 20%;
+    }
+    .navbar h2 {
+        padding: 0 5%;
+    }
     /*  ============== about me  =================*/
     .container {
         width: 90vw;
@@ -1266,6 +1337,54 @@ input[type="submit"]:hover {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {
+    /*  ============== navbar   =================*/
+    .navbar .container {
+        /* display: flex; */
+        display: block;
+    }
+    .navbar h2 {
+        padding: 0 5%;
+    }
+    .navbar ul li {
+        padding: 20px 0;
+        /* float: left; */
+        display: block;
+    }
+    .navbar-container .navbar-logo {
+        width: 80%;
+    }
+    .bar-container {
+        display: block;
+        width: 20%;
+    }
+    .navbar h2 {
+        padding: 0 10%;
+    }
+    .navbar ul {
+        padding-right: 0;
+    }
+    .navbar-container .navbar-list {
+        display: block;
+    }
+    .navbar-list ul {
+        top: auto;
+        /* if you change left: -60% it will disappear */
+        left: -100%;
+        right: 0;
+        position: fixed;
+        background-color: #2e2e31bd;
+        width: 40%;
+        height: 100%;
+        float: right;
+        list-style: none;
+        overflow: hidden;
+        display: block;
+        transition: all .5s;
+    }
+    /* its not working for some reason */
+    #check:checked {
+        left: 0;
+    }
     /* hero image */
     /* 
  skills
@@ -1600,6 +1719,60 @@ make changes to about-me section and make it just like 1200px you have got a spa
 */
 
 @media only screen and (min-width: 992px) {
+    /*  ============== navbar   =================*/
+    .navbar .container {
+        /* display: flex; */
+        display: flex;
+    }
+    .navbar h2 {
+        padding: 0 10%;
+    }
+    .navbar ul li {
+        padding: 20px 0;
+        float: left;
+        display: block;
+    }
+    .navbar-container .navbar-logo {
+        display: block;
+        width: 40%;
+    }
+    .navbar-container .navbar-list {
+        display: block;
+        width: 60%;
+    }
+    .bar-container {
+        display: none;
+        float: right;
+    }
+    .navbar ul {
+        padding-right: 5%;
+    }
+    .navbar-list ul {
+        top: 0 !important;
+        /* if you change left: -60% it will disappear */
+        left: 0 !important;
+        position: relative;
+        width: 100%;
+        background-color: #313132;
+        float: right;
+        list-style: none;
+        overflow: hidden;
+    }
+    .navbar ul li {
+        padding: 0;
+        float: right;
+        /* changed it to block */
+        display: block;
+    }
+    .navbar ul li a {
+        /* added display block here*/
+        display: flex;
+        padding: 20px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        text-decoration: none;
+    }
     /* =========================== about me ===========================*/
     /*   change it from  media query*/
     .about-me .details .services>div {
