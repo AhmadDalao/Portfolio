@@ -23,12 +23,12 @@
                     <h2>Ahmad <span>Dalao</span></h2>
                 </div>
                 <div class="bar-container">
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check" onclick="myFunction()">
                     <label for="check" class="bar-icon-label">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </label>
                 </div>
-                <div class="navbar-list">
+                <div class="navbar-list" id="navbar-not-responsive">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -524,6 +524,16 @@
 
     <!-- main js file-->
     <script src="js/main.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navbar-not-responsive");
+            if (x.className === "navbar-list") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar-list";
+            }
+        }
+    </script>
 </body>
 
 </html>

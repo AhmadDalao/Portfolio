@@ -185,6 +185,17 @@ progress {
     float: right;
 }
 
+.navbar-container .responsive {
+    width: 60%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    float: right;
+}
+
 .navbar ul {
     padding-right: 5%;
     float: right;
@@ -1094,6 +1105,9 @@ input[type="submit"]:hover {
     .navbar-container .navbar-list {
         display: block;
     }
+    .navbar-container .responsive {
+        display: block;
+    }
     .navbar ul {
         padding-right: 0;
     }
@@ -1113,10 +1127,26 @@ input[type="submit"]:hover {
         display: block;
         transition: all .5s;
     }
-    /* its not working for some reason */
-    #check:checked {
+    .responsive ul {
+        top: auto;
+        /* if you change left: -60% it will disappear */
         left: 0;
+        right: 0;
+        position: fixed;
+        background-color: #2e2e31bd;
+        /* width: 50%; */
+        width: 50%;
+        height: 100%;
+        float: right;
+        list-style: none;
+        overflow: hidden;
+        display: block;
+        transition: all .5s;
     }
+    /* its not working for some reason */
+    /* #check:checked {
+        left: 0;
+    } */
     .navbar ul li {
         padding: 20px 0;
         /* float: left; */
@@ -1366,10 +1396,28 @@ input[type="submit"]:hover {
     .navbar-container .navbar-list {
         display: block;
     }
+    .navbar-container .responsive {
+        display: block;
+    }
     .navbar-list ul {
         top: auto;
         /* if you change left: -60% it will disappear */
-        left: -100%;
+        left: -40%;
+        right: 0;
+        position: fixed;
+        background-color: #2e2e31bd;
+        width: 40%;
+        height: 100%;
+        float: right;
+        list-style: none;
+        overflow: hidden;
+        display: block;
+        transition: all .5s;
+    }
+    .responsive ul {
+        top: auto;
+        /* if you change left: -60% it will disappear */
+        left: 0;
         right: 0;
         position: fixed;
         background-color: #2e2e31bd;
@@ -1382,9 +1430,9 @@ input[type="submit"]:hover {
         transition: all .5s;
     }
     /* its not working for some reason */
-    #check:checked {
+    /* #check:checked {
         left: 0;
-    }
+    } */
     /* hero image */
     /* 
  skills
