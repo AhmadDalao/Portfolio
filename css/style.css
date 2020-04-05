@@ -1795,7 +1795,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         /* if you change left: -60% it will disappear */
         left: 0 !important;
         position: relative;
-        width: 60%;
+        width: 70%;
         background-color: #313132;
         float: right;
         list-style: none;
