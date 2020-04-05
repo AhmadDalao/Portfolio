@@ -1117,7 +1117,7 @@ input[type="submit"]:hover {
         left: -50%;
         right: 0;
         position: fixed;
-        background-color: #2e2e31bd;
+        background-color: #313132;
         /* width: 50%; */
         width: 50%;
         height: 100%;
@@ -1133,7 +1133,7 @@ input[type="submit"]:hover {
         left: 0;
         right: 0;
         position: fixed;
-        background-color: #2e2e31bd;
+        background-color: #313132;
         /* width: 50%; */
         width: 50%;
         height: 100%;
@@ -1405,7 +1405,7 @@ input[type="submit"]:hover {
         left: -40%;
         right: 0;
         position: fixed;
-        background-color: #2e2e31bd;
+        background-color: #313132;
         width: 40%;
         height: 100%;
         float: right;
@@ -1420,7 +1420,7 @@ input[type="submit"]:hover {
         left: 0;
         right: 0;
         position: fixed;
-        background-color: #2e2e31bd;
+        background-color: #313132;
         width: 40%;
         height: 100%;
         float: right;
@@ -1795,7 +1795,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         /* if you change left: -60% it will disappear */
         left: 0 !important;
         position: relative;
-        width: 100%;
+        width: 60%;
         background-color: #313132;
         float: right;
         list-style: none;
