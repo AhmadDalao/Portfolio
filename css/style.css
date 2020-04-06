@@ -1777,12 +1777,12 @@ make changes to about-me section and make it just like 1200px you have got a spa
     }
     .navbar-container .navbar-logo {
         display: block;
-        width: 25%;
+        width: 35%;
     }
     .navbar-container .navbar-list {
         padding-right: 30px !important;
         display: block;
-        width: 75%;
+        width: 65%;
     }
     .bar-container {
         display: none;
