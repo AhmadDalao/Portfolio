@@ -842,7 +842,7 @@ q {
 
 .card-text {
     grid-area: text;
-    padding: 25px;
+    padding: 7px;
     width: 100%;
 }
 
