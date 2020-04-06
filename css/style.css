@@ -1780,6 +1780,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         width: 25%;
     }
     .navbar-container .navbar-list {
+        padding-right: 30px !important;
         display: block;
         width: 75%;
     }
@@ -1787,15 +1788,16 @@ make changes to about-me section and make it just like 1200px you have got a spa
         display: none;
         float: right;
     }
-    .navbar ul {
+    /* .navbar ul {
         padding-right: 5%;
-    }
+    } */
     .navbar-list ul {
+        display: flex;
         top: 0 !important;
         /* if you change left: -60% it will disappear */
         left: 0 !important;
         position: relative;
-        width: 70% !important;
+        width: auto !important;
         background-color: #313132;
         float: right;
         list-style: none;
@@ -1903,10 +1905,14 @@ make changes to about-me section and make it just like 1200px you have got a spa
     }
     .navbar-container .navbar-list {
         display: block;
+        float: right;
         width: 80%;
+        padding-right: 30px !important;
     }
     .navbar-list ul {
-        width: 55% !important;
+        float: right;
+        display: flex;
+        width: auto !important;
     }
     /*  =========================== features ===========================
     */
