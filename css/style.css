@@ -118,15 +118,9 @@ progress {
     width: 100%;
     position: fixed;
     background-color: #313132;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     /* horizontal */
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     /* vertical */
 }
@@ -154,11 +148,7 @@ progress {
     color: white;
     display: block;
     padding: 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     text-transform: uppercase;
     padding: 0 10%;
@@ -170,22 +160,14 @@ progress {
 
 .navbar-container .navbar-list {
     width: 60%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: right;
-    -ms-flex-pack: right;
     justify-content: right;
     float: right;
 }
 
 .navbar-container .responsive {
     width: 60%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: right;
-    -ms-flex-pack: right;
     justify-content: right;
     float: right;
 }
@@ -333,7 +315,7 @@ li a:hover:not(.active-nav) {
 /* ============================  start features ============================*/
 
 .features {
-    background-image: url(../images/wave.svg);
+    background-image: url("../images/wave.svg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -648,25 +630,15 @@ li a:hover:not(.active-nav) {
     background-color: #2ecc71;
 }
 
-.education .education-information h2,
-.education .experience-information h2 {
+.edu-exp-styling {
     padding-bottom: 20px;
 }
 
-.education-details h2,
-.experience-details h2 {
+.education-experience-details {
     padding-top: 70px;
 }
 
-.education .education-information .education-p1,
-.education .experience-information .experience-p1 {
-    padding-bottom: 20px;
-}
-
-.education .education-information,
-.education .education-details,
-.education .experience-information,
-.education .experience-details {
+.edu-epx-padding {
     padding: 3%;
 }
 
@@ -1137,10 +1109,6 @@ input[type="submit"]:hover {
         display: block;
         transition: all .5s;
     }
-    /* its not working for some reason */
-    /* #check:checked {
-        left: 0;
-    } */
     .navbar ul li {
         padding: 10px 0;
         /* float: left; */
@@ -1298,11 +1266,7 @@ input[type="submit"]:hover {
         margin-top: 60px;
     }
     /* ============== education ============== */
-    /* change it using media query */
-    .education .education-information,
-    .education .education-details,
-    .education .experience-information,
-    .education .experience-details {
+    .Float-left {
         width: 100%;
         float: left;
         display: block;
@@ -1423,11 +1387,6 @@ input[type="submit"]:hover {
         display: block;
         transition: all .5s;
     }
-    /* its not working for some reason */
-    /* #check:checked {
-        left: 0;
-    } */
-    /* hero image */
     /* 
  skills
  */
@@ -1454,9 +1413,6 @@ input[type="submit"]:hover {
         display: block;
         margin: 0 auto;
     }
-    /* .skills .skills-progress {
-        padding: 30px;
-    } */
     .skills .skills-details a {
         float: left;
         display: none;
@@ -1519,10 +1475,7 @@ input[type="submit"]:hover {
     /* education */
     /* ============== education ============== */
     /* change it using media query */
-    .education .education-information,
-    .education .education-details,
-    .education .experience-information,
-    .education .experience-details {
+    .Float-left {
         width: 100%;
         float: left;
         display: block;
@@ -1601,6 +1554,12 @@ input[type="submit"]:hover {
     }
     .footer .footer-icon-list a {
         opacity: 0.5;
+    }
+}
+
+@media only screen and (max-width:766px) {
+    .text-center {
+        text-align: center;
     }
 }
 
@@ -1773,9 +1732,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
         display: none;
         float: right;
     }
-    /* .navbar ul {
-        padding-right: 5%;
-    } */
     .navbar-list ul {
         display: flex;
         top: 0 !important;
