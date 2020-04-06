@@ -98,13 +98,7 @@ progress {
     -o-transition: all 0.5s ease;
 }
 
-
-/* change it using media query */
-
-.education .education-information,
-.education .education-details,
-.education .experience-information,
-.education .experience-details {
+.Float-left {
     width: 50%;
     float: left;
     display: block;
@@ -213,7 +207,8 @@ progress {
 .navbar ul li a {
     /* added display block here*/
     display: block;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 20px;
     color: #ffffff;
     font-weight: bold;
     font-size: 1rem;
@@ -1117,7 +1112,6 @@ input[type="submit"]:hover {
         left: -50%;
         right: 0;
         position: fixed;
-        background-color: #313132;
         /* width: 50%; */
         width: 50%;
         height: 100%;
@@ -1133,7 +1127,7 @@ input[type="submit"]:hover {
         left: 0;
         right: 0;
         position: fixed;
-        background-color: #313132;
+        background-color: #313132eb;
         /* width: 50%; */
         width: 50%;
         height: 100%;
@@ -1405,7 +1399,7 @@ input[type="submit"]:hover {
         left: -40%;
         right: 0;
         position: fixed;
-        background-color: #313132;
+        background-color: #313132eb;
         width: 40%;
         height: 100%;
         float: right;
@@ -1420,7 +1414,7 @@ input[type="submit"]:hover {
         left: 0;
         right: 0;
         position: fixed;
-        background-color: #313132;
+        background-color: #313132eb;
         width: 40%;
         height: 100%;
         float: right;
@@ -1615,15 +1609,6 @@ input[type="submit"]:hover {
 The navbar toggle appears at this breakpoint */
 
 @media only screen and (min-width: 768px) {
-    /* skills */
-    /* .contact-button-hidden {
-        display: none;
-    }
-    .skills .skills-details,
-    .skills .skills-progress {
-        width: 50%;
-        float: left;
-    } */
     /*  education */
     /*  change the display to block in media query */
     .education .education-container,
@@ -1798,7 +1783,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
         left: 0 !important;
         position: relative;
         width: auto !important;
-        background-color: #313132;
+        background-color: #313132eb;
         float: right;
         list-style: none;
         overflow: hidden;
