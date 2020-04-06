@@ -30,13 +30,13 @@
                 </div>
                 <div class="navbar-list" id="navbar-not-responsive">
                     <ul class="custom-transition">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#resume">Resume</a></li>
+                        <li><a onclick="myFunction()" href="#about">About</a></li>
+                        <li><a onclick="myFunction()" href="#skills">Skills</a></li>
+                        <li><a onclick="myFunction()" href="#resume">Resume</a></li>
                         <!-- <li><a href="#education">Education</a></li> -->
                         <!-- <li><a href="#testimony">Testimony</a></li> -->
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a onclick="myFunction()" href="#portfolio">Portfolio</a></li>
+                        <li><a onclick="myFunction()" href="#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -528,11 +528,31 @@
             var x = document.getElementById("navbar-not-responsive");
             if (x.className === "navbar-list") {
                 x.className += " responsive";
+                // document.getElementById("navbar-not-responsive").style.left = "-60%";
+
             } else {
                 x.className = "navbar-list";
+                // document.getElementById("navbar-not-responsive").style.left = "0";
+
+            }
+        }
+
+        function myFunction2() {
+            var x = document.getElementById("navbar-not-responsive");
+            if (x.className === "responsive") {
+
+                document.getElementById("navbar-not-responsive").style.display = "none";
+                x.className += "navbar-list";
+
+            } else {
+                x.className = "responsive";
+                document.getElementById("navbar-not-responsive").style.display = "block";
+
+
             }
         }
     </script>
+
 </body>
 
 </html>
