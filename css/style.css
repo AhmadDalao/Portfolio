@@ -1901,12 +1901,12 @@ make changes to about-me section and make it just like 1200px you have got a spa
 @media only screen and (min-width: 1200px) {
     .navbar-container .navbar-logo {
         display: block;
-        width: 20%;
+        width: 40%;
     }
     .navbar-container .navbar-list {
         display: block;
         float: right;
-        width: 80%;
+        width: 60%;
         padding-right: 30px !important;
     }
     .navbar-list ul {
