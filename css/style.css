@@ -993,7 +993,7 @@ input[type="submit"]:hover {
 }
 
 .copyright {
-    padding: 20px;
+    padding-top: 20px;
     font-weight: bold;
     font-size: 1.1rem;
     color: white;
