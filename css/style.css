@@ -948,6 +948,9 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #2ecc71;
+    -webkit-animation: heartbeat .5s infinite linear;
+    -moz-animation: heartbeat .5s infinite linear;
+    animation: heartbeat .5s infinite linear;
 }
 
 
