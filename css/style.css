@@ -88,6 +88,9 @@ progress {
     background-color: #2ecc71;
     color: white;
     cursor: pointer;
+    -webkit-animation: heartbeat .5s infinite linear;
+    -moz-animation: heartbeat .5s infinite linear;
+    animation: heartbeat .5s infinite linear;
 }
 
 .custom-transition {
@@ -854,29 +857,24 @@ q {
 .card-stats {
     grid-area: stats;
     width: 100%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     background-color: #313132;
+    height: 100px;
+    overflow: hidden;
 }
 
 .custom-button2 {
-    height: 100%;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
-    /* Positioning and sizing */
-    display: block;
+    display: flex;
     width: 100%;
+    color: #2ecc71;
     margin-left: auto;
     margin-right: auto;
     margin-top: -5px;
-    /* Padding and margins */
     padding: 1em;
-    /* Text styles */
-    color: #2ecc71;
     justify-content: center;
     align-items: center;
-    /* Border styles */
     font-weight: bold;
     font-size: 22px;
     text-transform: uppercase;
@@ -984,77 +982,55 @@ input[type="submit"]:hover {
     overflow: hidden;
     min-height: 100px;
     background-color: #191e22;
-    /* background-color: #313132; */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 100%;
 }
 
-.footer p {
-    color: #ffffff;
-    margin-bottom: 20px;
+.footer .container {
+    text-align: center;
+    position: relative;
+}
+
+.copyright {
+    padding: 20px;
     font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
 }
 
-.footer .footer-icon-list {
-    display: inline-block;
-    color: #ffffff;
-    height: 100%;
-    text-align: center;
-    font-size: 1rem;
-    margin: 5px 30px;
-}
-
-.footer .footer-icon-list a {
-    margin: 0 10px;
-    overflow: hidden;
-    padding: 0 10px;
+.footer-icons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-align: center;
-    background-color: #555;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    float: left;
-    opacity: 0.4;
-}
-
-.footer .footer-icon-list>a span {
     width: 100%;
-    text-align: center;
-    height: 100%;
+    justify-content: center;
 }
 
-.footer .footer-icon-list>a:hover {
-    opacity: 1;
-    background-color: white;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+.footer-icons .footer-icons-link {
+    color: #191e22;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
 
-.footer .social-background {
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.footer-icons .footer-icons-link:hover {
+    color: #2ecc71;
 }
 
-.footer #twitter {
-    background-image: url("../images/twitter.svg");
+.footer-icons>div {
+    display: flex;
+    margin: auto 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer #linkedin {
-    background-image: url("../images/linkedin.svg");
-}
-
-.footer #github {
-    background-image: url("../images/github-logo.svg");
+.footer-icons>div:hover {
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-animation: heartbeat .5s infinite linear;
+    -moz-animation: heartbeat .5s infinite linear;
+    animation: heartbeat .5s infinite linear;
 }
 
 
@@ -1941,7 +1917,7 @@ make changes to about-me section and make it just like 1200px you have got a spa
 }
 
 
-/*============================ animation ============================*/
+/*============================ animation color-rotate  ============================*/
 
 @-webkit-keyframes color-rotate {
     from {
@@ -1962,5 +1938,71 @@ make changes to about-me section and make it just like 1200px you have got a spa
     to {
         -webkit-filter: hue-rotate(360deg);
         filter: hue-rotate(360deg);
+    }
+}
+
+
+/* ============================ animation  heartbeat  ============================ */
+
+@-webkit-keyframes heartbeat {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes heartbeat {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
     }
 }
