@@ -318,7 +318,7 @@ li a:hover:not(.active-nav) {
 /* ============================  start features ============================*/
 
 .features {
-    background-image: url("../images/wave.svg");
+    /* background-image: url("../images/wave.svg"); */
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -356,8 +356,9 @@ li a:hover:not(.active-nav) {
     margin: 20px;
     overflow: hidden;
     text-align: center;
-    border-radius: 18px;
     border: 1px solid #cccccc;
+    border-radius: 8px;
+    border-top: 3px solid #2ecc71;
     background: white;
 }
 
@@ -780,8 +781,6 @@ q {
 /*============================ start portfolio ============================ */
 
 .portfolio {
-    /* overflow: hidden;
-    */
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -791,62 +790,33 @@ q {
 }
 
 .portfolio .portfolio-items {
-    overflow: hidden;
     display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-row: 3;
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
     grid-gap: 3rem;
+    padding: 40px 0;
 }
 
-.portfolio .container {
-    text-align: center;
+.project-holder {
+    -webkit-box-shadow: -0.4rem -0.4rem 1rem rgba(0, 0, 0, 0.075);
+    box-shadow: -0.4rem -0.4rem 1rem rgba(0, 0, 0, 0.075);
+    padding: 15px;
+    border-radius: 8px;
+    border-top: 3px solid #2ecc71;
 }
 
+.portfolio .portfolio-items .project-title {
+    text-align: left;
+}
 
-/*  change the card here */
+.portfolio .portfolio-items .project-title h3 {
+    color: #2ecc71;
+    padding-bottom: 15px;
+}
 
-.warper {
+.portfolio .portfolio-items .project-links {
+    margin-top: 30px;
     display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolio .card {
-    overflow: hidden;
-    justify-content: center;
-    display: grid;
-    flex-wrap: wrap;
-    border: 0.5px solid #cccccc;
-    grid-template-columns: auto;
-    grid-template-rows: 210px 250px 60px;
-    grid-template-areas: "image" "text" "stats";
-    border-radius: 18px;
-    background: white;
-    text-align: center;
-    margin: 20px;
-}
-
-.portfolio .card:hover {
-    -webkit-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    transform: scale(1.02);
-    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-}
-
-.card-image {
-    grid-area: image;
-    width: 100%;
-    background: url("../images/coding-1170x780.jpg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    background-size: cover;
-}
-
-.card-text {
-    grid-area: text;
-    padding: 7px;
-    width: 100%;
+    justify-content: flex-end;
 }
 
 .card-text p {
@@ -854,44 +824,28 @@ q {
     font-weight: 500;
 }
 
-.card-stats {
-    grid-area: stats;
-    width: 100%;
-    background-color: #313132;
-    height: 100px;
-    overflow: hidden;
-}
-
-.custom-button2 {
-    text-decoration: none;
-    text-align: center;
-    background-color: transparent;
-    display: flex;
-    width: 100%;
-    color: #2ecc71;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -5px;
-    padding: 1em;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-    text-transform: uppercase;
-}
-
-.portfolio-items .card .value:hover .custom-button2 {
-    color: white;
-    background-color: #2ecc71;
-}
-
 .portfolio .portfolio-content .portfolio-intro {
     padding: 40px 5%;
 }
 
-.card img {
-    height: 100%;
-    width: 100%;
+.custom-button2 {
+    text-decoration: none;
+    /* background-color: #313132; */
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 150px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio-items .project-links .custom-button2:hover {
+    -webkit-animation: heartbeat .5s infinite linear;
+    -moz-animation: heartbeat .5s infinite linear;
+    animation: heartbeat .5s infinite linear;
 }
 
 
@@ -1280,17 +1234,8 @@ input[type="submit"]:hover {
         padding: 20px 0;
     }
     /*  ============== portfolio  =================*/
-    .portfolio .portfolio-items>div {
-        margin: 25px auto;
-        width: 70%;
-    }
     .portfolio .portfolio-items {
-        text-align: center;
-        margin: 15px auto;
-        display: block;
-    }
-    .portfolio .portfolio-items .label {
-        text-align: left;
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     }
     /*  ============== footer  =================*/
     .footer .footer-icon-list a {
@@ -1497,15 +1442,6 @@ input[type="submit"]:hover {
     .contact-me .contact-info {
         padding: 20px 0;
     }
-    .portfolio .portfolio-items>div {
-        margin: 30px auto;
-        width: 65%;
-    }
-    .portfolio .portfolio-items {
-        padding: 20px 0;
-        text-align: center;
-        margin: 0 auto;
-    }
     .label {
         text-align: left;
     }
@@ -1533,6 +1469,9 @@ input[type="submit"]:hover {
     }
     .footer .footer-icon-list a {
         opacity: 0.5;
+    }
+    .portfolio .portfolio-items {
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
     }
 }
 
@@ -1585,15 +1524,6 @@ The navbar toggle appears at this breakpoint */
     .about-me .services-details {
         float: left;
         width: 70%;
-    }
-    .portfolio .portfolio-items>div {
-        margin: 30px auto;
-        width: 65%;
-    }
-    .portfolio .portfolio-items {
-        padding: 20px 0;
-        text-align: center;
-        margin: 0 auto;
     }
     .footer .footer-icon-list a {
         opacity: 0.5;
@@ -1666,16 +1596,9 @@ The navbar toggle appears at this breakpoint */
         display: block;
         width: 80%;
     }
-    .portfolio .portfolio-items>div {
-        margin: 0 auto;
-        width: 90%;
-    }
     .about-me .details .image-holder img {
         width: 60%;
         height: 60%;
-    }
-    .portfolio .portfolio-items {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
     }
     .footer .footer-icon-list a {
         opacity: 0.4;
@@ -1795,10 +1718,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
         width: 100%;
         height: 100%;
     }
-    .portfolio .portfolio-items>div {
-        margin: 0 auto;
-        width: 75%;
-    }
 }
 
 @media screen and (max-device-width: 1024px) {
@@ -1913,10 +1832,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
         width: 70%;
     }
     /*   =========================== portfolio =========================== */
-    .portfolio .portfolio-items {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-        /* display: grid; */
-    }
 }
 
 
