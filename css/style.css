@@ -801,6 +801,7 @@ q {
     box-shadow: -0.4rem -0.4rem 1rem rgba(0, 0, 0, 0.075);
     padding: 15px;
     border-radius: 8px;
+    border: .5px solid #cccccc;
     border-top: 3px solid #2ecc71;
 }
 
