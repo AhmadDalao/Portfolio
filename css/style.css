@@ -585,14 +585,12 @@ li a:hover:not(.active-nav) {
     background-color: #f2f2f2;
     height: 60px;
     width: 60px;
-    right: 47%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: absolute;
-    top: -50px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    left: 50%;
+    top: 0;
 }
 
 
