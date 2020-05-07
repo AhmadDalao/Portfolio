@@ -873,6 +873,8 @@ textarea {
     /* Bottom margin */
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .contact-info-image {
@@ -894,6 +896,8 @@ input[type="submit"] {
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 
