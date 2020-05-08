@@ -40,7 +40,7 @@ h3 {
 
 .container {
     margin: auto;
-    width: 80vw;
+    width: 1170px;
 }
 
 hr {
@@ -55,6 +55,11 @@ q {
 
 progress {
     vertical-align: unset;
+}
+
+.full-size-image {
+    height: 100%;
+    width: 100%;
 }
 
 
@@ -506,53 +511,17 @@ li a:hover:not(.active-nav) {
     padding-top: 50px;
 }
 
-.skills .skills-progress .myProgress {
-    display: flex;
-    margin-bottom: 20px;
-    height: 30px;
-    width: 90%;
-    background-color: #f2f2f2;
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-gap: 2rem;
 }
 
-.skills .skills-progress .myBar {
-    font-weight: bold;
-    color: #ffffff;
-    height: 30px;
-    display: flex;
-    width: 100%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: #2ecc71;
-}
-
-.skills .skills-progress .myBar-span {
-    width: 100%;
-    padding: 0 5px;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    text-align: right;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-
-.skills .skills-progress .html5 {
-    width: 80%;
-}
-
-.skills .skills-progress .css {
-    width: 70%;
-}
-
-.skills .skills-progress .javascript {
-    width: 40%;
-}
-
-.skills .skills-progress .bootstrap {
-    width: 60%;
+.skill-holder {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 
@@ -1141,62 +1110,10 @@ input[type="submit"]:hover {
         float: left;
         display: none;
     }
-    .skills .skills-progress .myBar {
-        font-weight: bold;
-        color: #ffffff;
-        height: 30px;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        background-color: #2ecc71;
-    }
-    .skills .skills-progress .myProgress {
-        display: flex;
-        margin-bottom: 20px;
-        height: 30px;
-        background-color: #f2f2f2;
-    }
-    .skills .skills-progress .myBar-span {
-        width: 100%;
-        padding: 0 5px;
-        display: flex;
-        align-items: flex-end;
-        text-align: right;
-        justify-content: flex-end;
-    }
-    .skills .skills-details {
-        padding-top: 30px;
-    }
-    .skills .skills-details h2 {
-        text-align: center;
-    }
-    .skills .skills-progress {
-        text-align: left;
-    }
-    .skills .skills-details .details-two {
-        padding-top: 20px;
-    }
-    .skills .skills-details h3 {
-        padding-bottom: 20px;
-    }
-    .skills .skills-details a {
-        float: left;
-        display: none;
-    }
-    .skills .skills-progress {
-        padding-top: 20px;
-    }
-    .skills .skills-progress .html5 {
-        width: 80%;
-    }
-    .skills .skills-progress .css {
-        width: 70%;
-    }
-    .skills .skills-progress .javascript {
-        width: 40%;
-    }
-    .skills .skills-progress .bootstrap {
-        width: 60%;
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+        grid-gap: 2rem;
     }
     .contact-button-hidden {
         margin-top: 60px;
@@ -1344,35 +1261,8 @@ input[type="submit"]:hover {
         float: left;
         display: none;
     }
-    .skills .skills-progress .myBar {
-        font-weight: bold;
-        color: #ffffff;
-        height: 30px;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        background-color: #2ecc71;
-    }
-    .skills .skills-progress .myProgress {
-        width: 90%;
-        display: flex;
-        margin-bottom: 20px;
-        height: 30px;
-        background-color: #f2f2f2;
-    }
-    .skills .skills-progress .myBar-span {
-        width: 100%;
-        padding: 0 5px;
-        display: flex;
-        align-items: flex-end;
-        text-align: right;
-        justify-content: flex-end;
-    }
     .skills .skills-details {
         padding-top: 30px;
-    }
-    .skills .skills-progress {
-        text-align: left;
     }
     .skills .skills-details .details-two {
         padding-top: 20px;
@@ -1384,17 +1274,8 @@ input[type="submit"]:hover {
         float: left;
         display: none;
     }
-    .skills .skills-progress .html5 {
-        width: 80%;
-    }
-    .skills .skills-progress .css {
-        width: 70%;
-    }
-    .skills .skills-progress .javascript {
-        width: 40%;
-    }
-    .skills .skills-progress .bootstrap {
-        width: 60%;
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
     }
     .contact-button-hidden {
         margin-top: 60px;
@@ -1531,6 +1412,9 @@ The navbar toggle appears at this breakpoint */
     .footer .footer-icon-list a {
         opacity: 0.5;
     }
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
 }
 
 @media only screen and (min-width: 850px) {
@@ -1605,6 +1489,9 @@ The navbar toggle appears at this breakpoint */
     }
     .footer .footer-icon-list a {
         opacity: 0.4;
+    }
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
     }
 }
 
@@ -1684,10 +1571,6 @@ make changes to about-me section and make it just like 1200px you have got a spa
     .about-me .services-details {
         float: left;
         width: 70%;
-    }
-    /* =========================== skills ===========================*/
-    .skills .skills-progress .myProgress {
-        width: 80%;
     }
     /*   =========================== contact me =========================== */
     .contact-me {
@@ -1834,7 +1717,9 @@ make changes to about-me section and make it just like 1200px you have got a spa
         float: left;
         width: 70%;
     }
-    /*   =========================== portfolio =========================== */
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    }
 }
 
 
