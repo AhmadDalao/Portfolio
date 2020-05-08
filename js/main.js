@@ -168,3 +168,4 @@ function scrollTo() {
 //     dots[slideIndex - 1].className += " active";
 //
 // }
+// }
