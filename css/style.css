@@ -1161,6 +1161,9 @@ input[type="submit"]:hover {
     .portfolio .portfolio-items {
         grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
     }
+    .custom-button2 {
+        font-size: .9rem;
+    }
     /*  ============== footer  =================*/
     .footer .footer-icon-list a {
         width: 50px;
