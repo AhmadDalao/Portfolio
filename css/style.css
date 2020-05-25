@@ -494,9 +494,10 @@ li a:hover:not(.active-nav) {
     display: flex;
 }
 
-.skills .skills-details {
+
+/* .skills .skills-details {
     padding: 30px;
-}
+} */
 
 .skills .skills-details .details-two {
     padding-top: 20px;
@@ -613,9 +614,10 @@ li a:hover:not(.active-nav) {
     padding-top: 70px;
 }
 
-.edu-epx-padding {
+
+/* .edu-epx-padding {
     padding: 3%;
-}
+} */
 
 .education .education-container {
     padding: 5px;
