@@ -517,7 +517,7 @@ li a:hover:not(.active-nav) {
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 2rem;
 }
 
@@ -1114,11 +1114,11 @@ input[type="submit"]:hover {
         float: left;
         display: none;
     }
-    .skills-container {
+    /* .skills-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
         grid-gap: 2rem;
-    }
+    } */
     .contact-button-hidden {
         margin-top: 60px;
     }
@@ -1282,7 +1282,7 @@ input[type="submit"]:hover {
         display: none;
     }
     .skills-container {
-        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
     .contact-button-hidden {
         margin-top: 60px;
@@ -1420,7 +1420,7 @@ The navbar toggle appears at this breakpoint */
         opacity: 0.5;
     }
     .skills-container {
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     }
 }
 
@@ -1497,9 +1497,9 @@ The navbar toggle appears at this breakpoint */
     .footer .footer-icon-list a {
         opacity: 0.4;
     }
-    .skills-container {
-        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    }
+    /* .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    } */
 }
 
 
@@ -1724,9 +1724,9 @@ make changes to about-me section and make it just like 1200px you have got a spa
         float: left;
         width: 70%;
     }
-    .skills-container {
+    /* .skills-container {
         grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    }
+    } */
 }
 
 
