@@ -1386,6 +1386,9 @@ The navbar toggle appears at this breakpoint */
         display: flex !important;
         height: 100% !important;
     }
+    .education-p {
+        padding-right: 2.5rem;
+    }
     /*  end of the  change display to block in media query */
     .education .education-container .education-image-warper,
     .education .experience-container .experience-image-warper {
