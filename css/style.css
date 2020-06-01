@@ -40,7 +40,7 @@ h3 {
 
 .container {
     margin: auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 hr {
@@ -120,16 +120,14 @@ progress {
 /* ============================ start navbar ============================*/
 
 .navbar-container {
-    height: 8.5vh;
     z-index: 2;
-    position: absolute;
+    position: fixed;
+    width: 100%;
+    background-color: #313132;
 }
 
 .navbar .container {
-    float: left;
     width: 100%;
-    position: fixed;
-    background-color: #313132;
     display: flex;
     align-items: center;
     /* horizontal */
