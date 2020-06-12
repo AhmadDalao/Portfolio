@@ -320,7 +320,7 @@
                             background-repeat: no-repeat;
                             /*  this line may cause an issue on mac users  */
                             background-size: cover;
-                            background-position: top center;
+                            background-position: center center;
                         }
                         
                         .header .header-info {
@@ -409,6 +409,7 @@
                             border-radius: 4px;
                             font-weight: 700;
                             float: right;
+                            text-transform: capitalize;
                             margin-right: var(--font-size-small, 1.50rem);
                         }
                         
@@ -521,95 +522,6 @@
                             border-color: var(--main-color, #2ecc71);
                             transition: background-color .3s ease, border-color .3s ease;
                         }
-                        /* ============================  start testimony   ============================*/
-                        
-                        .testimony .testimony-content {
-                            text-align: center;
-                            padding-top: 60px;
-                            padding-bottom: 60px;
-                        }
-                        
-                        .slideshow-container {
-                            transition: all 1s ease;
-                            -webkit-transition: 1s ease;
-                            -moz-transition: 1s ease;
-                            -ms-transition: 1s ease;
-                            -o-transition: 1s ease;
-                            position: relative;
-                            margin-left: var(--negative-margin, -1.5rem);
-                            margin-right: var(--negative-margin, -1.5rem);
-                            /* background: var(--slideshow-background, #f1f1f1f1); */
-                        }
-                        
-                        .mySlides {
-                            display: none;
-                            padding: 80px;
-                            text-align: center;
-                        }
-                        
-                        .prev,
-                        .next {
-                            cursor: pointer;
-                            position: absolute;
-                            top: 50%;
-                            width: auto;
-                            margin-top: -30px;
-                            padding: 16px;
-                            color: #888;
-                            font-weight: bold;
-                            font-size: 20px;
-                            border-radius: 0 3px 3px 0;
-                            -webkit-user-select: none;
-                            -moz-user-select: none;
-                            -ms-user-select: none;
-                            user-select: none;
-                        }
-                        
-                        .next {
-                            position: absolute;
-                            right: 0;
-                            border-radius: 3px 0 0 3px;
-                        }
-                        
-                        .prev:hover,
-                        .next:hover {
-                            background-color: rgba(0, 0, 0, 0.8);
-                            color: white;
-                        }
-                        
-                        .dot-container {
-                            text-align: center;
-                            padding: 20px;
-                        }
-                        
-                        .dot {
-                            cursor: pointer;
-                            height: 15px;
-                            width: 15px;
-                            margin: 0 2px;
-                            background-color: #bbb;
-                            border-radius: 50%;
-                            display: inline-block;
-                            transition: background-color 0.6s ease;
-                            -webkit-transition: background-color 0.6s ease;
-                            -moz-transition: background-color 0.6s ease;
-                            -ms-transition: background-color 0.6s ease;
-                            -o-transition: background-color 0.6s ease;
-                        }
-                        
-                        .active,
-                        .dot:hover {
-                            background-color: #717171;
-                        }
-                        
-                        q {
-                            font-style: italic;
-                        }
-                        
-                        .author {
-                            color: cornflowerblue;
-                            padding-top: 20px;
-                        }
                         /*============================  start contact-me section ===========================*/
                         
                         .contact-holder {
@@ -651,6 +563,7 @@
                             /* 0.025rem */
                             color: var(--secondary, #2c3e50);
                             resize: none;
+                            -webkit-appearance: none;
                         }
                         
                         button[type="submit"].button-submit {
@@ -675,6 +588,34 @@
                         textarea:focus {
                             color: var(--main-color, #2ecc71);
                             font-weight: 500;
+                        }
+                        
+                        input[type="text"]::-webkit-input-placeholder,
+                        input[type="email"]::-webkit-input-placeholder,
+                        input[type=number]::-webkit-input-placeholder,
+                        textarea::-webkit-input-placeholder {
+                            color: var(--form-color, #4950576b);
+                        }
+                        
+                        input[type="text"]::-moz-placeholder,
+                        input[type="email"]::-moz-placeholder,
+                        input[type=number]::-moz-placeholder,
+                        textarea::-moz-placeholder {
+                            color: var(--form-color, #4950576b);
+                        }
+                        
+                        input[type="text"]:-ms-input-placeholder,
+                        input[type="email"]:-ms-input-placeholder,
+                        input[type=number]:-ms-input-placeholder,
+                        textarea:-ms-input-placeholder {
+                            color: var(--form-color, #4950576b);
+                        }
+                        
+                        input[type="text"]::-ms-input-placeholder,
+                        input[type="email"]::-ms-input-placeholder,
+                        input[type=number]::-ms-input-placeholder,
+                        textarea::-ms-input-placeholder {
+                            color: var(--form-color, #4950576b);
                         }
                         
                         input[type="text"]::placeholder,
@@ -751,6 +692,9 @@
                         @media only screen and (min-width: 600px) {
                             .about-service-container {
                                 grid-template-columns: repeat(2, minmax(5rem, 1fr));
+                            }
+                            .portfolio .card-item .link-holder a {
+                                width: 130px;
                             }
                         }
                         /* Medium devices (landscape tablets, 768px and up)  The navbar toggle appears at this breakpoint*/
@@ -865,10 +809,6 @@
                                 width: 100%;
                                 transition: width .3s ease;
                             }
-                            /* header  */
-                            .header {
-                                background-attachment: fixed;
-                            }
                             .portfolio .container .card-holder {
                                 grid-template-columns: repeat(2, minmax(18rem, 1fr));
                             }
@@ -877,6 +817,12 @@
                             }
                             .contact-holder .form {
                                 max-width: 75%;
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 1024px) {
+                            .hero-section .hero-image-holder {
+                                background-attachment: local !important;
                             }
                         }
                         /* Extra large devices (large laptops and desktops, 1170px and up) */
