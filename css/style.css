@@ -694,7 +694,7 @@
                                 grid-template-columns: repeat(2, minmax(5rem, 1fr));
                             }
                             .portfolio .card-item .link-holder a {
-                                width: 130px;
+                                width: 140px;
                             }
                         }
                         /* Medium devices (landscape tablets, 768px and up)  The navbar toggle appears at this breakpoint*/
