@@ -13,7 +13,7 @@
     <link rel="manifest" href="favicon/site.webmanifest">
     <!--adding fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet" />
-    <meta name="description" content="Ahmad Dalao a Software Engineer who loves building websites & loves programming.">
+    <meta name="description" content="html, css , javascript , js , jquery Ahmad Dalao a Software Engineer who loves building websites & loves programming.">
     <meta name="keywords" content="Ahmad Dalao AhmadDalao web web-development web developer free">
     <title>Ahmad Dalao - Software Developer</title>
     <!-- Place your kit's  "font-awesome" to use the icons -->
@@ -21,486 +21,238 @@
 </head>
 
 <body>
-    <nav class="navbar-container" id="home">
-        <div class="navbar">
-            <div class="container">
-                <div class="navbar-logo">
-                    <h2>Ahmad <span>Dalao</span></h2>
-                </div>
-                <div class="bar-container">
-                    <input type="checkbox" id="check" onclick="myFunction()">
-                    <label for="check" class="bar-icon-label">
-                        <i id="my-icon" class="fa fa-bars" aria-hidden="true"></i>
-                        <i style="display: none;" id="my-iconX"  class="fas fa-times" aria-hidden="true"></i>
-                </label>
-                </div>
-                <div class="navbar-list" id="navbar-not-responsive">
-                    <ul class="custom-transition">
-                        <li><a aria-label="About" onclick="myFunction()" href="#about">About</a></li>
-                        <li><a aria-label="Skills" onclick="myFunction()" href="#skills">Skills</a></li>
-                        <li><a aria-label="Resume" onclick="myFunction()" href="#resume">Resume</a></li>
-                        <li><a aria-label="Portfolio" onclick="myFunction()" href="#portfolio">Portfolio</a></li>
-                        <li><a aria-label="Contact" onclick="myFunction()" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+    <!-- side color menu -->
+    <div class="color-container" id="color-container">
+        <span class="custom-span" id="color-toggler"><i style="top: 50%; font-size: 22px; left: 50%;transform: translate(-50%, -50%); position: absolute;" class="fas fa-cog"></i></span>
+        <p>Choose your favorite color</p>
+        <ul class="color-list-style" id="color-list">
+            <li class="color-change color-list-li" data-color="#fb7813"></li>
+            <li class="color-change color-list-li" data-color="#f54291"></li>
+            <li class="color-change color-list-li" data-color="#0779e4"></li>
+            <li class="color-change color-list-li" data-color="#efa8e4 "> </li>
+            <li class="color-change color-list-li" data-color="#fd5e53"></li>
+        </ul>
+        <hr>
+        <p>default color</p>
+        <ul class="color-list-style color-list-default">
+            <li class="color-list-li" data-color="#2ecc71"></li>
+        </ul>
+    </div>
+    <!-- end side color menu -->
 
-            </div>
+    <!-- start navbar -->
+    <nav class="navbar-container" id="navbar">
+        <div class="container">
+            <section class="logo-container">
+                <a href="index.html" aria-label="AhmadDalao" data-name="Ahmad Dalao">Ahmad <span>Dalao</span></a>
+            </section>
+            <section onclick="myFunction()" class="my-container">
+                <span class="my-span"></span>
+                <span class="my-span"></span>
+                <span class="my-span"></span>
+            </section>
+            <section class="list-container">
+                <ul class="navbar-not-responsive">
+                    <li><a onclick="myFunction()" aria-label="Portfolio" href="#portfolio" data-name="">Portfolio</a></li>
+                    <li><a onclick="myFunction()" aria-label="Skills" href="#skills" data-name="Skills">Skills</a></li>
+                    <li><a onclick="myFunction()" aria-label="About" href="#about" data-name="About">About</a></li>
+                    <li><a onclick="myFunction()" aria-label="Resume" href="#resume" data-name="Resume">Resume</a></li>
+                    <li><a onclick="myFunction()" aria-label="Contact" href="#contact" data-name="Contact">Contact</a></li>
+                </ul>
+            </section>
         </div>
     </nav>
-    <!--navbar end-->
+    <!-- end navbar -->
 
     <!-- header -->
-    <header class="header">
-        <div class="hero-image">
-            <div style="max-width: 1200px;" class="container">
-                <div class="slider">
-                    <div class="slider-inner">
-                        <h1>I'm Ahmad.</h1>
-                        <!-- <h2>A Front End Web Developer</h2> -->
-                        <h2>A Software Developer</h2>
-                        <div class="btn">
-                            <div class="footer-icons ">
-                                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://twitter.com/AhmadDalao/ " aria-label="Twitter "><i style="width: 28px; height: 28px; " class="fa fa-twitter " aria-hidden="true "></i></a></div>
-                                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://www.linkedin.com/in/ahmad-dalao/ " aria-label="linkedin "><i style="width: 28px; height: 28px; " class="fab fa-linkedin " aria-hidden="true "></i></a></div>
-                                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://github.com/AhmadDalao " aria-label="github "><i style="width: 28px; height: 28px; " class="fa fa-github " aria-hidden="true "></i></a></div>
-                            </div>
-                        </div>
-                        <!-- <a aria-label="Learn More" href="#features" class="btn">learn more</a> -->
-                    </div>
-                </div>
-            </div>
+    <header class="header ">
+        <div class="container ">
+            <section class="header-info">
+                <h1>I'm Ahmad</h1>
+                <p class="p-a-h-style">A Software developer</p>
+                <a class="p-a-h-style custom-button" aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
+            </section>
         </div>
     </header>
-    <!-- <div class="clear"></div> -->
-
     <!-- end header -->
 
-    <!-- start features -->
-    <section class="features" id="features">
-        <div style="max-width: 1200px;" class="container">
-            <div class="features-outer-warper">
-                <div class="feature-item ">
-                    <div class="feature-warper custom-transition">
-                        <h2>Values</h2>
-                        <p>
-                            I'm a developer, so I know how to make your website to run across devices using the latest technologies available.
-
-                        </p>
-                    </div>
-                </div>
-                <div class="feature-item ">
-                    <div class="feature-warper custom-transition">
-                        <h2>Goals</h2>
-                        <p>
-                            I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send. </p>
-                    </div>
-                </div>
-                <div class="feature-item ">
-                    <div class="feature-warper custom-transition">
-                        <h2>Hobbies</h2>
-                        <p>
-                            I have a passion for web design and love to create for web and mobile devices.I am always designing website when am not coding.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end features -->
-
-    <!-- start about me -->
-    <div id="about"></div>
-    <section class="about-me">
-        <div style="max-width: 1200px;" class="container">
-            <div class="image">
-                <img src="images/programming1.svg" alt="programmer image" />
-            </div>
-            <div class="details ">
-                <h2 class="text-center">
-                    about me
-                </h2>
-                <p class="details-p1">
-                    I'm a Software Engineer who loves building and developing apps and websites. My latest app helps students around the world to learn the English language easily. Right now, I'm working on improving my skills by building more websites. I have been doing
-                    front end web development after taking a few courses and I have built few pet projects.
-                </p>
-                <p class="details-p2">
-                    I'd love to combine my passion for programming and learning with my software engineering development skills to continue building more personalized applications or websites for people. I have a passion to learn new skills and put these skills to use. </p>
-                <div class="image-holder">
-                    <img src="images/programming1.svg" alt="programmer image" />
-                </div>
-                <div class="services">
-                    <div class="services-container">
-                        <div class="services-image-container" id="web-development">
-                            <img class="services-image" src="images/programming.svg" alt="programmer-image" />
-                        </div>
-                        <div class="services-details">
-                            <h3>Web Developer</h3>
-                            <p>I can build your ideal website from scratch.</p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <div class="services-image-container" id="design">
-                            <img class="services-image" src="images/design.svg" alt="web designer image" />
-                        </div>
-                        <div class="services-details">
-                            <h3>
-                                Graphic design
-                            </h3>
-                            <p>I can design your website and make it beautiful.</p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <div class="services-image-container" id="marketing">
-                            <img class="services-image" src="images/icons8-material-ui.svg" alt="online market image" />
-                        </div>
-                        <div class="services-details">
-                            <h3>UX & UI Design
-                            </h3>
-                            <p>Talked him people valley add use her depend letter.</p>
-                        </div>
-                    </div>
-                    <div class="services-container">
-                        <div class="services-image-container" id="ceo">
-                            <img class="services-image" src="images/search.svg" alt="search icon" />
-                        </div>
-                        <div class="services-details">
-                            <h3>CEO</h3>
-                            <p>Can make your website appears on top when searching.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end about me -->
-
-    <!-- start skills -->
-    <section class="skills" id="skills">
-        <div style="max-width: 1200px;" class="container">
-            <div class="skills-details">
-                <div class="skills-details-container">
-                    <h2 class="text-center">My skills</h2>
-                    <p class="details-one">
-                        Here are some of my skills which I have, Am experienced in object oriented programming such as JavaScript, experienced in Markup languages such as HTML5 and CSS.
-
-                    </p>
-                    <p class="details-two">
-                        I have excellent problem solving skills and attention to details. I also have great communication skills and ability to work well with others on top of that I have the ability to work under pressure.
-
-                    </p>
-                    <a aria-label="Contact Me" href="#contact" class="custom-button custom-transition">Contact me</a>
-                </div>
-            </div>
-            <div class="skills-progress">
-                <div class="skills-progress-container">
-                    <div class="skills-container">
-                        <div class="skill-holder">
-                            <img class="full-size-image" src="images/html5.svg" alt="HTML5 logo">
-                        </div>
-                        <div class="skill-holder">
-                            <img class="full-size-image" src="images/css-5.svg" alt="CSS3 logo">
-                        </div>
-                        <div class="skill-holder">
-                            <img class="full-size-image" src="images/javascript.svg" alt="JavaScript logo ">
-                        </div>
-                        <div class="skill-holder ">
-                            <img class="full-size-image " src="images/bootstrap-4.svg " alt="Bootstrap-4 logo ">
-                        </div>
-                        <div class="skill-holder ">
-                            <img class="full-size-image " src="images/git-icon.svg " alt="git logo ">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <h3>html5</h3>
-                    <div class="myProgress ">
-                        <div class="html5 myBar "><span class="myBar-span ">80%</span></div>
-                    </div>
-                    <h3>css</h3>
-                    <div class="myProgress ">
-                        <div class="css myBar "><span class="myBar-span ">70%</span></div>
-                    </div>
-                    <h3>javascript</h3>
-                    <div class="myProgress ">
-                        <div class="javascript myBar ">
-                            <span class="myBar-span ">40%</span>
-                        </div>
-                    </div>
-                    <h3>bootstrap</h3>
-                    <div class="myProgress ">
-                        <div class="bootstrap myBar ">
-                            <span class="myBar-span ">60%</span>
-                        </div>
-                    </div> -->
-            </div>
-            <a aria-label="Contact me " class="contact-button-hidden custom-button custom-transition " href="#contact ">Contact me</a>
-        </div>
-        </div>
-    </section>
-    <!-- end skills -->
-
-    <!-- start resume -->
-    <section class="resume" id="resume">
-        <div style="max-width: 1200px;" class="container">
-            <div class="resume-content ">
-                <h2>Resume</h2>
-                <p>
-                    If you would like to learn more about me or have PDF copy of my resume please feel free to click the download button, The resume provides detailed information about me and more contact information.
-                </p>
-                <!-- href="https://drive.google.com/file/d/1_vk5-_xH8HfL_TmbEQwVlEIMt3Cbp009/view?usp=sharing " -->
-                <a aria-label="Download Resume " download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank " class="custom-button custom-transition ">download resume</a>
-                <!-- <button class="custom-button " type="button ">download resume</button> -->
-            </div>
-        </div>
-    </section>
-    <!-- end resume -->
-
-    <!-- start eduction & experience-->
-    <section class="education" id="education">
-        <div class="cube "></div>
-        <div style="max-width: 1200px;" class="container ">
-            <div class="education-container ">
-                <div class="education-information edu-epx-padding Float-left ">
-                    <div class="education-information-warper ">
-                        <h2 class="edu-exp-styling text-center ">My education</h2>
-                        <p class="edu-exp-styling  education-p">
-                            I went to the Arab Open University, a branch of the UK Open University am a graduate from the IT department.I am still aiming to get a master degree in computing in the near future. </p>
-                        <!-- <p class="edu-exp-styling ">
-                            Mrs age men and trees jokes fancy. You vexed shy mirth now noise. Talked him people valley add use her depend letter.
-                        </p> -->
-                    </div>
-                    <div class="education-image-warper ">
-                        <img src="images/graduation.svg " alt="education icon ">
-                    </div>
-                </div>
-
-                <div class="education-details edu-epx-padding Float-left ">
-                    <h2 class="education-experience-details ">Bcs in Information technology and computing</h2>
-                    <p>graduated 7-7-2019</p>
-                    <p class="gpa ">GPA 2.95</p>
-                    <hr />
-                    <p class="education-p">
-                        I have BCs degree my major is Information technology and computing, I graduated from the Arab open university in 7-7-2019 my GPA was 2.95 out of 4 which is nice.</p>
-                    <!-- <h2 class="education-experience-details ">Master: no information provided</h2>
-                    <p>none</p>
-                    <p class="gpa ">----</p>
-                    <hr />
-                    <p>
-                        No information provided.
-                    </p> -->
-                </div>
-            </div>
-            <div class="clear ">
-                <hr />
-            </div>
-            <div class="experience-container ">
-                <div class="experience-information edu-epx-padding Float-left ">
-                    <div class="experience-information-warper ">
-                        <h2 class="edu-exp-styling text-center ">work experience</h2>
-                        <p class="edu-exp-styling  education-p">
-                            I have all the qualities which can assist in the growth and success of your company. I'd love to combine my passion for programming with my passion to learn new skills to contribute to finding and building new solutions to any arising problem.
-                        </p>
-                        <p class="edu-exp-styling education-p">
-                            I would love to put my newly learned skills to use, and build up society for future generations
-                        </p>
-                    </div>
-                    <div class="experience-image-warper ">
-                        <img src="images/work2.svg " alt="work experience icon ">
-                    </div>
-                </div>
-                <div class="experience-details edu-epx-padding Float-left ">
-                    <h2 class="education-experience-details ">arab open university trainee</h2>
-                    <p>From Nov 2019 </p>
-                    <p class="gpa ">To Jan 2020</p>
-                    <hr />
-                    <p>
-                        - Maintained the PCs at the university and dealt with any arising problem.
-                    </p>
-                    <p> - Performed formatting and hardware maintenance.
-
-                    </p>
-                    <p>
-                        - I installed and configured the university's applications.
-                    </p>
-                    <p> - Assisted the head of support directly, by setting up the placement test exam for the students.
-                    </p>
-                    <p> - Provided the necessary support when called for.
-                    </p>
-                    <h2 class="education-experience-details ">help desk receptionist</h2>
-                    <p>From Nov 2019 </p>
-                    <p class="gpa ">To Jan 2020</p>
-                    <hr />
-                    <p>
-                        - Provided information about the university for the new coming students.
-                    </p>
-                    <p> - Assisted the student affairs and students during the registration period.
-                    </p>
-                    <p>
-                        - Set up the virtual classes for students and tutors to login and start learning.
-                    </p>
-                    <p> - Provided Information about the university's systems SIS, LMS and student email and how to activate and use it. </p>
-                    <p> - Helped students make a study plan based on their department
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end eduction -->
-
-    <!-- start testimony -->
-    <section class="testimony" id="testimony">
-        <div style="max-width: 1200px;" class="container ">
-            <!-- Slideshow container -->
-            <div class="slideshow-container ">
-                <!-- Full-width slides/quotes -->
-                <div class="mySlides ">
-                    <q>I love you the more in that I believe you had liked me for my own
-                        sake and for nothing else</q>
-                    <p class="author ">- John Keats</p>
-                </div>
-                <div class="mySlides ">
-                    <q>But man is not made for defeat. A man can be destroyed but not
-                        defeated.</q>
-                    <p class="author ">- Ernest Hemingway</p>
-                </div>
-                <div class="mySlides ">
-                    <q>I have not failed. I've just found 10,000 ways that won't
-                        work.</q>
-                    <p class="author ">- Thomas A. Edison</p>
-                </div>
-                <!-- Next/prev buttons -->
-                <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
-                <a class="next " onclick="plusSlides(1) ">&#10095;</a>
-            </div>
-            <!-- Dots/bullets/indicators -->
-            <div class="dot-container ">
-                <span class="dot " onclick="currentSlide(1) "></span>
-                <span class="dot " onclick="currentSlide(2) "></span>
-                <span class="dot " onclick="currentSlide(3) "></span>
-            </div>
-        </div>
-    </section>
-    <!-- end testimony -->
-
     <!-- start portfolio -->
-    <section class="portfolio " id="portfolio">
-        <div style="max-width: 1200px;" class="container ">
-            <div class="portfolio-content ">
-                <h2>Portfolio</h2>
-                <p class="portfolio-intro ">
-                    Here are some of my projects that I have built so far.Feel free to check them out and you can try them out using live preview too without any issue.Feel free to give me feedback about my work.
-                </p>
-            </div>
-            <div class="portfolio-items ">
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">Bootstrap-Start</h3>
-                        <p class="p-class ">
-                            I built a responsive page for portfolio projects and it is built using pure HTML CSS and JavaScript.
-                        </p>
-                    </div>
-                    <div class="project-links ">
+    <section class="portfolio padding-top-bottom center-text" id="portfolio">
+        <div class="container">
+            <h2 class="h2-style" data-title="portfolio">portfolio </h2>
+            <p class="p.style">Here are some of my projects that I have built so far.Feel free to check them out and you can try them out using live preview too without any issue.Feel free to give me feedback about my work. </p>
+            <section class="card-holder">
+                <article class="card-item">
+                    <h3 class="p-a-h-style">Bootstrap-Start</h3>
+                    <p>I built a responsive page for portfolio projects and it is built using pure HTML CSS and JavaScript.</p>
+                    <div class="link-holder">
+                        <a aria-label="Source code" class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Bootstrap-Start">Source code</a>
                         <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/Bootstrap-Start/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Bootstrap-Start">Source</a>
                     </div>
-                </div>
-
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">Linear-Gradient-picker</h3>
-                        <p class="p-class "> Is a tool to generate linear gradient css code. Project built using HTML5 CSS and JavaScript
-                        </p>
-                    </div>
-                    <div class="project-links ">
-                        <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/Linear-Gradient-picker/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Linear-Gradient-picker">Source</a>
-                    </div>
-                </div>
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">Mountain Travel</h3>
-                        <p class="p-class ">I designed and built a responsive page for a travel agency and it is built using pure HTML CSS and JavaScript.
-                        </p>
-                    </div>
-                    <div class="project-links ">
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style">MOUNTAIN TRAVEL </h3>
+                    <p>I designed and built a responsive page for a travel agency and it is built using pure HTML CSS and JavaScript. </p>
+                    <div class="link-holder">
+                        <a aria-label="Source code " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Mountain-Travel">Source code</a>
                         <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://dalaotravel.netlify.app/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Mountain-Travel">Source</a>
-
                     </div>
-                </div>
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">EQRATEAM</h3>
-                        <p class="p-class ">I designed and built 7 responsive pages and a landing page for eqraTeam and it is built using pure HTML CSS and JavaScript.
-                        </p>
-                    </div>
-                    <div class="project-links ">
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style">EQRATEAM</h3>
+                    <p>I designed and built 8 responsive pages for eqraTeam. Project built using pure HTML CSS and JavaScript. </p>
+                    <div class="link-holder">
                         <a aria-label="Live Demo " class="custom-button2 " rel="noopener " target="_blank " href="https://eqrateam.netlify.app/ ">Live demo</a>
                     </div>
-                </div>
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">Landing page design</h3>
-                        <p class="p-class ">
-                            This is a complete browser-based landing page.Built using HTML5 and CSS3.
-                        </p>
-                    </div>
-                    <div class="project-links ">
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style">LANDING PAGE DESIGN</h3>
+                    <p>This is a complete browser-based landing page.Built using HTML5 and CSS3. </p>
+                    <div class="link-holder">
+                        <a aria-label="Source code" class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/project-3">Source code</a>
                         <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://dalao2.netlify.app/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/project-3">Source</a>
                     </div>
-                </div>
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">MEMORY GAME
-                        </h3>
-                        <p class="p-class ">
-                            This is a complete browser-based card matching game.Built using HTML5 , CSS3 and javascript
-                        </p>
-                    </div>
-                    <div class="project-links ">
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style">MEMORY GAME</h3>
+                    <p> This is a complete browser-based card matching game.Built using HTML5 , CSS3 and javascript </p>
+                    <div class="link-holder">
+                        <a aria-label="Source code " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/MemoryGame">Source code</a>
                         <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/MemoryGame/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/MemoryGame">Source</a>
                     </div>
-                </div>
-                <div class="project-holder ">
-                    <div class="project-title ">
-                        <h3 class="h2-class ">CLASSIC ARCADE GAME
-                        </h3>
-                        <p class="p-class ">
-                            In this game, you have a Player and Enemies (Bugs).Built using HTML5 , CSS3 and javascript
-                        </p>
-                    </div>
-                    <div class="project-links ">
-                        <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/ClassicArcadeGame/ ">Live demo</a>
-                        <a aria-label="Source " class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/ClassicArcadeGame">Source</a>
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style">CLASSIC ARCADE GAME</h3>
+                    <p> This is a complete browser-based game.The game is built using HTML5 , CSS3 and javascript </p>
 
+                    <div class="link-holder">
+                        <a aria-label="Source code" class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/ClassicArcadeGame">Source code</a>
+                        <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/ClassicArcadeGame/ ">Live demo</a>
                     </div>
-                </div>
-            </div>
-        </div>
+                </article>
+                <article class="card-item">
+                    <h3 class="p-a-h-style"> Linear-Gradient-picker </h3>
+                    <p> Is a tool to generate linear gradient css code. Project built using HTML5 CSS and JavaScript</p>
+                    <div class="link-holder">
+                        <a aria-label="Source code" class="custom-button2 " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Linear-Gradient-picker">Source code</a>
+                        <a aria-label="Live Demo " class="custom-button2 margin-right-20p" rel="noopener " target="_blank " href="https://ahmaddalao.github.io/Linear-Gradient-picker/ ">Live demo</a>
+                    </div>
+                </article>
+
+            </section>
         </div>
     </section>
     <!-- end portfolio -->
 
+    <!-- start skills -->
+    <section class="skills padding-top-bottom center-text" id="skills">
+        <div class="container">
+            <h2 class="h2-style" data-title="Skills">Skills</h2>
+            <p class="p.style">Here are some of my skills which I have, Am experienced in object oriented programming such as JavaScript, experienced in Markup languages such as HTML5 and CSS. I have excellent problem solving skills and attention to details. I also have
+                great communication skills and ability to work well with others on top of that I have the ability to work under pressure. </p>
+            <section class="skill-holder">
+                <article class="skill-item">
+                    <img class="full-size-image" src="images/html5.svg" alt="HTML5 logo">
+                </article>
+                <article class="skill-item">
+                    <img class="full-size-image" src="images/css-5.svg" alt="CSS3 logo">
+                </article>
+                <article class="skill-item">
+                    <img class="full-size-image" src="images/javascript.svg" alt="JavaScript logo ">
+                </article>
+                <article class="skill-item ">
+                    <img class="full-size-image " src="images/bootstrap-4.svg " alt="Bootstrap-4 logo ">
+                </article>
+                <article class="skill-item ">
+                    <img class="full-size-image " src="images/git-icon.svg " alt="git logo ">
+                </article>
+            </section>
+
+        </div>
+    </section>
+    <!-- end skills -->
+
+    <!-- start about me -->
+    <section class="about-me padding-top-bottom center-text" id="about">
+        <div class="container">
+            <h2 class="h2-style" data-title="about me">about me</h2>
+            <p class="p.style"> I'm a Software Developer who loves building and developing apps and websites. My latest app helps students around the world to learn the English language easily. Right now, I'm working on improving my skills by building more websites. I have
+                been doing front end web development after taking a few courses and I have built few pet projects.</p>
+            <p class="p.style"> I'd love to combine my passion for programming and learning with my software engineering development skills to continue building more personalized applications or websites for people. I have a passion to learn new skills and put these skills
+                to use. </p>
+            </p>
+            <h3 class="h2-style" data-title="services">services</h3>
+            <section class="about-service-container">
+                <article class="service-item">
+                    <h3 class="h2-style">Web development</h3>
+                    <img src="images/undraw_version_control_9bpv.svg" alt="web-development image">
+                    <div class="service-detail">
+                        <p>I can build your ideal website from scratch.
+                        </p>
+                    </div>
+                </article>
+                <article class="service-item">
+                    <h3 class="h2-style">GRAPHIC DESIGN </h3>
+                    <img src="images/undraw_design_notes_8dmv.svg" alt="web-development image">
+                    <div class="service-detail">
+                        <p>I can design your website and make it beautiful. </p>
+                    </div>
+                </article>
+                <article class="service-item">
+                    <h3 class="h2-style"> UX & UI DESIGN </h3>
+                    <img src="images/undraw_version_control_9bpv.svg" alt="web-development image">
+                    <div class="service-detail">
+                        <p>I can make the user interface and experience more appealing to users.</p>
+                    </div>
+                </article>
+                <article class="service-item">
+                    <h3 class="h2-style">CEO</h3>
+                    <img src="images/undraw_file_searching_duff.svg" alt="web-development image">
+                    <div class="service-detail">
+                        <p>Can make your website appears on top when searching. </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </section>
+    <!-- end about me -->
+
+    <!-- start resume -->
+    <section class="resume padding-top-bottom center-text" id="resume">
+        <div class="container">
+            <h2 class="h2-style" data-title="resume">resume</h2>
+            <p>If you would like to learn more about me or have PDF copy of my resume please feel free to click the download button, The resume provides detailed information about me and more contact information.
+            </p>
+            <a class="p-a-h-style custom-button" aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
+        </div>
+    </section>
+    <!-- end resume -->
+
     <!-- start contact me -->
-    <section class="contact-me" id="contact">
-        <div style="max-width: 1200px;" class="container">
-            <div class="contact-info">
-                <img class="contact-info-image" src="images/undraw_contact_us_15o2-green.svg" alt="image-contact-us" title="contact-us" />
-            </div>
-            <div class="contact-form">
-                <form name="contactform" id="contactform" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                    <p class="hidden">
-                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                    </p>
-                    <label for="name">Name <span>*</span></label>
-                    <input type="text" id="name" name="name" placeholder="Your name.." required autocomplete="on" />
-                    <label for="email">Email <span>*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Your email.." required autocomplete="on" />
-                    <label for="message">Your message <span>*</span> </label>
-                    <textarea name="message" id="message" placeholder="Write your message.." style="height:200px" required autocomplete="on"></textarea>
-                    <input type="submit" value="Submit" />
+    <section class="contact-me padding-top-bottom center-text" id="contact">
+        <div class="container">
+            <h2 class="h2-style" data-title="contact me"> contact me</h2>
+            <div class="contact-holder">
+                <form class="form" id="form">
+                    <div class="form-name-holder">
+                        <label hidden for="name"></label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-email-holder">
+                        <label for="email" hidden></label>
+                        <input type="email" max="35" name="email" id="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-phone-holder">
+                        <label for="phone" hidden></label>
+                        <input type="number" max="15" name="phone" id="phone" placeholder="Phone number">
+                    </div>
+                    <div class="form-message-holder">
+                        <label for="message" hidden></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                    </div>
+                    <div class="form-button-holder">
+                        <button type="submit" aria-label="Send" class="button-submit">send</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -508,20 +260,33 @@
     <!-- end contact me -->
 
     <!-- start footer  -->
-    <footer class="footer">
-        <div style="max-width: 1200px;" class="container ">
-            <div class="footer-icons ">
-                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://twitter.com/AhmadDalao/ " aria-label="Twitter "><i style="width: 28px; height: 28px; " class="fa fa-twitter " aria-hidden="true "></i></a></div>
-                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://www.linkedin.com/in/ahmad-dalao/ " aria-label="linkedin "><i style="width: 28px; height: 28px; " class="fab fa-linkedin " aria-hidden="true "></i></a></div>
-                <div> <a class="footer-icons-link " target="_blank " rel="noopener " href="https://github.com/AhmadDalao " aria-label="github "><i style="width: 28px; height: 28px; " class="fa fa-github " aria-hidden="true "></i></a></div>
+    <footer class="footer footer-padding">
+        <section class="container">
+            <h2 class="h2-style" data-title="find me on"> find me on</h2>
+            <div class="icon-container">
+                <a href="https://twitter.com/AhmadDalao/" target="_blank " rel="noreferrer noopener " class="footer-icon " title="github " aria-label=" github ">
+                    <i><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmad-dalao/" target="_blank " rel="noreferrer noopener " class="footer-icon " title="Linkedin " aria-label=" Linkedin ">
+                    <i><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></i>
+                </a>
+                <a href="https://github.com/AhmadDalao" target="_blank " rel="noreferrer noopener " class="footer-icon " title="Github " aria-label=" Github ">
+                    <i> <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></i>
+                </a>
             </div>
-            <p class="copyright ">Copyright &copy; 2020 Ahmad Dalao</p>
-        </div>
+        </section>
     </footer>
     <!-- end footer  -->
 
+    <!-- start copyright  -->
+    <section class="copyright copyright-padding ">
+        <div class="container "> Copyright &copy AhmadDalao 2020</div>
+    </section>
+    <!-- end copyright  -->
+
     <!-- main js file-->
     <script src="js/main.js "></script>
+
 </body>
 
 </html>
