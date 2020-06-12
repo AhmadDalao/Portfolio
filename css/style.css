@@ -401,6 +401,7 @@ ul.color-list-default li:first-child {
     color: var(--main-color, #2ecc71);
     margin-top: var(--font-size-small, 1.50rem);
     font-size: var(--font-size-p);
+    font-weight: 700;
 }
 
 .portfolio .card-holder>.card-item p {
