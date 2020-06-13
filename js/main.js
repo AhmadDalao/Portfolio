@@ -1,7 +1,8 @@
-var myNav = document.getElementById('navbar'),
+let myNav = document.getElementById('navbar'),
     icon = document.querySelector('.my-container'),
     myColor = document.querySelectorAll('.color-change'),
-    list;
+    list,
+    filter_list;
 
 /* this is  the custom attribute name  which value is to be changed */
 const changeMe = "--main-color";
@@ -10,20 +11,40 @@ const changeMe = "--main-color";
 document.documentElement.style.setProperty(changeMe, localStorage.getItem("colorStored"));
 
 
+
+
+
 /*  getting value of  */
 list = document.querySelectorAll('[data-color]');
-console.log(list.length);
+// console.log(list.length);
 
-for (var i = 0; i < list.length; ++i) {
+for (let i = 0; i < list.length; ++i) {
     list[i].addEventListener("click", function(e) {
         // store attribute value in localStorage
         localStorage.setItem("colorStored", e.target.getAttribute('data-color'));
-        console.log("attribute value " + e.target.getAttribute('data-color'));
+        // console.log("attribute value " + e.target.getAttribute('data-color'));
 
         // change color based on the attribute value.
         document.documentElement.style.setProperty(changeMe, e.target.getAttribute('data-color'));
-        console.log("My local storage value " + localStorage.getItem("colorStored"));
+        // console.log("My local storage value " + localStorage.getItem("colorStored"));
 
+    }, false);
+}
+
+filter_list = document.querySelectorAll('[data-filter]');
+
+for (let i = 0; i < filter_list.length; i++) {
+    filter_list[i].addEventListener("click", function(e) {
+        let card_item = document.querySelectorAll('.card-item');
+
+        for (let i = 0; i < card_item.length; i++) {
+
+            if (!card_item[i].classList.contains(e.target.getAttribute('data-filter'))) {
+                card_item[i].style.display = "none";
+            } else {
+                card_item[i].style.display = "block";
+            }
+        }
     }, false);
 }
 

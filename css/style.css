@@ -380,6 +380,31 @@ ul.color-list-default li:first-child {
 
 /*============================ start portfolio ============================ */
 
+.portfolio .filter-list {
+    list-style: none;
+    margin-top: var(--h2-font-size, 3rem);
+}
+
+.portfolio .filter-list li {
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--main-color);
+    margin: 0 var(--padding-normal, 1rem);
+    /* margin: 1rem; */
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    padding: var(--padding-normal, 1rem);
+    font-size: var(--padding-normal, 1rem);
+}
+
+.portfolio .filter-list li:hover {
+    color: var(--color-white);
+    background-color: var(--main-color);
+}
+
 .portfolio .container .card-holder {
     margin-top: var(--h2-font-size, 3rem);
     display: grid;
@@ -720,6 +745,10 @@ textarea::placeholder {
     }
     .portfolio .card-item .link-holder a {
         margin-right: var(--padding-normal, 1rem);
+    }
+    .portfolio .filter-list li {
+        display: block;
+        margin: var(--padding-normal) auto 0 auto;
     }
 }
 
