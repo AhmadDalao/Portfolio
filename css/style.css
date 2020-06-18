@@ -763,9 +763,6 @@ textarea::placeholder {
     .about-service-container {
         grid-template-columns: repeat(2, minmax(5rem, 1fr));
     }
-    .portfolio .card-item .link-holder a {
-        width: 170px;
-    }
     .portfolio .filter-list li {
         width: 160px;
     }
