@@ -390,11 +390,11 @@ ul.color-list-default li:first-child {
 .portfolio .filter-list li {
     text-align: center;
     display: inline-block;
-    width: 120px;
+    /* width: 120px; */
     cursor: pointer;
     font-weight: 700;
     color: var(--main-color);
-    margin: 0 var(--padding-normal, 1rem);
+    margin: 0 var(--padding-small, .5rem);
     /* margin: 1rem; */
     border-radius: 8px;
     border: 2px solid var(--main-color);
@@ -749,7 +749,9 @@ textarea::placeholder {
         margin-right: var(--padding-normal, 1rem);
     }
     .portfolio .filter-list li {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 160px;
         margin: var(--padding-normal) auto 0 auto;
     }
 }
@@ -762,7 +764,10 @@ textarea::placeholder {
         grid-template-columns: repeat(2, minmax(5rem, 1fr));
     }
     .portfolio .card-item .link-holder a {
-        width: 150px;
+        width: 170px;
+    }
+    .portfolio .filter-list li {
+        width: 160px;
     }
     .portfolio .card-holder .card-item h3 {
         font-size: var(--font-size-small, 1.50rem);
