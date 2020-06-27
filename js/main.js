@@ -31,22 +31,34 @@ for (let i = 0; i < list.length; ++i) {
     }, false);
 }
 
-filter_list = document.querySelectorAll('[data-filter]');
 
-for (let i = 0; i < filter_list.length; i++) {
-    filter_list[i].addEventListener("click", function(e) {
-        let card_item = document.querySelectorAll('.card-item');
 
-        for (let i = 0; i < card_item.length; i++) {
+$(function() {
+    $(".filter").click(function() {
+        $($(this).data('filter')).fadeIn(500);
+        $('.card-holder').find('article').not($(this).data('filter')).fadeOut(1000);
+        console.log($(this).data('filter'));
 
-            if (!card_item[i].classList.contains(e.target.getAttribute('data-filter'))) {
-                card_item[i].style.display = "none";
-            } else {
-                card_item[i].style.display = "block";
-            }
-        }
-    }, false);
-}
+    });
+});
+
+
+// filter_list = document.querySelectorAll('[data-filter]');
+
+// for (let i = 0; i < filter_list.length; i++) {
+//     filter_list[i].addEventListener("click", function(e) {
+//         let card_item = document.querySelectorAll('.card-item');
+
+//         for (let i = 0; i < card_item.length; i++) {
+
+//             if (!card_item[i].classList.contains(e.target.getAttribute('data-filter'))) {
+//                 card_item[i].style.display = "none";
+//             } else {
+//                 card_item[i].style.display = "block";
+//             }
+//         }
+//     }, false);
+// }
 
 /* side icon */
 document.getElementById('color-toggler').addEventListener('click', function() {
