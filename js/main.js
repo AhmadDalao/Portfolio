@@ -11,9 +11,6 @@ const changeMe = "--main-color";
 document.documentElement.style.setProperty(changeMe, localStorage.getItem("colorStored"));
 
 
-
-
-
 /*  getting value of  */
 list = document.querySelectorAll('[data-color]');
 // console.log(list.length);
@@ -41,24 +38,6 @@ $(function() {
 
     });
 });
-
-
-// filter_list = document.querySelectorAll('[data-filter]');
-
-// for (let i = 0; i < filter_list.length; i++) {
-//     filter_list[i].addEventListener("click", function(e) {
-//         let card_item = document.querySelectorAll('.card-item');
-
-//         for (let i = 0; i < card_item.length; i++) {
-
-//             if (!card_item[i].classList.contains(e.target.getAttribute('data-filter'))) {
-//                 card_item[i].style.display = "none";
-//             } else {
-//                 card_item[i].style.display = "block";
-//             }
-//         }
-//     }, false);
-// }
 
 /* side icon */
 document.getElementById('color-toggler').addEventListener('click', function() {
@@ -109,3 +88,53 @@ window.onscroll = function() {
         myNav.classList.remove("nav-colored");
     }
 };
+
+// slow scroll 
+
+// Select all links with hashes
+$('a[href*="#"]')
+    // Remove links that don't actually link to anything
+    .not('[href="#"]')
+    .not('[href="#0"]')
+    .click(function(event) {
+        // On-page links
+        if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+            location.hostname == this.hostname
+        ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000, function() {
+                    // Callback after animation
+                    // Must change focus!
+                    var $target = $(target);
+                    $target.focus();
+                    if ($target.is(":focus")) { // Checking if the target was focused
+                        return false;
+                    } else {
+                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                        $target.focus(); // Set focus again
+                    };
+                });
+            }
+        }
+    });
+
+// adding class to the label so it moves up from the input field
+
+$(".custom__input").focus(function() {
+    $(this).next(".custom__label").addClass('custom__transition');
+});
+
+/* this line suppose to remove the previous class custom transition so the layout returns to the way it was */
+
+$(".custom__submit").click(function() {
+    $(this).prev(".custom__label").removeClass('custom__transition');
+});

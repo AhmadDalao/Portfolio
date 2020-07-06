@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking bootstrap file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- adding normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!--- main css file-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- adding favicon-->
@@ -11,14 +15,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <!--adding fonts -->
+    <!--google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- adding meta elements-->
     <meta name="description" content=" Ahmad Dalao a Software Engineer who loves building websites & loves programming.">
     <meta name="keywords" content="Ahmad Dalao,  AhmadDalao , Dalao , Ahmad , web ,web-development , web developer , developer , free , html, css , javascript , js , jquery , bootstrap">
     <title>Ahmad Dalao - Software Developer</title>
     <!-- Place your kit's  "font-awesome" to use the icons -->
     <script src="https://kit.fontawesome.com/5a0dddbca3.js" crossorigin="anonymous"></script>
-
+    <!-- jQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -41,47 +48,46 @@
     </div>
     <!-- end side color menu -->
 
-    <!-- start navbar -->
-    <nav class="navbar-container" id="navbar">
+    <!-- Navigation bar   fixed-top -->
+    <nav class="navbar navbar-expand-sm  fixed-top navbar-dark py-3" id="navbar">
         <div class="container">
-            <section class="logo-container">
-                <a href="index.html" aria-label="AhmadDalao" data-name="Ahmad Dalao">Ahmad <span>Dalao</span></a>
-            </section>
-            <section onclick="myFunction()" class="my-container">
-                <span class="my-span"></span>
-                <span class="my-span"></span>
-                <span class="my-span"></span>
-            </section>
-            <section class="list-container">
-                <ul class="navbar-not-responsive">
-                    <li><a onclick="myFunction()" aria-label="Portfolio" href="#portfolio" data-name="">Portfolio</a></li>
-                    <li><a onclick="myFunction()" aria-label="Skills" href="#skills" data-name="Skills">Skills</a></li>
-                    <li><a onclick="myFunction()" aria-label="About" href="#about" data-name="About">About</a></li>
-                    <li><a onclick="myFunction()" aria-label="Resume" href="#resume" data-name="Resume">Resume</a></li>
-                    <li><a onclick="myFunction()" aria-label="Contact" href="#contact" data-name="Contact">Contact</a></li>
+            <a class="navbar-brand logo text-uppercase" href="index.html" aria-label="AhmadDalao" data-name="Ahmad Dalao">Ahmad <span>Dalao</span></a>
+            <!-- navbar icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse mt-3 mt-sm-0 " id="navbarSupportedContent">
+                <!-- navbar list  -->
+                <ul class="navbar-nav  ml-auto text-center  ">
+                    <li class=" text-capitalize nav-item" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#portfolio" aria-label="Portfolio" class=" nav-link position-relative text-uppercase my-2 my-sm-0"><span data-title="portfolio" class="custom__underline">portfolio</span></a></li>
+                    <li class=" text-capitalize nav-item" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#skills" aria-label="Skills" class="nav-link position-relative text-uppercase my-2 my-sm-0"><span data-title="skills" class="custom__underline">Skills</span></a> </li>
+                    <li class=" text-capitalize nav-item" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#about" aria-label="About" class="nav-link position-relative text-uppercase my-2 my-sm-0"><span data-title="about" class="custom__underline">About</span></a> </li>
+                    <li class=" text-capitalize nav-item" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#resume" aria-label="Resume" class=" nav-link position-relative text-uppercase my-2 my-sm-0"><span data-title="resume" class="custom__underline">Resume</span></a></li>
+                    <li class=" text-capitalize nav-item" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#contact" aria-label="Contact" class=" nav-link position-relative text-uppercase my-2 my-sm-0"><span data-title="contact" class="custom__underline">Contact</span></a></li>
+                    <!--if you need more items in the navbar copy the previous line and paste it here -->
                 </ul>
-            </section>
+            </div>
         </div>
     </nav>
-    <!-- end navbar -->
+    <!-- end  Navigation bar -->
 
     <!-- header -->
     <header class="header ">
         <div class="container ">
             <section class="header-info">
                 <h1>I'm Ahmad</h1>
-                <p class="p-a-h-style">A Software developer</p>
-                <a class="p-a-h-style custom-button" aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
+                <p class="">A Software developer</p>
+                <a class=" custom__button" aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
             </section>
         </div>
     </header>
     <!-- end header -->
 
     <!-- start portfolio -->
-    <section class="portfolio padding-top-bottom center-text" id="portfolio">
+    <section class="portfolio padding-top-bottom text-center custom__outline" id="portfolio">
         <div class="container">
-            <h2 class="h2-style" data-title="portfolio">portfolio </h2>
-            <p class="p.style">Here are some of my projects that I have built so far.Feel free to check them out and you can try them out using live preview too without any issue.Feel free to give me feedback about my work. </p>
+            <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="portfolio">portfolio </h2>
+            <p class="lead">Here are some of my projects that I have built so far.Feel free to check them out and you can try them out using live preview too without any issue.Feel free to give me feedback about my work. </p>
             <ul class="filter-list">
                 <li class="filter" data-filter=".all">All</li>
                 <li class="filter" data-filter=".bootstrap">Bootstrap</li>
@@ -93,7 +99,7 @@
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://general-power.netlify.app/"><img class="card__image " src="images/general.png" alt="general power"> </a>
                     </div>
                     <h3 class="p-a-h-style ">general power lightning</h3>
-                    <p>I designed and built a responsive landing page for general power lightning. Technologies used HTML5 CSS3 Bootstrap jQuery.</p>
+                    <p>I designed and built a responsive landing page for general power lightning. Using HTML5 CSS3 Bootstrap jQuery.</p>
                     <div class="link-holder">
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://general-power.netlify.app/">Live demo</a>
                     </div>
@@ -125,7 +131,7 @@
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://dalaotravel.netlify.app/"><img class="card__image " src="images/travel.png" alt="bootstrap screenshot"> </a>
                     </div>
                     <h3 class="p-a-h-style">MOUNTAIN TRAVEL </h3>
-                    <p>I designed and built a responsive page for a travel agency and it is built using pure HTML CSS , JavaScript and Bootstrap. </p>
+                    <p>A responsive page for a travel agency and it is built using pure HTML CSS , JavaScript and Bootstrap. </p>
                     <div class="link-holder">
                         <a aria-label="Source code " rel="noopener " target="_blank " href="https://github.com/AhmadDalao/Mountain-Travel">Source code</a>
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://dalaotravel.netlify.app/ ">Live demo</a>
@@ -141,7 +147,7 @@
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://eqrateam.netlify.app/ ">Live demo</a>
                     </div>
                 </article>
-                <article class="card-item bootstrap all">
+                <article class="card-item  all">
                     <div class="card__container">
                         <a aria-label="Live Demo " rel="noopener " target="_blank " href="https://dalao2.netlify.app/"><img class="card__image " src="images/landing__design.png" alt="bootstrap screenshot"> </a>
                     </div>
@@ -192,26 +198,26 @@
     <!-- end portfolio -->
 
     <!-- start skills -->
-    <section class="skills padding-top-bottom center-text" id="skills">
+    <section class="skills padding-top-bottom text-center custom__background custom__outline" id="skills">
         <div class="container">
-            <h2 class="h2-style" data-title="Skills">Skills</h2>
-            <p class="p.style">Here are some of my skills which I have, Am experienced in object oriented programming such as JavaScript, experienced in Markup languages such as HTML5 and CSS. I have excellent problem solving skills and attention to details. I also have
+            <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="Skills">Skills</h2>
+            <p class="lead">Here are some of my skills which I have, Am experienced in object oriented programming such as JavaScript, experienced in Markup languages such as HTML5 and CSS. I have excellent problem solving skills and attention to details. I also have
                 great communication skills and ability to work well with others on top of that I have the ability to work under pressure. </p>
-            <section class="skill-holder">
-                <article class="skill-item">
-                    <img class="full-size-image" src="images/html5.svg" alt="HTML5 logo">
+            <section class="skill-holder row flex-column justify-content-center  position-relative mx-auto">
+                <article class="skill-item  my-4 my-md-0">
+                    <img class="img-fluid" src="images/html5.svg" alt="HTML5 logo">
                 </article>
-                <article class="skill-item">
-                    <img class="full-size-image" src="images/css-5.svg" alt="CSS3 logo">
+                <article class="skill-item  my-4 my-md-0">
+                    <img class="img-fluid" src="images/css-5.svg" alt="CSS3 logo">
                 </article>
-                <article class="skill-item">
-                    <img class="full-size-image" src="images/javascript.svg" alt="JavaScript logo ">
+                <article class="skill-item  my-4 my-md-0">
+                    <img class="img-fluid" src="images/javascript.svg" alt="JavaScript logo ">
                 </article>
-                <article class="skill-item ">
-                    <img class="full-size-image " src="images/bootstrap-4.svg " alt="Bootstrap-4 logo ">
+                <article class="skill-item  my-4 my-md-0">
+                    <img class="img-fluid" src="images/bootstrap-4.svg " alt="Bootstrap-4 logo ">
                 </article>
-                <article class="skill-item ">
-                    <img class="full-size-image " src="images/git-icon.svg " alt="git logo ">
+                <article class="skill-item  my-4 my-md-0">
+                    <img class="img-fluid" src="images/git-icon.svg " alt="git logo ">
                 </article>
             </section>
 
@@ -220,43 +226,50 @@
     <!-- end skills -->
 
     <!-- start about me -->
-    <section class="about-me padding-top-bottom center-text" id="about">
+    <section class="about-me padding-top-bottom text-center custom__outline" id="about">
         <div class="container">
-            <h2 class="h2-style" data-title="about me">about me</h2>
-            <p class="p.style"> I'm a Software Developer who loves building and developing apps and websites. My latest app helps students around the world to learn the English language easily. Right now, I'm working on improving my skills by building more websites. I have
+            <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="about me">about me</h2>
+            <p class="lead"> I'm a Software Developer who loves building and developing apps and websites. My latest app helps students around the world to learn the English language easily. Right now, I'm working on improving my skills by building more websites. I have
                 been doing front end web development after taking a few courses and I have built few pet projects.</p>
-            <p class="p.style"> I'd love to combine my passion for programming and learning with my software engineering development skills to continue building more personalized applications or websites for people. I have a passion to learn new skills and put these skills
+            <p class="lead mb-5"> I'd love to combine my passion for programming and learning with my software engineering development skills to continue building more personalized applications or websites for people. I have a passion to learn new skills and put these skills
                 to use. </p>
-            </p>
-            <h3 class="h2-style" data-title="services">services</h3>
-            <section class="about-service-container">
-                <article class="service-item">
-                    <h3 class="h2-style">Web development</h3>
-                    <img src="images/undraw_version_control_9bpv.svg" alt="web-development image">
-                    <div class="service-detail">
-                        <p>I can build your ideal website from scratch.
-                        </p>
+            <h3 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="services">services</h3>
+            <section class="row justify-content-center ">
+                <article class="col-sm-12 col-md-6 col-lg-3 my-2 mb-3">
+                    <div class="service-item overflow-hidden  position-relative">
+                        <h3 class="h2__style text-uppercase d-block position-relative  my-3">Web development</h3>
+                        <img class="img-fluid  m-2" src="images/undraw_version_control_9bpv.svg" alt="web-development image">
+                        <div class="service-detail position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                            <p class="p-2">I can build your ideal website from scratch.
+                            </p>
+                        </div>
                     </div>
                 </article>
-                <article class="service-item">
-                    <h3 class="h2-style">GRAPHIC DESIGN </h3>
-                    <img src="images/undraw_design_notes_8dmv.svg" alt="web-development image">
-                    <div class="service-detail">
-                        <p>I can design your website and make it beautiful. </p>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-2 mb-3">
+                    <div class="service-item overflow-hidden  position-relative">
+                        <h3 class="h2__style text-uppercase d-block position-relative my-3">GRAPHIC DESIGN </h3>
+                        <img class="img-fluid  m-2" src="images/undraw_design_notes_8dmv.svg" alt="web-development image">
+                        <div class="service-detail position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                            <p class="p-2">I can design your website and make it beautiful. </p>
+                        </div>
                     </div>
                 </article>
-                <article class="service-item">
-                    <h3 class="h2-style"> UX & UI DESIGN </h3>
-                    <img src="images/undraw_design_tools_42tf.svg" alt="web-development image">
-                    <div class="service-detail">
-                        <p>I can make the user interface and experience more appealing to users.</p>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-2 mb-3">
+                    <div class="service-item overflow-hidden position-relative">
+                        <h3 class="h2__style text-uppercase d-block position-relative my-3"> UX & UI DESIGN </h3>
+                        <img class="img-fluid  m-2" src="images/undraw_design_tools_42tf.svg" alt="web-development image">
+                        <div class="service-detail position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                            <p class="p-2">I can make the user interface and experience more appealing to users.</p>
+                        </div>
                     </div>
                 </article>
-                <article class="service-item">
-                    <h3 class="h2-style">CEO</h3>
-                    <img src="images/undraw_file_searching_duff.svg" alt="web-development image">
-                    <div class="service-detail">
-                        <p>Can make your website appears on top when searching. </p>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-2 mb-3">
+                    <div class="service-item overflow-hidden position-relative">
+                        <h3 class="h2__style text-uppercase d-block position-relative my-3">CEO</h3>
+                        <img class="img-fluid m-2" src="images/undraw_file_searching_duff.svg" alt="web-development image">
+                        <div class="service-detail position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                            <p class="p-2">Can make your website appears on top when searching. </p>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -265,75 +278,76 @@
     <!-- end about me -->
 
     <!-- start resume -->
-    <section class="resume padding-top-bottom center-text" id="resume">
+    <section class="resume padding-top-bottom text-center position-relative custom__background custom__outline" id="resume">
         <div class="container">
-            <h2 class="h2-style" data-title="resume">resume</h2>
-            <p>If you would like to learn more about me or have PDF copy of my resume please feel free to click the download button, The resume provides detailed information about me and more contact information.
+            <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="resume">resume</h2>
+            <p class="lead">If you would like to learn more about me or have PDF copy of my resume please feel free to click the download button, The resume provides detailed information about me and more contact information.
             </p>
-            <a class="p-a-h-style custom-button" aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
+            <a class="custom__button p-a-h-style " aria-label="Download Resume" download href="download/Resume-Ahmad Dalao.pdf " rel="noopener " target="_blank "> <i class="fas fa-download"></i> download resume</a>
         </div>
     </section>
     <!-- end resume -->
 
-    <!-- start contact me -->
-    <section class="contact-me padding-top-bottom center-text" id="contact">
+    <!-- contact us form  -->
+    <section class="contact-me padding-top-bottom custom__outline" id="contact">
         <div class="container">
-            <h2 class="h2-style" data-title="contact me"> contact me</h2>
-            <div class="contact-holder">
-                <form class="form" id="form">
-                    <div class="form-name-holder">
-                        <label hidden for="name">name</label>
-                        <input type="text" name="name" id="name" placeholder="Name">
+            <section class="row justify-content-center">
+                <section class="col-sm-12 col-lg-8">
+                    <div class="text-center row mb-5 justify-content-center align-items-center text-uppercase font-weight-bold  ">
+                        <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline" data-title="Contact me">Contact me</h2>
                     </div>
-                    <div class="form-email-holder">
-                        <label for="email" hidden>email</label>
-                        <input type="email" max="35" name="email" id="email" placeholder="Email Address">
+                    <div class="position-relative contact-form ">
+                        <form name="position-relative " id="contact-form" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                            <p class="hidden">
+                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
+                            <div class="field row mx-1 ">
+                                <input class="custom__input" type="text" id="name" name="name" required autocomplete="on" />
+                                <label class="custom__label  form__name" for="name">Name </label>
+                            </div>
+                            <div class="field row mx-1">
+                                <input class="custom__input" type="email" id="email" name="email" required autocomplete="on" />
+                                <label class="custom__label " for="email">Email </label>
+                            </div>
+                            <div class="field row mx-1">
+                                <textarea class="custom__input" name="message" id="message" style="height:200px" required autocomplete="on"></textarea>
+                                <label class="custom__label " for="message">Your message </label>
+                            </div>
+                            <input class="m-1 my-2 custom__submit" type="submit" value="Submit" />
+                        </form>
                     </div>
-                    <div class="form-phone-holder">
-                        <label for="phone" hidden>phone number</label>
-                        <input type="number" max="15" name="phone" id="phone" placeholder="Phone number">
-                    </div>
-                    <div class="form-message-holder">
-                        <label for="message" hidden> message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-                    </div>
-                    <div class="form-button-holder">
-                        <label for="submit" hidden> message</label>
-                        <button type="submit" id="submit" aria-label="Send" class="button-submit">send</button>
-                    </div>
-                </form>
-            </div>
+                </section>
+            </section>
         </div>
     </section>
-    <!-- end contact me -->
+    <!-- end contact us form -->
 
     <!-- start footer  -->
-    <footer class="footer footer-padding">
-        <section class="container">
-            <h2 class="h2-style" data-title="find me on"> find me on</h2>
-            <div class="icon-container">
-                <a href="https://twitter.com/AhmadDalao/" target="_blank " rel="noreferrer noopener " class="footer-icon " title="github " aria-label=" github ">
-                    <i><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </i>
-                </a>
-                <a href="https://www.linkedin.com/in/ahmad-dalao/" target="_blank " rel="noreferrer noopener " class="footer-icon " title="Linkedin " aria-label=" Linkedin ">
-                    <i><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></i>
-                </a>
-                <a href="https://github.com/AhmadDalao" target="_blank " rel="noreferrer noopener " class="footer-icon " title="Github " aria-label=" Github ">
-                    <i> <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></i>
-                </a>
+    <footer class="footer py-5 text-center ">
+        <section class="container ">
+            <h2 class="h2__style footer__h2 text-uppercase d-inline-block position-relative custom__underline mb-4 " data-title="find me on "> find me on</h2>
+            <div class="p-1 ">
+                <a href="https://twitter.com/AhmadDalao/ " target="_blank " rel="noreferrer noopener " class="footer__icon p-1 m-1 rounded-circle d-inline-flex position-relative justify-content-center align-items-center " title="twitter
+                    " aria-label=" twitter "><i class="fab fa-twitter "></i></a>
+                <a href="https://www.linkedin.com/in/ahmad-dalao/ " target="_blank " rel="noreferrer noopener " class="footer__icon p-1 m-1 rounded-circle d-inline-flex position-relative justify-content-center align-items-center " title="Linkedin
+                    " aria-label=" Linkedin "><i class="fab fa-linkedin "></i></a>
+                <a href="https://github.com/AhmadDalao " target="_blank " rel="noreferrer noopener " class="footer__icon p-1 m-1 rounded-circle d-inline-flex position-relative justify-content-center align-items-center " title="Github " aria-label="
+                    Github "> <i class="fab fa-github "></i></a>
             </div>
         </section>
     </footer>
     <!-- end footer  -->
 
     <!-- start copyright  -->
-    <section class="copyright copyright-padding ">
-        <div class="container "> Copyright &copy AhmadDalao 2020</div>
+    <section class="copyright p-3 text-center text-capitalize ">
+        <div class="container lead "> Copyright &copy AhmadDalao 2020</div>
     </section>
     <!-- end copyright  -->
 
-    <!-- jQuery  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JS, and jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
     <!-- main js file-->
     <script src="js/main.js "></script>
 
