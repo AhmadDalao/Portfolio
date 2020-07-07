@@ -322,7 +322,7 @@ ul.color-list-default li:first-child {
 
 /*============================  start about me ============================  */
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .service-item>h3 {
         font-size: 1.1rem;
     }
