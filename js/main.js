@@ -29,9 +29,10 @@ for (let i = 0; i < list.length; ++i) {
 }
 
 
-
+// gallery filter 
 $(function() {
     $(".filter").click(function() {
+        $(this).addClass('custom__active').siblings().removeClass('custom__active');
         $($(this).data('filter')).fadeIn(500);
         $('.card-holder').find('article').not($(this).data('filter')).fadeOut(1000);
         console.log($(this).data('filter'));
@@ -44,12 +45,6 @@ document.getElementById('color-toggler').addEventListener('click', function() {
     document.getElementById('color-container').classList.toggle('show');
 });
 
-
-/* make navbar responsive and change to x icon */
-function myFunction() {
-    document.querySelector(".navbar-not-responsive").classList.toggle('responsive');
-    document.querySelector('.my-container').classList.toggle('my-button');
-}
 
 /* if the screen height is below 550 and you click on the bar icon the navbar will get background if it was transparent */
 myNav.addEventListener('click', function() {
