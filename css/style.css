@@ -264,16 +264,16 @@ ul.color-list-default li:first-child {
     color: var(--main-color);
 }
 
-.gallery__listItem {
+.gallery__list--item {
     transition: color .3s ease;
 }
 
-.gallery__listItem:hover {
+.gallery__list--item:hover {
     cursor: pointer;
     color: var(--main-color);
 }
 
-.gallery__listItem:not(:last-child)::after {
+.gallery__list--item:not(:last-child)::after {
     content: '/';
     display: inline-block;
     margin-left: .7rem;
@@ -287,6 +287,23 @@ ul.color-list-default li:first-child {
 
 .portfolio .card-item h3 {
     color: var(--main-color);
+    font-size: 1.2rem;
+}
+
+@media(max-width: 767px) {
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery__list--item {
+        font-size: 1.1rem;
+    }
+    .portfolio .card-item h3 {
+        color: var(--main-color);
+        font-size: 1.5rem;
+    }
 }
 
 .portfolio .card-item .link-holder a {
@@ -324,7 +341,7 @@ ul.color-list-default li:first-child {
 
 @media (min-width: 768px) {
     .service-item>h3 {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 }
 
