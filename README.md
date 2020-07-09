@@ -1,6 +1,6 @@
 # Portfolio website
 
-### I designed and built a responsive page showcase my work and it is built using pure HTML CSS and JavaScript.
+### I designed and built a responsive page showcase my work and it is built using  HTML CSS JavaScript Bootstrap and jQuery.
 
 
 -[Live Demo]: https://dalao.netlify.app/
