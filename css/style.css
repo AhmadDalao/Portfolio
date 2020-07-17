@@ -15,6 +15,7 @@ html {
 
 body {
     line-height: 1.5;
+    overflow: hidden;
 }
 
  :root {
@@ -492,6 +493,77 @@ a.footer__icon:hover {
 .copyright {
     background-color: var(--submit-footer-icon-background, #191e22);
     color: var(--color-white);
+}
+
+
+/*============================ start loading screen section ============================*/
+
+.loading-screen {
+    top: 0;
+    background-color: #313132;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.loading__title {
+    color: var(--white);
+}
+
+.spinner {
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: rgb(255, 255, 0);
+    border-radius: 50%;
+    animation: my__rotate 1s linear infinite;
+}
+
+@-webkit-keyframes my__rotate {
+    from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@-moz-keyframes my__rotate {
+    from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@-o-keyframes my__rotate {
+    from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes my__rotate {
+    from {
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
 }
 
 

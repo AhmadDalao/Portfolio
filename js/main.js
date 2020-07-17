@@ -133,3 +133,13 @@ $(".custom__input").focus(function() {
 $(".custom__submit").click(function() {
     $(this).prev(".custom__label").removeClass('custom__transition');
 });
+
+// loading screen
+
+$(window).on("load", function() {
+    $(".loading__title , .spinner-container").fadeOut(99999);
+    $(".loading-screen").fadeOut(400, function() {
+        $("body").css("overflow", "auto");
+        $(this).remove();
+    });
+});
