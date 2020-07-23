@@ -137,7 +137,7 @@ $(".custom__submit").click(function() {
 // loading screen
 
 $(window).on("load", function() {
-    $(".loading__title , .spinner-container").fadeOut(99999);
+    $(".loading__title , .spinner-container").fadeOut(2500);
     $("body").css("overflow", "auto");
     $(".loading-screen").fadeOut(400, function() {
         $(this).remove();
