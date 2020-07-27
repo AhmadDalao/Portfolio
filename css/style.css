@@ -288,12 +288,17 @@ ul.color-list-default li:first-child {
 
 .portfolio .card-item h3 {
     color: var(--main-color);
-    font-size: 1.2rem;
 }
 
 @media(max-width: 767px) {
     .lead {
         font-size: 1rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .portfolio .card-item h3 {
+        font-size: 1.20rem;
     }
 }
 
@@ -308,25 +313,31 @@ ul.color-list-default li:first-child {
 }
 
 .portfolio .card-item .link-holder a {
-    color: var(--color-white);
-    background-color: var(--main-color, #2ecc71);
-    padding: var(--padding-normal, 1rem);
-    margin-top: var(--font-size-small, 1.50rem);
-    margin-bottom: var(--font-size-small, 1.50rem);
+    color: var(--main-color, #2ecc71);
+    border: 1px solid var(--main-color);
     text-decoration: none;
     border-radius: 4px;
     font-weight: 700;
     float: right;
     text-transform: capitalize;
-    margin-right: var(--font-size-small, 1.50rem);
 }
 
 .portfolio .card-item .link-holder a:hover {
-    background-color: var(--submit-hover, #1c9950);
+    background-color: var(--main-color, #2ecc71);
+    border: 1px solid var(--main-color);
+    color: white;
     font-weight: bold;
     -webkit-animation: heartbeat .5s infinite linear;
     -moz-animation: heartbeat .5s infinite linear;
     animation: heartbeat .5s infinite linear;
+}
+
+@media(max-width: 767px) {
+    .portfolio .card-item .link-holder a {
+        border-radius: 0;
+        font-weight: 700;
+        width: 100%;
+    }
 }
 
 
@@ -343,6 +354,12 @@ ul.color-list-default li:first-child {
 @media (min-width: 768px) {
     .service-item>h3 {
         font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 400px) {
+    .about-me .service-item>.h2__style {
+        font-size: 1.20rem;
     }
 }
 
