@@ -84,44 +84,6 @@ window.onscroll = function() {
     }
 };
 
-// slow scroll 
-
-// Select all links with hashes
-$('a[href*="#"]')
-    // Remove links that don't actually link to anything
-    .not('[href="#"]')
-    .not('[href="#0"]')
-    .click(function(event) {
-        // On-page links
-        if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname
-        ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function() {
-                    // Callback after animation
-                    // Must change focus!
-                    var $target = $(target);
-                    $target.focus();
-                    if ($target.is(":focus")) { // Checking if the target was focused
-                        return false;
-                    } else {
-                        $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
-                    };
-                });
-            }
-        }
-    });
-
 // adding class to the label so it moves up from the input field
 
 $(".custom__input").focus(function() {
@@ -142,4 +104,29 @@ $(window).on("load", function() {
     $(".loading-screen").fadeOut(400, function() {
         $(this).remove();
     });
+});
+
+// scroll spy
+$('body').scrollspy({
+    target: '#navbar'
+});
+
+// Add smooth scrolling
+$('#navbar a').on('click', function(e) {
+    // Check for a hash value
+    if (this.hash !== '') {
+        // Prevent default behavior
+        e.preventDefault();
+
+        // Store hash
+        const hash = this.hash;
+
+        // Animate smooth scroll
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, function() {
+            // Add hash to URL after scroll
+            window.location.hash = hash;
+        });
+    }
 });
