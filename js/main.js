@@ -96,16 +96,6 @@ $(".custom__submit").click(function() {
     $(this).prev(".custom__label").removeClass('custom__transition');
 });
 
-// loading screen
-
-$(window).on("load", function() {
-    $(".loading__title , .spinner-container").fadeOut(2500);
-    $("body").css("overflow", "auto");
-    $(".loading-screen").fadeOut(400, function() {
-        $(this).remove();
-    });
-});
-
 // scroll spy
 $('body').scrollspy({
     target: '#navbar'

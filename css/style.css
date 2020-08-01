@@ -15,10 +15,9 @@ html {
 
 body {
     line-height: 1.5;
-    overflow: hidden;
 }
 
- :root {
+:root {
     /* colors */
     --text-color: #222831b7;
     --main-color: #2ecc71;
@@ -319,6 +318,7 @@ ul.color-list-default li:first-child {
     border-radius: 4px;
     font-weight: 700;
     float: right;
+    font-size: 1rem;
     text-transform: capitalize;
 }
 
