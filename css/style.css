@@ -363,7 +363,7 @@ ul.color-list-default li:first-child {
     }
 }
 
-.service-item>img {
+.service-item>figure img {
     height: 150px;
     width: 180px;
     max-height: 150px;
