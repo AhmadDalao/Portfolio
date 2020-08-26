@@ -505,9 +505,12 @@
         <section class="contact padding-top-bottom custom__outline text-center" id="contact">
             <div class="container">
                 <h2 class="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5" data-title="contact me">contact me </h2>
-                <form class="my__form form-row  mt-5 ">
+                <form class="my__form form-row mt-5 " id="my__form" netlify netlify-honeypot="bot-field" data-netlify="true">
                     <div class=" col-lg-6 ">
                         <div class="input-group ">
+                            <p class="hidden">
+                                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                            </p>
                             <label for="username" class="sr-only">Username</label>
                             <input class="w-100 my-2 form-control-lg" id="username" type="text" name="Username" placeholder="Username">
                         </div>
