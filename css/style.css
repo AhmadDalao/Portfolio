@@ -4,7 +4,7 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -34,10 +34,9 @@ body {
     /* space */
     --padding-big: 6rem;
     --padding-normal: 1rem;
-    --padding-small: .5rem;
+    --padding-small: 0.5rem;
     --side-font: 0.875rem;
 }
-
 
 /* ============================ reusable classes ============================ */
 
@@ -66,13 +65,13 @@ body {
     overflow: hidden;
     white-space: nowrap;
     border-bottom: 2px solid var(--main-color, #2ecc71);
-    transition: width .3s ease, color .3s ease;
+    transition: width 0.3s ease, color 0.3s ease;
 }
 
 .custom__underline:hover::before {
     width: 100%;
     color: var(--main-color, #2ecc71);
-    transition: width .3s ease, color .3s ease;
+    transition: width 0.3s ease, color 0.3s ease;
 }
 
 .h2__style {
@@ -81,28 +80,44 @@ body {
 
 .header .custom__button,
 .resume .custom__button {
-    padding: var(--font-size-small, 1.50rem);
+    padding: var(--font-size-small, 1.5rem);
     overflow: hidden;
     display: inline-block;
-    margin-top: var(--font-size, 2.25rem);
     color: var(--main-color, #2ecc71);
     border-color: var(--main-color, #2ecc71);
     text-decoration: none;
     margin-top: 1.5rem;
     border-radius: 1rem;
-    transition: background-color .3s ease, border-color .3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.custom__button:hover {
-    color: var(--color-white);
+.custom__button {
+    position: relative;
+    z-index: 1;
+}
+
+.custom__button::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -100%;
     background-color: var(--main-color, #2ecc71);
     border-color: var(--main-color, #2ecc71);
+    border-radius: 1rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: left 0.4s ease;
+}
+
+.custom__button:hover::before {
+    left: 0;
 }
 
 .custom__shadow {
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.270);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27);
 }
-
 
 /* ============================ setting sidebar  ============================*/
 
@@ -117,7 +132,7 @@ body {
     font-size: var(--side-font, 0.875rem);
     transform: translateY(-60%);
     background-color: var(--color-white);
-    box-shadow: 0.1rem 0.1rem 1.2rem 0.2rem rgba(0, 0, 0, 0.170);
+    box-shadow: 0.1rem 0.1rem 1.2rem 0.2rem rgba(0, 0, 0, 0.17);
     z-index: 999;
     transition: left 0.3s ease;
 }
@@ -138,7 +153,7 @@ body {
     right: -47px;
     background-color: white;
     position: absolute;
-    box-shadow: 0.05rem 0.05rem 0rem 0.01rem rgba(0, 0, 0, 0.170);
+    box-shadow: 0.05rem 0.05rem 0rem 0.01rem rgba(0, 0, 0, 0.17);
 }
 
 .color-container p {
@@ -186,7 +201,6 @@ ul.color-list-default li:first-child {
     background-color: #fd5e53;
 }
 
-
 /* ============================ start navbar ============================*/
 
 .navbar {
@@ -196,7 +210,7 @@ ul.color-list-default li:first-child {
 .navbar .nav-link:hover .custom__underline::before {
     width: 100%;
     color: var(--main-color, #2ecc71);
-    transition: width .3s ease, color .3s ease;
+    transition: width 0.3s ease, color 0.3s ease;
 }
 
 .nav-transparent {
@@ -211,7 +225,6 @@ ul.color-list-default li:first-child {
     color: var(--main-color, #2ecc71);
 }
 
-
 /* ============================ start header ============================ */
 
 .header {
@@ -223,7 +236,8 @@ ul.color-list-default li:first-child {
     color: var(--color-white);
     height: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/image.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../images/image.jpg");
     background-repeat: no-repeat;
     /*  this line may cause an issue on mac users  */
     background-size: cover;
@@ -242,21 +256,20 @@ ul.color-list-default li:first-child {
 .resume a {
     line-height: 2.25rem;
     color: var(--color-white);
-    margin-top: 1.50rem;
-    font-size: 1.50rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
     font-weight: 300;
     text-transform: capitalize;
 }
 
 .header .custom__button {
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     color: var(--color-white);
 }
 
 .header .custom__button:hover {
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
 }
-
 
 /*============================ start portfolio ============================ */
 
@@ -265,7 +278,7 @@ ul.color-list-default li:first-child {
 }
 
 .gallery__list--item {
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 
 .gallery__list--item:hover {
@@ -274,9 +287,9 @@ ul.color-list-default li:first-child {
 }
 
 .gallery__list--item:not(:last-child)::after {
-    content: '/';
+    content: "/";
     display: inline-block;
-    margin-left: .7rem;
+    margin-left: 0.7rem;
     color: rgba(0, 0, 0, 0.2);
 }
 
@@ -289,15 +302,15 @@ ul.color-list-default li:first-child {
     color: var(--main-color);
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
     .lead {
         font-size: 1rem;
     }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
     .portfolio .card-item h3 {
-        font-size: 1.20rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -305,6 +318,7 @@ ul.color-list-default li:first-child {
     .gallery__list--item {
         font-size: 1.1rem;
     }
+
     .portfolio .card-item h3 {
         color: var(--main-color);
         font-size: 1.5rem;
@@ -319,20 +333,35 @@ ul.color-list-default li:first-child {
     font-weight: 700;
     float: right;
     font-size: 1rem;
+    position: relative;
+    overflow: hidden;
     text-transform: capitalize;
+    z-index: 1;
 }
 
 .portfolio .card-item .link-holder a:hover {
-    background-color: var(--main-color, #2ecc71);
-    border: 1px solid var(--main-color);
     color: white;
     font-weight: bold;
-    -webkit-animation: heartbeat .5s infinite linear;
-    -moz-animation: heartbeat .5s infinite linear;
-    animation: heartbeat .5s infinite linear;
 }
 
-@media(max-width: 767px) {
+.portfolio .card-item .link-holder a::after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color, #2ecc71);
+    transition: all 0.4s ease;
+}
+
+.portfolio .card-item .link-holder a:hover::after {
+    right: 0;
+}
+
+@media (max-width: 767px) {
     .portfolio .card-item .link-holder a {
         border-radius: 0;
         font-weight: 700;
@@ -340,14 +369,12 @@ ul.color-list-default li:first-child {
     }
 }
 
-
 /* ============================  start skills  ============================*/
 
 .skill__icon {
     height: 6em;
     width: 6em;
 }
-
 
 /*============================  start about me ============================  */
 
@@ -357,9 +384,9 @@ ul.color-list-default li:first-child {
     }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
     .about-me .service-item>.h2__style {
-        font-size: 1.20rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -375,13 +402,12 @@ ul.color-list-default li:first-child {
     bottom: 0;
     background-color: var(--main-color, #2ecc71);
     color: var(--color-white, white);
-    transition: left .3s ease;
+    transition: left 0.3s ease;
 }
 
 .service-item:hover .service-detail {
     left: 0;
 }
-
 
 /* ============================  start resume ============================ */
 
@@ -399,9 +425,14 @@ ul.color-list-default li:first-child {
 }
 
 .resume .custom__button {
-    border: 2px solid var(--main-color);
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--main-color);
 }
 
+.resume .custom__button:hover {
+    color: white;
+}
 
 /**
 *
@@ -424,6 +455,7 @@ ul.color-list-default li:first-child {
 }
 
 @media (max-width: 991px) {
+
     .contact .my__form .textarea__group,
     .contact .my__form textarea {
         height: 200px;
@@ -460,7 +492,6 @@ input[type="submit"]:focus {
     outline: 1px solid var(--main-color);
 }
 
-
 /*============================ start footer section ============================*/
 
 .footer {
@@ -479,7 +510,7 @@ a.footer__icon {
     height: 60px;
     width: 60px;
     top: 0;
-    transition: background-color .3s ease, color .3s ease, top 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, top 0.3s ease;
 }
 
 a.footer__icon:hover {
@@ -488,7 +519,6 @@ a.footer__icon:hover {
     background-color: var(--section-background-color, #f2f2f2);
 }
 
-
 /*============================ start copyright section ============================*/
 
 .copyright {
@@ -496,19 +526,17 @@ a.footer__icon:hover {
     color: var(--color-white);
 }
 
-
 /* ============================  media query   ============================ */
-
 
 /* Extra small devices (phones, 576px and down) */
 
 @media only screen and (max-width: 576px) {
+
     .header .header-info a,
     .resume a {
         font-size: var(--font-size-info, 1.35rem);
     }
 }
-
 
 /* Small devices (portrait tablets and large phones, 576px and up) */
 
@@ -518,7 +546,6 @@ a.footer__icon:hover {
     }
 }
 
-
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -527,7 +554,6 @@ a.footer__icon:hover {
     }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
 
 @media only screen and (min-width: 992px) {}
@@ -535,71 +561,5 @@ a.footer__icon:hover {
 @media only screen and (max-width: 1024px) {
     .hero-section .hero-image-holder {
         background-attachment: local !important;
-    }
-}
-
-
-/* ============================ animation   ============================ */
-
-@-webkit-keyframes heartbeat {
-    0% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(.9);
-        -moz-transform: scale(.9);
-        -o-transform: scale(.9);
-        transform: scale(.9);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@-moz-keyframes heartbeat {
-    0% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(.9);
-        -moz-transform: scale(.9);
-        -o-transform: scale(.9);
-        transform: scale(.9);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-@keyframes heartbeat {
-    0% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
-    }
-    50% {
-        -webkit-transform: scale(.9);
-        -moz-transform: scale(.9);
-        -o-transform: scale(.9);
-        transform: scale(.9);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        transform: scale(1);
     }
 }
