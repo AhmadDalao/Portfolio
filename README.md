@@ -8,15 +8,15 @@
 
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/images/page1.jpg" height="600" width="1000"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/blob/master/src/images/page1.jpg" height="600" width="1000"/>
 <br>
 
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/images/page2.png" height="600" width="1000"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/blob/master/src/images/page2.png" height="600" width="1000"/>
 <br>
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/images/page3.png" height="600" width="1000"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/blob/master/src/images/page3.png" height="600" width="1000"/>
 <br>
 "# react-test" 
