@@ -960,6 +960,12 @@ class App extends React.Component {
                 data-netlify="true"
                 data-netlify-recaptcha="true"
               >
+                <p className="hidden">
+                  <label>
+                    Don’t fill this out if you're human:{" "}
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <div className=" col-lg-6 ">
                   <div className="input-group ">
                     <p className="hidden">
