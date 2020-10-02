@@ -954,8 +954,10 @@ class App extends React.Component {
                 className="my__form form-row mt-5 "
                 id="my__form"
                 netlify
+                name="contact__main"
                 netlify-honeypot="bot-field"
                 data-netlify="true"
+                data-netlify-recaptcha="true"
               >
                 <div className=" col-lg-6 ">
                   <div className="input-group ">
@@ -1014,6 +1016,7 @@ class App extends React.Component {
                     ></textarea>
                   </div>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
                 <div className="input-group justify-content-start">
                   <input
                     className="m-1 my-2 custom__submit mt-5  "
