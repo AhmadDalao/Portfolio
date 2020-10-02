@@ -10,5 +10,5 @@
 
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/src/images/page.jpg" height="600" width="1000"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/src/images/page.jpg"  width="1000"/>
 <br>
