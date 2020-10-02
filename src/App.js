@@ -948,18 +948,14 @@ class App extends React.Component {
                 className="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5"
                 data-title="contact me"
               >
-                contact me{" "}
+                contact me
               </h2>
               <form
                 className="my__form form-row mt-5 "
-                id="my__form"
-                netlify
                 method="POST"
                 name="contact__main"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-                data-netlify-recaptcha="true"
               >
+                <input type="hidden" name="form-name" value="contact__main" />
                 <p className="hidden">
                   <label>
                     Don’t fill this out if you're human:{" "}
@@ -981,7 +977,7 @@ class App extends React.Component {
                       className="w-100 my-2 form-control-lg"
                       id="username"
                       type="text"
-                      name="Your Name"
+                      name="YourName"
                       placeholder="Your Name"
                     />
                   </div>
@@ -1005,7 +1001,7 @@ class App extends React.Component {
                       className="w-100 my-2 form-control-lg mb-lg-0"
                       id="subject"
                       type="text"
-                      name="Subject "
+                      name="Subject"
                       placeholder="Subject"
                     />
                   </div>
@@ -1023,7 +1019,6 @@ class App extends React.Component {
                     ></textarea>
                   </div>
                 </div>
-                <div data-netlify-recaptcha="true"></div>
                 <div className="input-group justify-content-start">
                   <input
                     className="m-1 my-2 custom__submit mt-5  "

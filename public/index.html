@@ -38,6 +38,15 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- A little help for the Netlify bots if you're not using a SSG -->
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="YourName" />
+    <input type="email" name="Email" />
+    <input type="text" name="Subject" />
+    <textarea name="message"></textarea>
+  </form>
+
   <div id="root"></div>
   <!--
       This HTML file is a template.
