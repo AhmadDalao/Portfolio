@@ -954,6 +954,7 @@ class App extends React.Component {
                 className="my__form form-row mt-5 "
                 id="my__form"
                 netlify
+                method="POST"
                 name="contact__main"
                 netlify-honeypot="bot-field"
                 data-netlify="true"
