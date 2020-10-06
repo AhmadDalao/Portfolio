@@ -1,6 +1,12 @@
 import React from "react";
+import { colorList } from "../../portfolioData";
+import ColorComponent from "../../components/ColorsComponent/ColorsComponent";
 
 export default function ColorContainer() {
+  const colors = colorList.map((color) => {
+    return <ColorComponent key={color.id} id={color.id} color={color.color} />;
+  });
+
   return (
     <section className="color-container" id="color-container">
       <span className="custom-span" id="color-toggler">
@@ -17,11 +23,7 @@ export default function ColorContainer() {
       </span>
       <p>Choose your favorite color</p>
       <ul className="color-list-style" id="color-list">
-        <li className="color-change color-list-li" data-color="#fb7813"></li>
-        <li className="color-change color-list-li" data-color="#f54291"></li>
-        <li className="color-change color-list-li" data-color="#0779e4"></li>
-        <li className="color-change color-list-li" data-color="#efa8e4 "></li>
-        <li className="color-change color-list-li" data-color="#fd5e53"></li>
+        {colors}
       </ul>
       <hr />
       <p>default color</p>

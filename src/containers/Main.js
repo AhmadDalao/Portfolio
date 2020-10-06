@@ -8,13 +8,16 @@ import ResumeContainer from "./ResumeContainer/ResumeContainer";
 import ContactContainer from "./ContactContainer/ContactContainer";
 import FooterContainer from "./FooterContainer/FooterContainer";
 import CopyrightContainer from "./CopyrightContainer/CopyrightContainer";
+import HeaderInfoContainer from "./HeaderInfoContainer/HeaderInfoContainer";
 
 export default class Main extends Component {
   render() {
     return (
       <>
+        {/*  جرب تعمل كومبوننت للست وتعمل لوب عليها وتستدعيها بصفحة الكولر كونتينار */}
         <ColorContainer />
         <HeaderContainer />
+        <HeaderInfoContainer />
         <main>
           <PortfolioContainer />
           <SkillContainer />

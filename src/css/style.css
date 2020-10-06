@@ -78,7 +78,7 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header .custom__button,
+.header-info .custom__button,
 .resume .custom__button {
   padding: var(--font-size-small, 1.5rem);
   overflow: hidden;
@@ -116,7 +116,8 @@ body {
 }
 
 .custom__shadow {
-  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27);
+  /* box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.27); */
+  box-shadow: 0.001rem 0.001rem 0.001rem 0.025rem rgba(0, 0, 0, 0.27);
 }
 
 /* ============================ setting sidebar  ============================*/
@@ -227,7 +228,7 @@ ul.color-list-default li:first-child {
 
 /* ============================ start header ============================ */
 
-.header {
+.header-info {
   align-items: center;
   display: flex;
   padding-top: calc(var(--padding-big, 6rem) + 94px);
@@ -261,12 +262,12 @@ ul.color-list-default li:first-child {
   text-transform: capitalize;
 }
 
-.header .custom__button {
+.header-info .custom__button {
   border: 1px solid var(--border-color);
   color: var(--color-white);
 }
 
-.header .custom__button:hover {
+.header-info .custom__button:hover {
   border: 1px solid var(--main-color);
 }
 
@@ -529,7 +530,7 @@ a.footer__icon:hover {
 /* Extra small devices (phones, 576px and down) */
 
 @media only screen and (max-width: 576px) {
-  .header .header-info a,
+  .header-info a,
   .resume a {
     font-size: var(--font-size-info, 1.35rem);
   }

@@ -22,7 +22,7 @@ export default function ResumeContainer() {
           className="custom__button p-a-h-style"
           aria-label="Download Resume"
           download
-          href={require("../../download/Resume-Ahmad Dalao.pdf")}
+          href={require("../../download/Software-Developer-Ahmad-Dalao.pdf")}
           rel="noopener "
           target="_blank "
         >
