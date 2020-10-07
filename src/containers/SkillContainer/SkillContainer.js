@@ -16,7 +16,7 @@ export default function SkillContainer() {
   return (
     <section
       className="skills padding-top-bottom text-center custom__background custom__outline"
-      id="skills"
+      id={SkillsSection.id}
     >
       <div className="container">
         <h2

@@ -17,7 +17,7 @@ export default function AboutContainer() {
   return (
     <section
       className="about-me padding-top-bottom text-center custom__outline"
-      id="about"
+      id={AboutSection.id}
     >
       <div className="container">
         <h2

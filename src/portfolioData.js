@@ -1,5 +1,11 @@
 /* this file contains all the objects ,
- one object for each container (section) */
+ one object or an array for each container (section) */
+
+const colorContainerData = {
+  fontIcon: "fas fa-cog",
+  paragraphOne: `Choose your favorite color`,
+  paragraphTwo: `default color`,
+};
 
 const colorList = [
   { id: 1, color: "#fb7813" },
@@ -146,6 +152,10 @@ const portfolioList = [
   { id: 2, filtering: ".bootstrap", list__word: "Bootstrap", active: "" },
   { id: 3, filtering: ".javaScript", list__word: "JavaScript", active: "" },
 ];
+const SkillsSection = {
+  id: "skills",
+  title: "Skills",
+};
 
 const SkillsImages = [
   {
@@ -194,11 +204,9 @@ const SkillsImages = [
     skillName: "API",
   },
 ];
-const SkillsSection = {
-  title: "Skills",
-};
 
 const AboutSection = {
+  id: "about",
   title: "about me",
   paragraph: ` I'm a Software Engineer / Developer who loves building and developing
           applications and websites. I'd love to combine my passion for
@@ -258,7 +266,44 @@ const contactData = {
   textArea: "message",
 };
 
+const FooterData = {
+  FooterText: "find me on",
+};
+
+const footerSocialData = [
+  {
+    id: 1,
+    socialName: "twitter",
+    socialImg: "fab fa-twitter",
+    socialURL: "https://twitter.com/AhmadDalao/",
+  },
+  {
+    id: 2,
+    socialName: "Linkedin",
+    socialImg: "fab fa-linkedin",
+    socialURL: "https://www.linkedin.com/in/ahmad-dalao/",
+  },
+  {
+    id: 3,
+    socialName: "Github",
+    socialImg: "fab fa-github",
+    socialURL: "https://github.com/AhmadDalao",
+  },
+  {
+    id: 4,
+    socialName: "stackoverflow",
+    socialImg: "fab fa-stack-overflow",
+    socialURL: "https://stackoverflow.com/users/9283958/ahmad-dalao",
+  },
+];
+
+const copyright = {
+  first__word: "Copyright",
+  second__word: "AhmadDalao 2020",
+};
+
 export {
+  colorContainerData,
   colorList,
   navbarLinks,
   logoData,
@@ -273,4 +318,7 @@ export {
   servicesData,
   resumeData,
   contactData,
+  FooterData,
+  footerSocialData,
+  copyright,
 };

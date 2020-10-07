@@ -5,7 +5,7 @@ export default function ContactContainer() {
   return (
     <section
       className="contact padding-top-bottom custom__outline text-center"
-      id={contactData.contact}
+      id={contactData.id}
     >
       <div className="container">
         <h2

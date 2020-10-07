@@ -37,7 +37,7 @@ export default function PortfolioContainer() {
   return (
     <section
       className="portfolio padding-top-bottom text-center custom__outline"
-      id="portfolio"
+      id={portfolioSection.title}
     >
       <div className="container">
         <h2

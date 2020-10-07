@@ -1,5 +1,5 @@
 import React from "react";
-import { colorList } from "../../portfolioData";
+import { colorList, colorContainerData } from "../../portfolioData";
 import ColorComponent from "../../components/ColorsComponent/ColorsComponent";
 
 export default function ColorContainer() {
@@ -18,15 +18,15 @@ export default function ColorContainer() {
             transform: "translate(-50%, -50%)",
             position: "absolute",
           }}
-          className="fas fa-cog"
+          className={colorContainerData.fontIcon}
         ></i>
       </span>
-      <p>Choose your favorite color</p>
+      <p>{colorContainerData.paragraphOne}</p>
       <ul className="color-list-style" id="color-list">
         {colors}
       </ul>
       <hr />
-      <p>default color</p>
+      <p>{colorContainerData.paragraphTwo}</p>
       <ul className="color-list-style color-list-default">
         <li className="color-list-li" data-color="#2ecc71"></li>
       </ul>
