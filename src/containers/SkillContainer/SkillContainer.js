@@ -4,7 +4,13 @@ import { SkillsImages, SkillsSection } from "../../portfolioData";
 
 export default function SkillContainer() {
   const skills = SkillsImages.map((item) => {
-    return <SkillsComponent imgURL={item.imgURL} skillName={item.skillName} />;
+    return (
+      <SkillsComponent
+        key={item.id}
+        imgURL={item.imgURL}
+        skillName={item.skillName}
+      />
+    );
   });
 
   return (

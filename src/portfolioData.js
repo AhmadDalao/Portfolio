@@ -198,6 +198,66 @@ const SkillsSection = {
   title: "Skills",
 };
 
+const AboutSection = {
+  title: "about me",
+  paragraph: ` I'm a Software Engineer / Developer who loves building and developing
+          applications and websites. I'd love to combine my passion for
+          programming and learning with my software engineering skills to
+          continue building more personalized applications and websites for
+          people. I have a passion to learn everything new, contributing to the
+          progress of mankind, and show creativity and possibilities in
+          everything I do.`,
+};
+const AboutServices = {
+  title: "services",
+};
+
+const servicesData = [
+  {
+    id: 1,
+    serviceName: "Web development",
+    serviceImg: require("./images/undraw_version_control_9bpv.svg"),
+    serviceDescription: `I can build your ideal website from scratch.`,
+  },
+  {
+    id: 2,
+    serviceName: "GRAPHIC DESIGN",
+    serviceImg: require("./images/undraw_design_notes_8dmv.svg"),
+    serviceDescription: `I can design your website and make it beautiful.`,
+  },
+  {
+    id: 3,
+    serviceName: "UX & UI DESIGN",
+    serviceImg: require("./images/undraw_design_tools_42tf.svg"),
+    serviceDescription: `I can make the user interface and experience more appealing to users.`,
+  },
+  {
+    id: 4,
+    serviceName: "SEO",
+    serviceImg: require("./images/undraw_file_searching_duff.svg"),
+    serviceDescription: `Can make your website appears on top when searching.`,
+  },
+];
+
+const resumeData = {
+  id: "resume",
+  resumeInfo: ` If you would like to learn more about me or have PDF copy of my resume
+          please feel free to click the download button, The resume provides
+          detailed information about me and more contact information.`,
+  resumeAnchorText: "Download Resume",
+  resumeURL: require("./download/Software-Developer-Ahmad-Dalao.pdf"),
+};
+
+const contactData = {
+  id: "contact",
+  contactText: "contact me",
+  submitButton: "Submit",
+  inputName: " Your name",
+  inputEmail: "Email",
+  inputSubject: "Subject",
+  textArea: "message",
+};
+
 export {
   colorList,
   navbarLinks,
@@ -208,4 +268,9 @@ export {
   portfolioSection,
   SkillsImages,
   SkillsSection,
+  AboutSection,
+  AboutServices,
+  servicesData,
+  resumeData,
+  contactData,
 };

@@ -1,17 +1,18 @@
 import React from "react";
+import { contactData } from "../../portfolioData";
 
 export default function ContactContainer() {
   return (
     <section
       className="contact padding-top-bottom custom__outline text-center"
-      id="contact"
+      id={contactData.contact}
     >
       <div className="container">
         <h2
           className="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5"
-          data-title="contact me"
+          data-title={contactData.contactText}
         >
-          contact me
+          {contactData.contactText}
         </h2>
         <form
           className="my__form form-row mt-5 "
@@ -33,51 +34,51 @@ export default function ContactContainer() {
                 </label>
               </p>
               <label htmlFor="username" className="sr-only">
-                Your name
+                {contactData.inputName}
               </label>
               <input
                 className="w-100 my-2 form-control-lg"
                 id="username"
                 type="text"
                 name="YourName"
-                placeholder="Your Name"
+                placeholder={contactData.inputName}
               />
             </div>
             <div className="input-group">
               <label htmlFor="email" className="sr-only">
-                Email
+                {contactData.inputEmail}
               </label>
               <input
                 className="w-100 my-2 form-control-lg"
                 id="email"
                 type="email"
                 name="Email"
-                placeholder="Email"
+                placeholder={contactData.inputEmail}
               />
             </div>
             <div className="input-group">
               <label htmlFor="subject" className="sr-only">
-                Subject
+                {contactData.inputSubject}
               </label>
               <input
                 className="w-100 my-2 form-control-lg mb-lg-0"
                 id="subject"
                 type="text"
                 name="Subject"
-                placeholder="Subject"
+                placeholder={contactData.inputSubject}
               />
             </div>
           </div>
           <div className=" col-lg-6 ">
             <div className="input-group h-100 textarea__group">
               <label htmlFor="message" className="sr-only">
-                message
+                {contactData.textArea}
               </label>
               <textarea
                 className="w-100 p-3 form-control-lg "
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder={contactData.textArea}
               ></textarea>
             </div>
           </div>
@@ -85,7 +86,7 @@ export default function ContactContainer() {
             <input
               className="m-1 my-2 custom__submit mt-5  "
               type="submit"
-              value="Submit"
+              value={contactData.submitButton}
             />
           </div>
         </form>
