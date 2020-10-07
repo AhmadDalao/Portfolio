@@ -14,7 +14,6 @@ export default class Main extends Component {
   render() {
     return (
       <>
-        {/*  جرب تعمل كومبوننت للست وتعمل لوب عليها وتستدعيها بصفحة الكولر كونتينار */}
         <ColorContainer />
         <HeaderContainer />
         <HeaderInfoContainer />

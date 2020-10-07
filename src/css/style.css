@@ -81,7 +81,6 @@ body {
 .header-info .custom__button,
 .resume .custom__button {
   padding: var(--font-size-small, 1.5rem);
-  overflow: hidden;
   display: inline-block;
   color: var(--main-color, #2ecc71);
   border-color: var(--main-color, #2ecc71);
@@ -94,12 +93,12 @@ body {
 .custom__button {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .custom__button::before {
   content: "";
   top: 0;
-  bottom: 0;
   left: -100%;
   background-color: var(--main-color, #2ecc71);
   border-color: var(--main-color, #2ecc71);
@@ -113,6 +112,7 @@ body {
 
 .custom__button:hover::before {
   left: 0;
+  top: 0;
 }
 
 .custom__shadow {
@@ -327,7 +327,7 @@ ul.color-list-default li:first-child {
 
 .portfolio .card-item .link-holder a {
   color: var(--main-color, #2ecc71);
-  border: 1px solid var(--main-color);
+  border: 0.1px solid var(--main-color);
   text-decoration: none;
   border-radius: 4px;
   font-weight: 700;

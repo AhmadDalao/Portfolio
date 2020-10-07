@@ -1,8 +1,11 @@
 import React from "react";
 
+/*
+ *
+ * @param {props} is getting it's data through the HeaderInfoContainer.js
+ *
+ */
 export default function HeaderInfo(props) {
-  console.log(props.name + " headerInfo");
-
   return (
     <>
       <h1 className="mt-0 mb-0">{props.name}</h1>
@@ -15,7 +18,7 @@ export default function HeaderInfo(props) {
         rel="noopener "
         target="_blank "
       >
-        <i className={`${props.fontIcon}`}></i> download resume
+        <i className={`${props.fontIcon}`}></i> {props.AnchorText}
       </a>
     </>
   );

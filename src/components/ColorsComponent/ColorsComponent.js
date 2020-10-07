@@ -1,5 +1,10 @@
 import React from "react";
 
+/*
+ *
+ * @param {props} is getting it's data through the ColorContainer.js
+ *
+ */
 export default function ColorComponent(props) {
   return (
     <li

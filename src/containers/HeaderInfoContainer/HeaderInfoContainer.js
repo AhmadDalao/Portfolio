@@ -13,6 +13,7 @@ export default function HeaderInfoContainer() {
               job={headerInfo.job}
               resumeLink={headerInfo.resumeLink}
               fontIcon={headerInfo.fontIcon}
+              AnchorText={headerInfo.AnchorText}
             />
           </div>
         </div>

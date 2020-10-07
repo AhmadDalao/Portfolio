@@ -1,5 +1,10 @@
 import React from "react";
 
+/*
+ *
+ * @param {props} is getting it's data through the HeaderContainer.js
+ *
+ */
 export default function NavbarLinks(props) {
   return (
     <>
