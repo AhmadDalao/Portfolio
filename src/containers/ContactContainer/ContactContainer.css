@@ -1,0 +1,50 @@
+.contact .my__form input[type="text"],
+.contact .my__form input[type="email"],
+.contact .my__form textarea {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.contact .my__form .textarea__group,
+.contact .my__form textarea {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .contact .my__form .textarea__group,
+  .contact .my__form textarea {
+    height: 200px;
+  }
+}
+
+input[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 150px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  border: none;
+  background-color: var(--submit-hover);
+}
+
+.hidden {
+  display: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="submit"]:focus {
+  font-weight: 500;
+  outline: 1px solid var(--main-color);
+}

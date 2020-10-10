@@ -1,0 +1,28 @@
+.color-list-li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+.color-list-style li:first-child {
+  background-color: #fb7813;
+}
+
+.color-list-style li:nth-child(2) {
+  background-color: #f54291;
+}
+
+.color-list-style li:nth-child(3) {
+  background-color: #0779e4;
+}
+
+.color-list-style li:nth-child(4) {
+  background-color: #efa8e4;
+}
+
+.color-list-style li:last-child {
+  background-color: #fd5e53;
+}

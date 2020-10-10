@@ -1,0 +1,10 @@
+.navbar {
+  transition: background 0.3s ease-in-out;
+}
+.nav-transparent {
+  background-color: transparent;
+}
+
+.navbar.nav-colored {
+  background-color: var(--navbar-color, #313132);
+}

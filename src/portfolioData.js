@@ -7,6 +7,10 @@ const colorContainerData = {
   paragraphTwo: `default color`,
 };
 
+const defaultColor = {
+  defaultColor: "#2ecc71",
+};
+
 const colorList = [
   { id: 1, color: "#fb7813" },
   { id: 2, color: "#f54291" },
@@ -303,6 +307,7 @@ const copyright = {
 };
 
 export {
+  defaultColor,
   colorContainerData,
   colorList,
   navbarLinks,

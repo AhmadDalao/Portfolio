@@ -1,8 +1,7 @@
-import $ from "jquery";
+import "jquery";
 import "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle";
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import "./css/bootstrap.min.css";
 import "./css/normalize.css";

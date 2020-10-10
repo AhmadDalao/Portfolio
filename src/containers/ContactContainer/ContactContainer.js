@@ -1,5 +1,6 @@
 import React from "react";
 import { contactData } from "../../portfolioData";
+import "./ContactContainer.css";
 
 export default function ContactContainer() {
   return (

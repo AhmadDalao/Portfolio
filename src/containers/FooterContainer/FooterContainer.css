@@ -1,0 +1,8 @@
+.footer {
+  background-color: var(--navbar-color, #313132);
+  font-weight: 500;
+}
+
+.footer__h2 {
+  color: rgba(255, 255, 255, 0.6);
+}

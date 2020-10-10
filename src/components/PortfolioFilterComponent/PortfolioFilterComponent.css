@@ -1,0 +1,23 @@
+.custom__active {
+  color: var(--main-color);
+}
+.gallery__list--item {
+  transition: color 0.3s ease;
+}
+.gallery__list--item:hover {
+  cursor: pointer;
+  color: var(--main-color);
+}
+
+.gallery__list--item:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin-left: 0.7rem;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .gallery__list--item {
+    font-size: 1.1rem;
+  }
+}

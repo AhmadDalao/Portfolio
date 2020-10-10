@@ -3,6 +3,7 @@ import NavbarLinks from "../../components/Navbar/NavbarLinks/NavbarLinks";
 import NavbarIcon from "../../components/Navbar/NavbarIcon/NavbarIcon";
 import NavbarLogo from "../../components/Navbar/NavbarLogo/NavbarLogo";
 import { navbarLinks, logoData } from "../../portfolioData";
+import "./HeaderContainer.css";
 
 export default function HeaderContainer() {
   const navbar_anchor = navbarLinks.map((item) => {

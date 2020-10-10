@@ -1,0 +1,29 @@
+.header-info p,
+.header-info a {
+  line-height: 2.25rem;
+  color: var(--color-white);
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 576px) {
+  .header-info a {
+    font-size: var(--font-size-info, 1.35rem);
+  }
+}
+
+.header-info h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.header-info .custom__button {
+  border: 1px solid var(--border-color);
+  color: var(--color-white);
+}
+
+.header-info .custom__button:hover {
+  border: 1px solid var(--main-color);
+}

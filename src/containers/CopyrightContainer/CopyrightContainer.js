@@ -1,5 +1,6 @@
 import React from "react";
 import { copyright } from "../../portfolioData";
+import "./CopyrightContainer.css";
 
 export default function CopyrightContainer() {
   return (

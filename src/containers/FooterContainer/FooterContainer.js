@@ -1,6 +1,7 @@
 import React from "react";
 import { FooterData, footerSocialData } from "../../portfolioData";
 import FooterSocial from "../../components/FooterSocial/FooterSocial";
+import "./FooterContainer.css";
 
 export default function FooterContainer() {
   const social = footerSocialData.map((item) => {

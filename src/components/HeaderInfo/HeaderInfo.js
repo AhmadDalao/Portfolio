@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./HeaderInfo.css";
 /*
  *
  * @param {props} is getting it's data through the HeaderInfoContainer.js

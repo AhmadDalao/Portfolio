@@ -1,0 +1,16 @@
+.header-info {
+  align-items: center;
+  display: flex;
+  padding-top: calc(var(--padding-big, 6rem) + 94px);
+  padding-bottom: var(--padding-big, 6rem);
+  text-align: center;
+  color: var(--color-white);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/image.jpg");
+  background-repeat: no-repeat;
+  /*  this line may cause an issue on mac users  */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+}

@@ -1,0 +1,5 @@
+.navbar .nav-link:hover .custom__underline::before {
+  width: 100%;
+  color: var(--main-color, #2ecc71);
+  transition: width 0.3s ease, color 0.3s ease;
+}

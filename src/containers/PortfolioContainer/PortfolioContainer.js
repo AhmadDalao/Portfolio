@@ -6,6 +6,7 @@ import {
   portfolioList,
   portfolioSection,
 } from "../../portfolioData";
+import "./PortfolioContainer.css";
 
 export default function PortfolioContainer() {
   const projects = projectsData.map((item) => {

@@ -1,11 +1,7 @@
 import $ from "jquery";
 export function main() {
-  console.log("i'm working ");
   let myNav = document.getElementById("navbar"),
-    icon = document.querySelector(".my-container"),
-    myColor = document.querySelectorAll(".color-change"),
-    list,
-    filter_list;
+    list;
 
   /* this is  the custom attribute name  which value is to be changed */
   const changeMe = "--main-color";
@@ -103,7 +99,6 @@ export function main() {
 
   /* if scrolling add the background color to the navbar */
   window.onscroll = function () {
-    "use strict";
     if (
       document.body.scrollTop >= 250 ||
       document.documentElement.scrollTop >= 250

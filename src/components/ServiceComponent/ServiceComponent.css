@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+  .service-item > h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-me .service-item > .h2__style {
+    font-size: 1.2rem;
+  }
+}
+
+.service-item > figure img {
+  height: 150px;
+  width: 180px;
+  max-height: 150px;
+}
+
+.service-detail {
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  background-color: var(--main-color, #2ecc71);
+  color: var(--color-white, white);
+  transition: left 0.3s ease;
+}
+
+.service-item:hover .service-detail {
+  left: 0;
+}

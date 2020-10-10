@@ -1,0 +1,4 @@
+.copyright {
+  background-color: var(--submit-footer-icon-background, #191e22);
+  color: var(--color-white);
+}

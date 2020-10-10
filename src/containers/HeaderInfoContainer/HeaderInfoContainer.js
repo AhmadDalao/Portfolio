@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderInfo from "../../components/HeaderInfo/HeaderInfo";
 import { headerInfo } from "../../portfolioData";
+import "./HeaderInfoContainer.css";
 
 export default function HeaderInfoContainer() {
   return (

@@ -1,0 +1,3 @@
+.navbar .logo span {
+  color: var(--main-color, #2ecc71);
+}

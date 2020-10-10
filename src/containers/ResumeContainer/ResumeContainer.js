@@ -1,5 +1,6 @@
 import React from "react";
 import { resumeData } from "../../portfolioData";
+import "./ResumeContainer.css";
 
 export default function ResumeContainer() {
   return (

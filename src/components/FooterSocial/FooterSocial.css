@@ -1,0 +1,15 @@
+a.footer__icon {
+  color: var(--color-white);
+  font-size: 24px;
+  border: 2px solid var(--border-color);
+  height: 58px;
+  width: 58px;
+  top: 0;
+  transition: background-color 0.3s ease, color 0.3s ease, top 0.3s ease;
+}
+
+a.footer__icon:hover {
+  top: -5px;
+  color: var(--submit-footer-icon-background, #191e22);
+  background-color: var(--section-background-color, #f2f2f2);
+}

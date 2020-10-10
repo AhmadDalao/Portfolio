@@ -1,0 +1,35 @@
+.resume::before {
+  content: "";
+  border: 60px solid var(--section-background-color, #f2f2f2);
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 106%;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+.resume a {
+  line-height: 2.25rem;
+  color: var(--color-white);
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 576px) {
+  .resume a {
+    font-size: var(--font-size-info, 1.35rem);
+  }
+}
+.resume .custom__button {
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--main-color);
+}
+
+.resume .custom__button:hover {
+  color: white;
+}

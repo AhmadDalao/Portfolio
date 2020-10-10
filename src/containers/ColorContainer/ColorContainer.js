@@ -1,6 +1,12 @@
 import React from "react";
-import { colorList, colorContainerData } from "../../portfolioData";
+import {
+  colorList,
+  colorContainerData,
+  defaultColor,
+} from "../../portfolioData";
 import ColorComponent from "../../components/ColorsComponent/ColorsComponent";
+// importing CSS
+import "./ColorContainer.css";
 
 export default function ColorContainer() {
   const colors = colorList.map((color) => {
@@ -27,8 +33,12 @@ export default function ColorContainer() {
       </ul>
       <hr />
       <p>{colorContainerData.paragraphTwo}</p>
+      {/* default color container */}
       <ul className="color-list-style color-list-default">
-        <li className="color-list-li" data-color="#2ecc71"></li>
+        <li
+          className="color-list-li"
+          data-color={defaultColor.defaultColor}
+        ></li>
       </ul>
     </section>
   );
