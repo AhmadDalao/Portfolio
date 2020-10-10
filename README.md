@@ -12,15 +12,15 @@ Just change the data inside of **`src/portfolioData.js`** to get your personal p
 
 ## Sections
 
-### ✔️ Header\
-### ✔️ Portfolio\
-### ✔️ Skills\
-### ✔️ About me\
-### ✔️ Services\
-### ✔️ Resume\
-### ✔️ Contact me\
-### ✔️ Find me on ( Social )\
-### ✔️ Copyright\
+##### ✔️ Header\
+##### ✔️ Portfolio\
+##### ✔️ Skills\
+##### ✔️ About me\
+##### ✔️ Services\
+##### ✔️ Resume\
+##### ✔️ Contact me\
+##### ✔️ Find me on ( Social )\
+##### ✔️ Copyright\
 
 
 ## Getting Started
