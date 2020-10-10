@@ -17,14 +17,14 @@
 
 ## Sections
 
- ✔️ Header \
- ✔️ Portfolio \
- ✔️ Skills \
- ✔️ About me \ 
- ✔️ Services \
- ✔️ Resume \
- ✔️ Contact me \ 
- ✔️ Find me on ( Social ) \ 
+ ✔️ Header\
+ ✔️ Portfolio\
+ ✔️ Skills\
+ ✔️ About me\ 
+ ✔️ Services\
+ ✔️ Resume\
+ ✔️ Contact me\ 
+ ✔️ Find me on ( Social )\ 
  ✔️ Copyright
 
 
