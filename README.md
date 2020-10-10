@@ -30,14 +30,13 @@
 ✔️ Find me on ( Social )\
 ✔️ Copyright
 
-<br>
-<br>
 
+<br>
+<br>
 
 ## Getting Started
 
-<br>
-<br>
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 You'll need **Git** and **Node.js** (which comes with npm) installed on your computer.
@@ -116,8 +115,6 @@ const headerInfo = {
 ## Illustrations
 - [UnDraw](https://undraw.co/illustrations)
 
-<br>
-<br>
 
 <br>
     <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/src/images/page.jpg"  width="1000"/>
