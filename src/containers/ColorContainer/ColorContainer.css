@@ -20,17 +20,15 @@
 }
 
 .color-container .custom-span {
-  transform: translate(-50%, -50%);
   height: 15px;
   cursor: pointer;
   width: 15px;
   padding: 16px;
-  /* top: 16.5px; */
-  top: 15.8px;
-  right: -47px;
-  background-color: white;
+  top: 0;
+  right: -32px;
+  background-color: #fff;
   position: absolute;
-  box-shadow: 0.05rem 0.05rem 0rem 0.01rem rgba(0, 0, 0, 0.17);
+  box-shadow: 0.05rem 0.05rem 0 0.01rem rgba(0, 0, 0, 0.17);
 }
 
 .color-container p {
