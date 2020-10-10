@@ -12,7 +12,7 @@
 - [Sections](#sections)
 - [Getting Started](#getting-started)
 - [How to Use](#how-to-use)
-- [Changes and customization](#Change-and-customize-every-section-according-to-your-need.)
+- [Changes and customization](#change-and-customize-every-section-according-to-your-need)
 
 
 ## Sections
