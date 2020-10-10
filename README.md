@@ -1,6 +1,6 @@
 # Portfolio website
 
-### I designed and built A clean, beautiful and responsive portfolio template for everyone! and it is built using Bootstrap ,jQuery and React.
+### I designed and built a clean, beautiful and responsive portfolio template for everyone! and it is built using Bootstrap ,jQuery and React.
 
 
 -[Live Demo]: https://dalao.netlify.app/
