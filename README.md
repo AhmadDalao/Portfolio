@@ -17,15 +17,15 @@
 
 ## Sections
 
- ✔️ Header\
- ✔️ Portfolio\
- ✔️ Skills\
- ✔️ About\ 
- ✔️ Services\
- ✔️ Resume\
- ✔️ Contact\ 
- ✔️ Find me on ( Social )\ 
- ✔️ Copyright
+✔️ Header\
+✔️ Portfolio\
+✔️ Skills\
+✔️ About\ 
+✔️ Services\
+✔️ Resume\
+✔️ Contact\ 
+✔️ Find me on ( Social )\
+✔️ Copyright
 
 
 ## Getting Started
