@@ -8,6 +8,12 @@
 <br>
 <br>
 
+## Table of Contents
+- [Sections](#sections)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+- [Changes and customization](#Change-and-customize-every-section-according-to-your-need.)
+
 Just change the data inside of **`src/portfolioData.js`** to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
 
 ## Sections
@@ -56,7 +62,7 @@ $ npm start
 
 ## Change and customize every section according to your need.
 
-As I mentioned before to get Personalized page content navigate to /src/portfolioData.js and modify the data  based upon your information.
+As I mentioned before to get Personalized page content navigate to `/src/portfolioData.js` and modify the data  based upon your information.
 
 ```
 const colorContainerData = {
