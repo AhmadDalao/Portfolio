@@ -15,6 +15,9 @@
 - [Changes and customization](#change-and-customize-every-section-according-to-your-need)
 - [Illustrations](#illustrations)
 
+<br>
+<br>
+
 ## Sections
 
 ✔️ Header\
@@ -27,9 +30,14 @@
 ✔️ Find me on ( Social )\
 ✔️ Copyright
 
+<br>
+<br>
+
 
 ## Getting Started
 
+<br>
+<br>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 You'll need **Git** and **Node.js** (which comes with npm) installed on your computer.
@@ -39,6 +47,8 @@ node@v10.16.0 or higher
 npm@6.9.0 or higher
 git@2.17.1 or higher
 ```
+<br>
+<br>
 
 ## How To Use
 
@@ -58,6 +68,8 @@ $ npm install
 $ npm start
 ```
 
+<br>
+<br>
 
 ## Change and customize every section according to your need.
 
@@ -98,11 +110,14 @@ const headerInfo = {
 
 ```
 
+<br>
+<br>
 
 ## Illustrations
 - [UnDraw](https://undraw.co/illustrations)
 
-
+<br>
+<br>
 
 <br>
     <img src="https://raw.githubusercontent.com/AhmadDalao/Portfolio/master/src/images/page.jpg"  width="1000"/>
