@@ -20,10 +20,10 @@
 ✔️ Header\
 ✔️ Portfolio\
 ✔️ Skills\
-✔️ About\ 
+✔️ About\
 ✔️ Services\
 ✔️ Resume\
-✔️ Contact\ 
+✔️ Contact\
 ✔️ Find me on ( Social )\
 ✔️ Copyright
 
