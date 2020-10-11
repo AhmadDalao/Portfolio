@@ -72,7 +72,7 @@ $ npm start
 
 ## Change and customize every section according to your need.
 
-To get personalized page content navigate to  **`src/portfolioData.js`** and just and modify the data inside to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
+To get personalized page content navigate to  **`src/portfolioData.js`** and just modify the data inside to get your personal portfolio. Feel free to use it as-is or customize it as much as you want.
 
 ```
 const colorContainerData = {
