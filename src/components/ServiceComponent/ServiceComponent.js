@@ -10,7 +10,7 @@ import "./ServiceComponent.css";
 export default function ServiceComponent(props) {
   return (
     <article className="col-sm-12 col-md-6 col-lg-5 my-2 mb-3">
-      <div className="service-item overflow-hidden position-relative custom__shadow">
+      <div className="service-item overflow-hidden position-relative">
         <h3 className="h2__style text-uppercase d-block position-relative my-3">
           {props.serviceName}
         </h3>
