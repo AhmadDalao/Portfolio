@@ -94,7 +94,7 @@ const projectsData = [
   },
   {
     id: 6,
-    liveDemo: "https://eqrateam.netlify.app/",
+    liveDemo: "https://eqra2.netlify.app/",
     projectName: "eqrateam",
     imgURL: require("./images/eqra.jpg"),
     liveDemoText: "Live Demo",
