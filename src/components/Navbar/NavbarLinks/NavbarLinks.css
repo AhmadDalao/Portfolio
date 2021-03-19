@@ -3,3 +3,7 @@
   color: var(--main-color, #2ecc71);
   transition: width 0.3s ease, color 0.3s ease;
 }
+.navbar-light .navbar-nav .nav-link {
+  /* color: rgba(0, 0, 0, 0.6); */
+  color: var(--text-color, #222831b7);
+}

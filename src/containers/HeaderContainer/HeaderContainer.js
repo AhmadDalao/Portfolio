@@ -30,7 +30,7 @@ export default function HeaderContainer() {
   return (
     <header className="header  fixed-top w-100">
       {/* <!-- Navigation bar   fixed-top --> */}
-      <nav className="navbar navbar-expand-md  navbar-dark py-3" id="navbar">
+      <nav className="navbar navbar-expand-md navbar-light  py-3" id="navbar">
         <div className="container">
           {logoDetails}
           {/* hamburger icon */}

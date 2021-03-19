@@ -9,7 +9,7 @@
   font-size: var(--side-font, 0.875rem);
   transform: translateY(-60%);
   background-color: var(--color-white);
-  box-shadow: 0.1rem 0.1rem 1.2rem 0.2rem rgba(0, 0, 0, 0.17);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   z-index: 999;
   transition: left 0.3s ease;
 }
@@ -28,7 +28,7 @@
   right: -32px;
   background-color: #fff;
   position: absolute;
-  box-shadow: 0.05rem 0.05rem 0 0.01rem rgba(0, 0, 0, 0.17);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .color-container p {

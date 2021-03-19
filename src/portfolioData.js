@@ -43,6 +43,9 @@ const headerInfo = {
   fontIcon: "fas fa-download",
   AnchorText: "download resume",
 };
+const headerImage = {
+  headerImage_src: require("./images/header_image.jpg"),
+};
 const projectsData = [
   {
     id: 1,
@@ -313,6 +316,7 @@ export {
   navbarLinks,
   logoData,
   headerInfo,
+  headerImage,
   projectsData,
   portfolioList,
   portfolioSection,

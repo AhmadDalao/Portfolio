@@ -1,0 +1,7 @@
+.image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  height: 100%;
+}

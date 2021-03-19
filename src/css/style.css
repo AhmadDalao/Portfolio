@@ -19,7 +19,8 @@ body {
 
 :root {
   /* colors */
-  --text-color: #222831b7;
+  /* --text-color: #222831b7; */
+  --text-color: #14181db7;
   --main-color: #2ecc71;
   --submit-hover: #1c9950;
   --secondary: #2c3e50;

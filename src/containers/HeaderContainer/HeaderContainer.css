@@ -1,15 +1,5 @@
-/* .header {
+.navbar {
+  background-color: white;
   box-shadow: 0 1px 2px rgba(16, 16, 17, 0.02),
     0 3.4px 8px rgba(16, 16, 17, 0.007), 0 12px 30px rgba(16, 16, 17, 0.003);
-} */
-
-.navbar {
-  transition: background 0.3s ease-in-out;
-}
-.nav-transparent {
-  background-color: transparent;
-}
-
-.navbar.nav-colored {
-  background-color: var(--navbar-color, #313132);
 }

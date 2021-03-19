@@ -1,7 +1,7 @@
 .header-info p,
 .header-info a {
   line-height: 2.25rem;
-  color: var(--color-white);
+  color: var(--text-color);
   margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: 300;
@@ -21,9 +21,11 @@
 
 .header-info .custom__button {
   border: 1px solid var(--border-color);
-  color: var(--color-white);
+  color: var(--text-color);
+  transition: all 0.4s ease;
 }
 
 .header-info .custom__button:hover {
   border: 1px solid var(--main-color);
+  color: var(--color-white);
 }

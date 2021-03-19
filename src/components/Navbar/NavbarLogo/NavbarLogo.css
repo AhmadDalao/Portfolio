@@ -1,3 +1,6 @@
 .navbar .logo span {
   color: var(--main-color, #2ecc71);
 }
+.navbar-light .navbar-brand {
+  color: var(--text-color);
+}

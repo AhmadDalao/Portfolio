@@ -23,7 +23,7 @@ export default function HeaderInfo(props) {
     <>
       <h1 className="mt-0 mb-0">{props.name}</h1>
       <p className="">{props.job}</p>
-      <div className="p-1">{social}</div>
+      <div className="p-1 header__social">{social}</div>
       <a
         className="custom__button"
         aria-label="Download Resume"

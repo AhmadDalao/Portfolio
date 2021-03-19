@@ -11,14 +11,14 @@ export default function NavbarLinks(props) {
     <>
       <li
         id={props.label__span__title}
-        className="text-capitalize nav-item"
+        className="text-capitalize font-font-weight-light nav-item"
         data-target=".navbar-collapse.show"
         data-toggle="collapse"
       >
         <a
           href={props.navigateTo}
           aria-label={props.label__span__title}
-          className="nav-link position-relative text-uppercase my-2 my-sm-0"
+          className="nav-link position-relative  my-2 my-sm-0"
         >
           <span
             data-title={props.label__span__title}

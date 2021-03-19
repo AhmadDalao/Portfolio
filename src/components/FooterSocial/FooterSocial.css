@@ -1,7 +1,7 @@
 a.footer__icon {
   color: var(--color-white);
   font-size: 24px;
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   height: 58px;
   width: 58px;
   top: 0;
@@ -12,4 +12,9 @@ a.footer__icon:hover {
   top: -5px;
   color: var(--submit-footer-icon-background, #191e22);
   background-color: var(--section-background-color, #f2f2f2);
+}
+
+.header__social a.footer__icon:hover {
+  color: var(--color-white);
+  background-color: var(--text-color, #222831b7);
 }
