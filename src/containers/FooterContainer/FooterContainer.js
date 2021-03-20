@@ -18,10 +18,7 @@ export default function FooterContainer() {
   return (
     <footer className="footer py-5 text-center" role="contentinfo">
       <section className="container">
-        <h2
-          className="h2__style footer__h2 text-uppercase d-inline-block position-relative custom__underline mb-4"
-          data-title={FooterData.FooterText}
-        >
+        <h2 className="h2__style footer__h2 text-uppercase d-inline-block position-relative  mb-4">
           {FooterData.FooterText}
         </h2>
         <div className="p-1">{social}</div>

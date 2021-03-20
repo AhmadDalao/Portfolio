@@ -1,8 +1,10 @@
 .footer {
-  background-color: var(--navbar-color, #313132);
+  /* background-color: var(--navbar-color, #313132); */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   font-weight: 500;
 }
 
 .footer__h2 {
-  color: rgba(255, 255, 255, 0.6);
+  /* color: rgba(255, 255, 255, 0.6); */
+  color: var(--color-white);
 }

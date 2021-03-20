@@ -1,4 +1,5 @@
 .copyright {
-  background-color: var(--submit-footer-icon-background, #191e22);
+  /* background-color: var(--submit-footer-icon-background, #191e22); */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   color: var(--color-white);
 }

@@ -17,4 +17,6 @@ a.footer__icon:hover {
 .header__social a.footer__icon:hover {
   color: var(--color-white);
   background-color: var(--text-color, #222831b7);
+  /* background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }

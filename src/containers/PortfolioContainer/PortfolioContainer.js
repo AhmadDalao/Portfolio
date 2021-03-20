@@ -38,7 +38,7 @@ export default function PortfolioContainer() {
 
   return (
     <section
-      className="portfolio padding-top-bottom text-center custom__outline"
+      className="portfolio custom__background padding-top-bottom text-center custom__outline"
       id={portfolioSection.title}
     >
       <div className="container">

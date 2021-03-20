@@ -41,6 +41,10 @@
   text-transform: capitalize;
   z-index: 1;
 }
+.card__detail {
+  color: var(--text-color);
+}
+
 .portfolio .card-item .link-holder a:not(:first-child) {
   margin-right: 1rem;
 }
@@ -59,7 +63,8 @@
   content: "";
   height: 100%;
   width: 100%;
-  background-color: var(--main-color, #2ecc71);
+  /* background-color: var(--main-color, #2ecc71); */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   transition: all 0.4s ease;
 }
 
@@ -75,7 +80,8 @@
 .card-img-top {
   border-radius: 0;
 }
-@media (min-width: 1200px) {
+
+@media (min-width: 992px) {
   .portfolio .card-item:nth-child(odd) .card__container {
     order: 6;
   }

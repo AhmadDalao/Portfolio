@@ -44,7 +44,7 @@ const headerInfo = {
   AnchorText: "download resume",
 };
 const headerImage = {
-  headerImage_src: require("./images/header_image.jpg"),
+  headerImage_src: require("./images/header_image-Recovered-Recovered.png"),
 };
 const projectsData = [
   {

@@ -20,7 +20,9 @@ body {
 :root {
   /* colors */
   /* --text-color: #222831b7; */
-  --text-color: #14181db7;
+  /* --text-color: #14181db7; */
+  --text-color: #636e72;
+  /* --text-color: #2d3436; */
   --main-color: #2ecc71;
   --submit-hover: #1c9950;
   --secondary: #2c3e50;
@@ -29,7 +31,7 @@ body {
   --background-color: #555;
   --border-color: #cccccc;
   --a-background-hover-icon: #f8f9fa;
-  --section-background-color: #f2f2f2;
+  --section-background-color: #eceff1;
   --submit-footer-icon-background: #191e22;
   --slideshow-background: #f1f1f1f1;
   /* space */
@@ -37,6 +39,22 @@ body {
   --padding-normal: 1rem;
   --padding-small: 0.5rem;
   --side-font: 0.875rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 /* ============================ reusable classes ============================ */
@@ -50,7 +68,8 @@ body {
 }
 
 .custom__background {
-  background-color: var(--section-background-color, #f2f2f2);
+  /* background-color: var(--section-background-color, #f2f2f2); */
+  background-color: var(--section-background-color, #eceff1);
 }
 
 .custom__underline {
@@ -101,8 +120,10 @@ body {
   content: "";
   top: 0;
   left: -100%;
-  background-color: var(--main-color, #2ecc71);
-  border-color: var(--main-color, #2ecc71);
+  /* background-color: var(--main-color, #2ecc71); */
+  /* background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%); */
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  border-color: white;
   border-radius: 1rem;
   z-index: -1;
   height: 100%;

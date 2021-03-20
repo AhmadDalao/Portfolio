@@ -9,10 +9,10 @@ import "./PortfolioComponent.css";
 
 export default function PortfolioComponent(props) {
   return (
-    <article className={`card-item ${props.filter__word} all col-12`}>
-      <div className="wrapper card my-4 my-xl-0">
+    <article className={`card-item ${props.filter__word} my-4  all col-12`}>
+      <div className="wrapper card shadow-sm my-lg-0">
         <div className="row card__detail--wrapper no-gutters">
-          <div className="card__container col-12 col-xl-6">
+          <div className="card__container col-12 col-lg-6">
             <a
               aria-label={props.liveDemoText}
               rel="noopener "
@@ -28,14 +28,14 @@ export default function PortfolioComponent(props) {
               </figure>
             </a>
           </div>
-          <div className="card__detail--holder align-self-center my-5 p-3 col-12 col-xl-6">
+          <div className="card__detail--holder position-relative align-self-center p-3 p-lg-5 py-5 col-12  col-lg-6">
             <div className="card__detail text-left ">
               <h3 className="text-capitalize mb-3">{props.projectName}</h3>
-              <p className="lead mb-0">{props.project__info}</p>
+              <p className="mb-0">{props.project__info}</p>
             </div>
             <div className="link-holder d-inline-block mt-4 w-100">
               <a
-                className="mr-3 mb-3 mb-md-0 btn btn-lg"
+                className="btn btn-md-lg"
                 aria-label={props.liveDemoText}
                 rel="noopener "
                 target="_blank "
@@ -46,7 +46,7 @@ export default function PortfolioComponent(props) {
               </a>
               <a
                 style={{ display: !props.sourceURL && "none" }}
-                className=" mb-3 mb-md-0 btn btn-lg"
+                className="  btn btn-md-lg"
                 aria-label={props.sourceCodeText}
                 rel="noopener "
                 target="_blank "
