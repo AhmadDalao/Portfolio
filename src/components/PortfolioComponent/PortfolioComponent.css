@@ -1,6 +1,9 @@
+.portfolio figure {
+  height: 100%;
+}
+
 .portfolio .card__image {
-  height: 300px;
-  width: 100%;
+  height: inherit;
 }
 
 .portfolio .card-item h3 {
@@ -21,7 +24,6 @@
 
 @media (min-width: 768px) {
   .portfolio .card-item h3 {
-    color: var(--main-color);
     font-size: 1.5rem;
   }
 }
@@ -38,6 +40,9 @@
   overflow: hidden;
   text-transform: capitalize;
   z-index: 1;
+}
+.portfolio .card-item .link-holder a:not(:first-child) {
+  margin-right: 1rem;
 }
 
 .portfolio .card-item .link-holder a:hover {
@@ -62,15 +67,16 @@
   right: 0;
 }
 
-@media (max-width: 767px) {
-  .portfolio .card-item .link-holder a {
-    border-radius: 0;
-    font-weight: 700;
-    width: 100%;
-  }
+.portfolio .card-item > div.card {
+  border-radius: 0;
+  border: none;
 }
-@media only screen and (min-width: 768px) {
-  .card-item > p {
-    padding: var(--padding-normal, 1rem);
+.card-img,
+.card-img-top {
+  border-radius: 0;
+}
+@media (min-width: 1200px) {
+  .portfolio .card-item:nth-child(odd) .card__container {
+    order: 6;
   }
 }

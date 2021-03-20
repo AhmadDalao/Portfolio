@@ -16,6 +16,7 @@ export default function PortfolioContainer() {
         liveDemo={item.liveDemo}
         projectName={item.projectName}
         imgURL={item.imgURL}
+        project__info={item.project__info}
         liveDemoText={item.liveDemoText}
         sourceCodeText={item.sourceCodeText}
         sourceURL={item.sourceURL}

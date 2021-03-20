@@ -53,6 +53,8 @@ const projectsData = [
     projectName: "eqrateam",
     imgURL: require("./images/eqra.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I designed and built 7 responsive pages and a landing page for eqraTeam and it is built using pure HTML CSS and JavaScript.",
     sourceCodeText: "Source Code",
     filter__word: "bootstrap",
   },
@@ -62,6 +64,8 @@ const projectsData = [
     projectName: "graphy",
     imgURL: require("./images/graphy.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I built and designed a responsive page for photographers and it is built using HTML, CSS, JavaScript, jQuery and Bootstrap.",
     sourceCodeText: "Source Code",
     sourceURL: "https://github.com/AhmadDalao/Graphy ",
     filter__word: "bootstrap",
@@ -72,6 +76,8 @@ const projectsData = [
     projectName: "general power lightning",
     imgURL: require("./images/general.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I designed and built a responsive landing page for general power lightning. Technologies used HTML5 CSS3 Bootstrap jQuery.",
     sourceCodeText: "Source Code",
     filter__word: "bootstrap",
   },
@@ -81,6 +87,8 @@ const projectsData = [
     projectName: "bootstrap-start",
     imgURL: require("./images/bootstrap_start.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I built a responsive page for portfolio projects and it is built using HTML CSS Bootstrap and JavaScript.",
     sourceCodeText: "Source Code",
     sourceURL: "https://github.com/AhmadDalao/Bootstrap-Start ",
     filter__word: "bootstrap",
@@ -91,6 +99,8 @@ const projectsData = [
     projectName: "mountain travel",
     imgURL: require("./images/travel.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I designed and built a responsive page for a travel agency and it is built using HTML CSS Bootstrap and JavaScript.",
     sourceCodeText: "Source Code",
     sourceURL: "https://github.com/AhmadDalao/Mountain-Travel ",
     filter__word: "bootstrap",
@@ -101,6 +111,8 @@ const projectsData = [
     projectName: "AXIT",
     imgURL: require("./images/axit.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "I built a responsive landing page for a startup, Technologies used HTML5 CSS3 Bootstrap jQuery.",
     sourceCodeText: "Source Code",
     filter__word: "bootstrap",
   },
@@ -120,6 +132,8 @@ const projectsData = [
     projectName: "memory game",
     imgURL: require("./images/memory.jpg"),
     liveDemoText: "Live Demo",
+    project__info:
+      "This is a complete browser-based card matching game. Built using HTML CSS Bootstrap and JavasScript",
     sourceCodeText: "Source Code",
     sourceURL: "https://github.com/AhmadDalao/MemoryGame",
     filter__word: "javaScript",
