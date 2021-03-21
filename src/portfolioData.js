@@ -246,25 +246,28 @@ const servicesData = [
     id: 1,
     serviceName: "Web development",
     serviceImg: require("./images/undraw_version_control_9bpv.svg"),
-    serviceDescription: `I can build your ideal website from scratch.`,
+    serviceDescription:
+      "I can build your ideal website from scratch with the newest technologies.",
   },
   {
     id: 2,
     serviceName: "GRAPHIC DESIGN",
     serviceImg: require("./images/undraw_design_notes_8dmv.svg"),
-    serviceDescription: `I can design your website and make it beautiful.`,
+    serviceDescription:
+      "I can design your website and make it beautiful to right fit your test.",
   },
   {
     id: 3,
     serviceName: "UX & UI DESIGN",
     serviceImg: require("./images/undraw_design_tools_42tf.svg"),
-    serviceDescription: `I can make the user interface and experience more appealing to users.`,
+    serviceDescription:
+      "I can make the user interface and experience more appealing to users.",
   },
   {
     id: 4,
     serviceName: "SEO",
     serviceImg: require("./images/undraw_file_searching_duff.svg"),
-    serviceDescription: `Can make your website appears on top when searching.`,
+    serviceDescription: "Can make your website appears on top when searching.",
   },
 ];
 

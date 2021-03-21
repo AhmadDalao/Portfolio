@@ -2,6 +2,8 @@
   /* background-color: var(--navbar-color, #313132); */
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   font-weight: 500;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
 }
 
 .footer__h2 {

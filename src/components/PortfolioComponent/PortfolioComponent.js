@@ -31,7 +31,7 @@ export default function PortfolioComponent(props) {
             </a>
           </div>
           <div className="card__detail--holder align-self-center position-relative p-3 py-4 p-lg-4  col-12  col-lg-6">
-            <div class="details__wrapper h-100">
+            <div className="details__wrapper h-100">
               <div className="card__detail text-left ">
                 <h3 className="text-capitalize mb-3">{props.projectName}</h3>
                 <p className="mb-0">{props.project__info}</p>

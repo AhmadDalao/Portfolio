@@ -1,4 +1,5 @@
 import React from "react";
+import "./SkillContainer.css";
 import SkillsComponent from "../../components/SkillsComponent/SkillsComponent";
 import { SkillsImages, SkillsSection } from "../../portfolioData";
 

@@ -1,3 +1,6 @@
+.resume {
+  border-top-right-radius: 4rem;
+}
 .resume::before {
   content: "";
   border: 60px solid var(--section-background-color, #f2f2f2);

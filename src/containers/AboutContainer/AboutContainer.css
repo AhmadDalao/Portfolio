@@ -1,0 +1,9 @@
+.services__holder {
+  border-top: 2px solid red;
+}
+.services__holder > article {
+  border-top: 2px solid red;
+}
+section.services__holder article {
+  border-top: 2px solid red;
+}

@@ -33,7 +33,9 @@ export default function AboutContainer() {
         >
           {AboutServices.title}
         </h3>
-        <section className="row justify-content-center">{services}</section>
+        <section className="row services__holder justify-content-center">
+          {services}
+        </section>
       </div>
     </section>
   );
