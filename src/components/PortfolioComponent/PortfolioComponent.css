@@ -1,9 +1,34 @@
 .portfolio figure {
   height: 100%;
+  z-index: 1;
 }
 
 .portfolio .card__image {
   height: inherit;
+}
+.portfolio .card__container figure::after,
+.portfolio .card__container figure::before {
+  position: absolute;
+  background-size: cover;
+  background-position: right;
+  background-image: url(/static/media/circle.cfc539ea.png);
+  transform: translate(-50%, -50%) rotate(180deg);
+  filter: drop-shadow(2px 2px 6px #00d2ff) opacity(0.8);
+  z-index: -1;
+  content: "";
+}
+.portfolio .card__container figure::before {
+  height: 150px;
+  width: 150px;
+  left: 80%;
+  top: 30px;
+}
+.portfolio .card__container figure::after {
+  height: 85px;
+  width: 85px;
+  left: 3%;
+  top: 50%;
+  filter: drop-shadow(2px 2px 6px #00d2ff) opacity(0.8);
 }
 
 .portfolio .card-item h3 {
@@ -24,10 +49,26 @@
 
 @media (min-width: 768px) {
   .portfolio .card-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .portfolio .card-item p {
+    font-size: 18px;
   }
 }
 
+.card-item .card__container {
+  position: relative;
+}
+.card-item .card__container::before {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  opacity: 0.7;
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
 .portfolio .card-item .link-holder a {
   color: var(--main-color, #2ecc71);
   border: 0.1px solid var(--main-color);
@@ -35,7 +76,7 @@
   border-radius: 4px;
   font-weight: 700;
   float: right;
-  font-size: 1rem;
+  font-size: 0.75rem;
   position: relative;
   overflow: hidden;
   text-transform: capitalize;
@@ -57,19 +98,18 @@
 .portfolio .card-item .link-holder a::after {
   z-index: -1;
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -100%;
+  top: -100%;
+  right: 0;
   content: "";
   height: 100%;
   width: 100%;
-  /* background-color: var(--main-color, #2ecc71); */
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
   transition: all 0.4s ease;
 }
 
 .portfolio .card-item .link-holder a:hover::after {
-  right: 0;
+  top: 0;
+  border: 1px solid #00d2ff;
 }
 
 .portfolio .card-item > div.card {

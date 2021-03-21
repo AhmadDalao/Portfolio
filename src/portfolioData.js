@@ -51,7 +51,7 @@ const projectsData = [
     id: 1,
     liveDemo: "https://eqra2.netlify.app/",
     projectName: "eqrateam",
-    imgURL: require("./images/eqra.jpg"),
+    imgURL: require("./images/eqra.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I designed and built 7 responsive pages and a landing page for eqraTeam and it is built using pure HTML CSS and JavaScript.",
@@ -62,7 +62,7 @@ const projectsData = [
     id: 2,
     liveDemo: "https://graphy.netlify.app/",
     projectName: "graphy",
-    imgURL: require("./images/graphy.jpg"),
+    imgURL: require("./images/graphy.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I built and designed a responsive page for photographers and it is built using HTML, CSS, JavaScript, jQuery and Bootstrap.",
@@ -74,7 +74,7 @@ const projectsData = [
     id: 3,
     liveDemo: "https://general-power.netlify.app/",
     projectName: "general power lightning",
-    imgURL: require("./images/general.jpg"),
+    imgURL: require("./images/general.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I designed and built a responsive landing page for general power lightning. Technologies used HTML5 CSS3 Bootstrap jQuery.",
@@ -85,7 +85,7 @@ const projectsData = [
     id: 4,
     liveDemo: "https://ahmaddalao.github.io/Bootstrap-Start/",
     projectName: "bootstrap-start",
-    imgURL: require("./images/bootstrap_start.jpg"),
+    imgURL: require("./images/bootstrap_start.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I built a responsive page for portfolio projects and it is built using HTML CSS Bootstrap and JavaScript.",
@@ -97,7 +97,7 @@ const projectsData = [
     id: 5,
     liveDemo: "https://dalaotravel.netlify.app/",
     projectName: "mountain travel",
-    imgURL: require("./images/travel.jpg"),
+    imgURL: require("./images/travel.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I designed and built a responsive page for a travel agency and it is built using HTML CSS Bootstrap and JavaScript.",
@@ -109,7 +109,7 @@ const projectsData = [
     id: 6,
     liveDemo: "https://axit-dalao.netlify.app/",
     projectName: "AXIT",
-    imgURL: require("./images/axit.jpg"),
+    imgURL: require("./images/axit.png"),
     liveDemoText: "Live Demo",
     project__info:
       "I built a responsive landing page for a startup, Technologies used HTML5 CSS3 Bootstrap jQuery.",
@@ -130,7 +130,7 @@ const projectsData = [
     id: 8,
     liveDemo: "https://github.com/AhmadDalao/MemoryGame ",
     projectName: "memory game",
-    imgURL: require("./images/memory.jpg"),
+    imgURL: require("./images/memory.png"),
     liveDemoText: "Live Demo",
     project__info:
       "This is a complete browser-based card matching game. Built using HTML CSS Bootstrap and JavasScript",

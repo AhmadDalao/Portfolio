@@ -38,7 +38,7 @@ export default function ContactContainer() {
                 {contactData.inputName}
               </label>
               <input
-                className="w-100 my-2 form-control-lg"
+                className="w-100 my-2 form-control"
                 id="username"
                 type="text"
                 name="YourName"
@@ -50,7 +50,7 @@ export default function ContactContainer() {
                 {contactData.inputEmail}
               </label>
               <input
-                className="w-100 my-2 form-control-lg"
+                className="w-100 my-2 form-control"
                 id="email"
                 type="email"
                 name="Email"
@@ -62,7 +62,7 @@ export default function ContactContainer() {
                 {contactData.inputSubject}
               </label>
               <input
-                className="w-100 my-2 form-control-lg mb-lg-0"
+                className="w-100 my-2 form-control mb-lg-0"
                 id="subject"
                 type="text"
                 name="Subject"
@@ -76,7 +76,7 @@ export default function ContactContainer() {
                 {contactData.textArea}
               </label>
               <textarea
-                className="w-100 p-3 form-control-lg "
+                className="w-100 p-3 form-control "
                 id="message"
                 name="message"
                 placeholder={contactData.textArea}
@@ -85,7 +85,7 @@ export default function ContactContainer() {
           </div>
           <div className="input-group justify-content-start">
             <input
-              className="m-1 my-2 custom__submit mt-5  "
+              className="m-1 my-2 custom__submit mt-5 position-relative "
               type="submit"
               value={contactData.submitButton}
             />

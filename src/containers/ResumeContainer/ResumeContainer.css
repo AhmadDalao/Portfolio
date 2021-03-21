@@ -32,4 +32,5 @@
 
 .resume .custom__button:hover {
   color: white;
+  border: 1px solid #00d2ff;
 }
