@@ -11,7 +11,7 @@
   position: absolute;
   background-size: cover;
   background-position: right;
-  background-image: url(/static/media/circle.cfc539ea.png);
+  background-image: url("../../images/circle.png");
   transform: translate(-50%, -50%) rotate(180deg);
   filter: drop-shadow(2px 2px 6px #00d2ff) opacity(0.8);
   z-index: -1;
