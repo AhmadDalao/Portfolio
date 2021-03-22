@@ -61,7 +61,7 @@
 }
 .card-item .card__container::before {
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  opacity: 0.7;
+  /* opacity: 0.7; */
   content: "";
   position: absolute;
   width: 100%;
@@ -69,6 +69,33 @@
   top: 0;
   height: 100%;
 }
+
+.card-item .card__detail--holder .details__wrapper {
+  display: grid;
+  grid-template-areas:
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "card_detail"
+    "links";
+}
+
+.card__detail {
+  color: var(--text-color);
+  grid-area: card_detail;
+}
+.link-holder {
+  grid-area: links;
+}
+
 .portfolio .card-item .link-holder a {
   color: var(--main-color, #2ecc71);
   border: 0.1px solid var(--main-color);
@@ -81,9 +108,6 @@
   overflow: hidden;
   text-transform: capitalize;
   z-index: 1;
-}
-.card__detail {
-  color: var(--text-color);
 }
 
 .portfolio .card-item .link-holder a:not(:first-child) {

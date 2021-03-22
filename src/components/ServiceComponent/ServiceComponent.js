@@ -14,7 +14,9 @@ export default function ServiceComponent(props) {
         <h3 className="h5 h2__style text-left text-uppercase d-block position-relative px-3 mt-4 mb-0">
           {props.serviceName}
         </h3>
-        <p className="px-3 mb-3 mt-2 text-left">{props.serviceDescription}</p>
+        <p className="px-3 mb-3 mt-2 text-left text-muted">
+          {props.serviceDescription}
+        </p>
         <figure className="px-3 m-3 mb-4 text-right">
           <img
             className="img-fluid "
