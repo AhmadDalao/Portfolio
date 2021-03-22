@@ -26,6 +26,7 @@ export default function PortfolioComponent(props) {
                   className="card__image card-img rounded-lg"
                   src={props.imgURL}
                   alt={props.projectName}
+                  loading="lazy"
                 />
               </figure>
             </a>
