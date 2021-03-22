@@ -10,9 +10,7 @@ export default function SkillsComponent(props) {
   return (
     <article className="skill-item col-6 col-md-4 col-lg-3 p-3">
       <div className="skills__container p-2  rounded d-flex justify-content-center align-items-center">
-        <p className="mb-0 py-5 h-100 w-100  skill__name rounded">
-          {props.skillName}
-        </p>
+        <p className="mb-0 py-5 h-100 w-100 rounded">{props.skillName}</p>
       </div>
     </article>
   );

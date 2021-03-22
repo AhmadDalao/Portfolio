@@ -84,11 +84,12 @@ export default function ContactContainer() {
             </div>
           </div>
           <div className="input-group justify-content-start">
-            <input
-              className="m-1 my-2 custom__submit mt-5 position-relative "
+            <button
               type="submit"
-              value={contactData.submitButton}
-            />
+              className="m-1 my-2 custom__submit mt-5 position-relative "
+            >
+              {contactData.submitButton}
+            </button>
           </div>
         </form>
       </div>

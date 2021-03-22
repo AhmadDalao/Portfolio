@@ -13,7 +13,7 @@
   background-position: right;
   background-image: url("../../images/circle.png");
   transform: translate(-50%, -50%) rotate(180deg);
-  filter: drop-shadow(2px 2px 6px #00d2ff) opacity(0.8);
+  filter: opacity(0.9);
   z-index: -1;
   content: "";
 }
@@ -58,6 +58,12 @@
 
 .card-item .card__container {
   position: relative;
+}
+.card-item .card__container img {
+  transition: all 0.4s ease;
+}
+.card-item .card__container:hover img {
+  transform: scale(1.05);
 }
 .card-item .card__container::before {
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
@@ -117,6 +123,7 @@
 .portfolio .card-item .link-holder a:hover {
   color: white;
   font-weight: bold;
+  border: 0.1px solid #00d2ff;
 }
 
 .portfolio .card-item .link-holder a::after {

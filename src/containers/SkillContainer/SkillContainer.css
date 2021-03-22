@@ -1,7 +1,18 @@
 .skills {
   border-bottom-left-radius: 4rem;
   border-bottom-right-radius: 4rem;
+  /* background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%); */
+  background: linear-gradient(
+    90deg,
+    rgba(49, 186, 209, 0.8) 0%,
+    rgba(82, 169, 226, 0.8) 35%,
+    rgba(196, 34, 151, 0.8040427841058299) 91%
+  );
 }
+.skills h2 {
+  color: white;
+}
+
 .skills__container {
   color: white;
   position: relative;

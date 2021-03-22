@@ -176,7 +176,7 @@ const portfolioList = [
 const SkillsSection = {
   id: "skills",
   title: "Skills",
-  skillsImage: require("./images/skills.png"),
+  // skillsImage: require("./images/skills.png"),
 };
 
 const SkillsImages = [
@@ -207,10 +207,14 @@ const SkillsImages = [
   },
   {
     id: 7,
-    skillName: "JSON",
+    skillName: "MySQL",
   },
   {
     id: 8,
+    skillName: "JSON",
+  },
+  {
+    id: 9,
     skillName: "API",
   },
 ];

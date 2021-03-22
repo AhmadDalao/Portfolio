@@ -19,24 +19,41 @@
   }
 }
 
-input[type="submit"].custom__submit {
-  /* background-color: var(--main-color); */
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+.contact button.custom__submit {
   color: white;
   padding: 12px 20px;
-  border: 1px solid white;
+  border: 1px solid #00d2ff;
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
   width: 150px;
   border-radius: 4px;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+.contact button.custom__submit::before {
+  content: "";
+  transform: translate(-25%, -25%);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  position: absolute;
+  width: 200%;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 350%;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.contact button.custom__submit:hover {
+  border: 1px solid #00d2ff;
 }
 
-input[type="submit"].custom__submit:hover {
-  border: 1px solid #00d2ff;
-  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+.contact button.custom__submit:hover::before {
+  transform: translate(-25%, -25%) rotate(-180deg);
+  background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%);
 }
 
 .hidden {
@@ -47,7 +64,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus,
 .form-control:focus,
-input[type="submit"]:focus {
+button[type="submit"]:focus {
   font-weight: 500;
   outline: 1px solid #00d2ff;
 }

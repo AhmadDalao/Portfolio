@@ -1,7 +1,6 @@
 .header-info p,
 .header-info a {
   line-height: 2.25rem;
-  color: var(--text-color);
   margin-top: 1.5rem;
   font-size: 1.5rem;
   font-weight: 300;
@@ -12,7 +11,12 @@
     font-size: var(--font-size-info, 1.35rem);
   }
 }
-
+.header-info h1,
+.header-info p,
+.header-info a,
+.header-info .custom__button {
+  color: var(--text-color);
+}
 .header-info h1 {
   font-family: "Sacramento", cursive;
   font-size: 4rem;
@@ -21,11 +25,10 @@
 
 .header-info .custom__button {
   border: 1px solid var(--border-color);
-  color: var(--text-color);
   transition: all 0.4s ease;
 }
 
 .header-info .custom__button:hover {
   border: 1px solid #00d2ff;
-  color: var(--color-white);
+  color: white;
 }
