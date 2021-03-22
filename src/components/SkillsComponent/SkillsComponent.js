@@ -8,15 +8,11 @@ import "./SkillsComponent.css";
  */
 export default function SkillsComponent(props) {
   return (
-    <article className="skill-item my-4 my-md-0 col-md-3 p-3">
-      <div className="skills__container p-3 rounded">
-        <figure className="m-0 ">
-          <img
-            className="img-fluid skill__icon"
-            src={props.imgURL}
-            alt={props.skillName}
-          />
-        </figure>
+    <article className="skill-item col-6 col-md-4 col-lg-3 p-3">
+      <div className="skills__container p-2  rounded d-flex justify-content-center align-items-center">
+        <p className="mb-0 py-5 h-100 w-100  skill__name rounded">
+          {props.skillName}
+        </p>
       </div>
     </article>
   );

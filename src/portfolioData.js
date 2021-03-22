@@ -176,52 +176,41 @@ const portfolioList = [
 const SkillsSection = {
   id: "skills",
   title: "Skills",
+  skillsImage: require("./images/skills.png"),
 };
 
 const SkillsImages = [
   {
     id: 1,
-    imgURL: require("./images/html5.svg"),
+    // imgURL: require("./images/html5.svg"),
     skillName: "HTML5",
   },
   {
     id: 2,
-    imgURL: require("./images/css-5.svg"),
     skillName: "CSS3",
   },
   {
     id: 3,
-    imgURL: require("./images/javascript.svg"),
     skillName: "JavaScript",
   },
   {
     id: 4,
-    imgURL: require("./images/bootstrap-4.svg"),
     skillName: "Bootstrap",
   },
   {
     id: 5,
-    imgURL: require("./images/git-icon.svg"),
     skillName: "Git",
   },
   {
     id: 6,
-    imgURL: require("./images/github-brands.svg"),
-    skillName: "Github",
+    skillName: "PHP",
   },
   {
     id: 7,
-    imgURL: require("./images/jquery.svg"),
-    skillName: "jQuery",
-  },
-  {
-    id: 8,
-    imgURL: require("./images/json.svg"),
     skillName: "JSON",
   },
   {
-    id: 9,
-    imgURL: require("./images/api.svg"),
+    id: 8,
     skillName: "API",
   },
 ];

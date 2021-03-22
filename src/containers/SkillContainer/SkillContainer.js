@@ -5,18 +5,12 @@ import { SkillsImages, SkillsSection } from "../../portfolioData";
 
 export default function SkillContainer() {
   const skills = SkillsImages.map((item) => {
-    return (
-      <SkillsComponent
-        key={item.id}
-        imgURL={item.imgURL}
-        skillName={item.skillName}
-      />
-    );
+    return <SkillsComponent key={item.id} skillName={item.skillName} />;
   });
 
   return (
     <section
-      className="skills padding-top-bottom text-center custom__background custom__outline"
+      className="skills padding-top-bottom text-center  custom__outline"
       id={SkillsSection.id}
     >
       <div className="container">

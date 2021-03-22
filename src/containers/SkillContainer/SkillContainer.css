@@ -2,3 +2,36 @@
   border-bottom-left-radius: 4rem;
   border-bottom-right-radius: 4rem;
 }
+.skills__container {
+  color: white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.skills__container:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.skills__container::before {
+  background: linear-gradient(135deg, #00d2ff 25%, #3a47d5 75%);
+  /* background: linear-gradient(135deg, #21d4fd 25%, #b721ff 75%); */
+  transition: all 0.5s ease;
+  transform: translate(-25%, -25%);
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.skills__container:hover::before {
+  transform: translate(-25%, -25%) rotate(-180deg);
+}
+.skills__container > p {
+  color: var(--text-color);
+  background: white;
+  font-weight: bold;
+  /* z-index: 1; */
+}
