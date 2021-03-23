@@ -48,7 +48,7 @@ export default function PortfolioContainer() {
         >
           {portfolioSection.title}
         </h2>
-        <p data-aos-once="true">{portfolioSection.paragraph}</p>
+        <p className="text-left">{portfolioSection.paragraph}</p>
         <ul className="gallery__list list-inline  text-center mb-5">
           {filterList}
         </ul>

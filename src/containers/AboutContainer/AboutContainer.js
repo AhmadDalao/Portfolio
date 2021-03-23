@@ -26,7 +26,8 @@ export default function AboutContainer() {
         >
           {AboutSection.title}
         </h2>
-        <p className="lead mb-5">{AboutSection.paragraph}</p>
+        <p className="lead text-left">{AboutSection.paragraph}</p>
+        <p className="lead text-left mb-5">{AboutSection.paragraph2}</p>
         <h3
           className="h2__style mt-5 text-uppercase d-inline-block position-relative custom__underline mb-5"
           data-title={AboutServices.title}

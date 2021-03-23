@@ -116,16 +116,6 @@ const projectsData = [
     sourceCodeText: "Source Code",
     filter__word: "bootstrap",
   },
-  // {
-  //   id: 7,
-  //   liveDemo: "https://dalao2.netlify.app/",
-  //   projectName: "landing page",
-  //   imgURL: require("./images/landing__design.jpg"),
-  //   liveDemoText: "Live Demo",
-  //   sourceCodeText: "Source Code",
-  //   sourceURL: "https://github.com/AhmadDalao/project-3 ",
-  //   filter__word: "",
-  // },
   {
     id: 8,
     liveDemo: "https://github.com/AhmadDalao/MemoryGame ",
@@ -138,26 +128,6 @@ const projectsData = [
     sourceURL: "https://github.com/AhmadDalao/MemoryGame",
     filter__word: "javaScript",
   },
-  // {
-  //   id: 9,
-  //   liveDemo: "https://ahmaddalao.github.io/ClassicArcadeGame/ ",
-  //   projectName: "classic arcade game",
-  //   imgURL: require("./images/classic__game.jpg"),
-  //   liveDemoText: "Live Demo",
-  //   sourceCodeText: "Source Code",
-  //   sourceURL: "https://github.com/AhmadDalao/ClassicArcadeGame ",
-  //   filter__word: "javaScript",
-  // },
-  // {
-  //   id: 10,
-  //   liveDemo: "https://ahmaddalao.github.io/Linear-Gradient-picker/ ",
-  //   projectName: " linear-gradient-picker",
-  //   imgURL: require("./images/picker.jpg"),
-  //   liveDemoText: "Live Demo",
-  //   sourceCodeText: "Source Code",
-  //   sourceURL: "https://github.com/AhmadDalao/Linear-Gradient-picker",
-  //   filter__word: "javaScript",
-  // },
 ];
 
 const portfolioSection = {
@@ -222,7 +192,8 @@ const SkillsImages = [
 const AboutSection = {
   id: "about",
   title: "about me",
-  paragraph: `✨ I'm a Software Engineer / Developer 👨🏻‍💻 who loves building and developing applications and websites. I'd love to combine my passion for programming and learning with my software engineering skills to continue building 🧑‍💻 more personalized applications and websites for people . I have a passion to learn everything new ❤, contributing to the progress of mankind, and show creativity and possibilities in everything I do ✨.`,
+  paragraph: `✨ I'm a Software Engineer / Developer 👨🏻‍💻 who loves building and developing applications and websites. I'd love to combine my passion for programming and learning with my software engineering skills to continue building 🧑‍💻 more personalized applications and websites for people.`,
+  paragraph2: `I have a passion to learn everything new ❤, contributing to the progress of mankind, and show creativity and possibilities in everything I do ✨.`,
 };
 const AboutServices = {
   title: "services",

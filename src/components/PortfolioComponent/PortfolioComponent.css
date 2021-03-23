@@ -102,7 +102,7 @@
     height: 100%;
     display: block;
     background-size: 45%;
-    opacity: 0.4;
+    opacity: 0.6;
     background-repeat: no-repeat;
   }
   .card__detail--holder::before {
