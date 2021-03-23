@@ -25,6 +25,10 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Sacramento&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <!-- adding CSS for the AOS library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" />
   <!-- adding meta elements-->
   <meta name="description"
     content=" Ahmad Dalao a Software Engineer who loves building websites & loves programming." />
@@ -59,8 +63,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
-  <!-- <script-require async defer type="text/babel" src="./js/main.js">
-  </script-require> -->
+  <!-- AOS library JavaScript file cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./main.js"></script>
 
 </body>

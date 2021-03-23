@@ -46,3 +46,8 @@
   font-weight: bold;
   /* z-index: 1; */
 }
+@media (min-width: 768px) {
+  .skills__container > p {
+    font-size: 1.2rem;
+  }
+}

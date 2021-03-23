@@ -10,12 +10,18 @@ export default function ContactContainer() {
     >
       <div className="container">
         <h2
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
           className="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5"
           data-title={contactData.contactText}
         >
           {contactData.contactText}
         </h2>
         <form
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-once="true"
           className="my__form form-row mt-5 "
           method="POST"
           name="contact__main"

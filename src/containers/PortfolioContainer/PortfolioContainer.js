@@ -43,13 +43,28 @@ export default function PortfolioContainer() {
     >
       <div className="container">
         <h2
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
           className="h2__style text-uppercase d-inline-block position-relative custom__underline mb-5"
           data-title={portfolioSection.title}
         >
           {portfolioSection.title}
         </h2>
-        <p className="lead mb-5">{portfolioSection.paragraph}</p>
-        <ul className="gallery__list list-inline  text-center mb-5">
+        <p
+          className="lead mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-once="true"
+        >
+          {portfolioSection.paragraph}
+        </p>
+        <ul
+          data-aos="fade-up"
+          data-aos-duration="1400"
+          data-aos-once="true"
+          className="gallery__list list-inline  text-center mb-5"
+        >
           {filterList}
         </ul>
         <section className="card-holder row justify-content-md-center justify-content-lg-start align-items-center">

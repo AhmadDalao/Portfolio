@@ -5,6 +5,9 @@ import "./ResumeContainer.css";
 export default function ResumeContainer() {
   return (
     <section
+      data-aos="fade-up"
+      data-aos-duration="1200"
+      data-aos-once="true"
       className="resume padding-top-bottom text-center position-relative custom__background custom__outline"
       id={resumeData.id}
     >
