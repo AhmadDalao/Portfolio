@@ -1,5 +1,4 @@
 .portfolio figure {
-  height: 100%;
   z-index: 1;
 }
 
@@ -82,15 +81,6 @@
     "card_detail"
     "card_detail"
     "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
-    "card_detail"
     "links";
 }
 
@@ -98,6 +88,35 @@
   color: var(--text-color);
   grid-area: card_detail;
 }
+
+.card__detail--holder {
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .card__detail--holder::before,
+  .card__detail--holder::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-size: 45%;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+  }
+  .card__detail--holder::before {
+    background-image: url("../../images/back3.png");
+    top: -16px;
+    left: 69%;
+  }
+  .card__detail--holder::after {
+    background-image: url("../../images/back.png");
+    top: 80%;
+    right: 3%;
+  }
+}
+
 .link-holder {
   grid-area: links;
 }

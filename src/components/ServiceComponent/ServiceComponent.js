@@ -9,9 +9,7 @@ import "./ServiceComponent.css";
 
 export default function ServiceComponent(props) {
   return (
-    <article
-      className="col-sm-12 col-md-6 col-lg-5 my-2 mb-3"
-    >
+    <article className="col-sm-12 col-md-9 col-lg-5 my-2 mb-3">
       <div className="service-item shadow-sm overflow-hidden position-relative">
         <h3 className="h5 h2__style text-left text-uppercase d-block position-relative px-3 mt-4 mb-0">
           {props.serviceName}
@@ -26,9 +24,6 @@ export default function ServiceComponent(props) {
             alt={props.serviceName}
           />
         </figure>
-        {/* <div className="service-detail position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
-          <p className="p-2">{props.serviceDescription}</p>
-        </div> */}
       </div>
     </article>
   );

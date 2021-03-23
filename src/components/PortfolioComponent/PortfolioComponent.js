@@ -24,7 +24,7 @@ export default function PortfolioComponent(props) {
             >
               <figure className="m-0 position-relative">
                 <img
-                  className="card__image card-img rounded-lg"
+                  className="card__image img-fluid rounded-lg"
                   src={props.imgURL}
                   alt={props.projectName}
                   loading="lazy"
@@ -32,13 +32,13 @@ export default function PortfolioComponent(props) {
               </figure>
             </a>
           </div>
-          <div className="card__detail--holder position-relative p-4  col-12  col-lg-6">
-            <div className="details__wrapper h-100">
-              <div className="card__detail align-self-lg-center text-left ">
+          <div className="card__detail--holder position-relative  p-4  col-12  col-lg-6">
+            <div className="details__wrapper position-relative h-100">
+              <div className="card__detail position-relative align-self-lg-center text-left ">
                 <h3 className="text-capitalize mb-3">{props.projectName}</h3>
                 <p className="mb-0">{props.project__info}</p>
               </div>
-              <div className="link-holder d-inline-block align-self-end mt-3 mt-lg-0 w-100">
+              <div className="link-holder d-inline-block align-self-end mt-3 w-100">
                 <a
                   className="btn btn-md-lg"
                   aria-label={props.liveDemoText}
