@@ -54,13 +54,13 @@
   background-image: url("../../images/back3.png");
   right: 20%;
   top: 16%;
-  background-size: 70%;
+  background-size: 80%;
 
   background-position: bottom left;
 }
 .skills__container > p::after {
   background-image: url("../../images/back2.png");
-  left: 23%;
+  left: 16%;
   top: -13%;
   background-position: top right;
 }
