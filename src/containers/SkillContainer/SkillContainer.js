@@ -15,9 +15,6 @@ export default function SkillContainer() {
     >
       <div className="container">
         <h2
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-once="true"
           className="h2__style text-uppercase d-inline-block position-relative  mb-5"
           data-title={SkillsSection.title}
         >

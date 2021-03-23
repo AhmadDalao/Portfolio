@@ -10,9 +10,6 @@ import "./PortfolioComponent.css";
 export default function PortfolioComponent(props) {
   return (
     <article
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      data-aos-once="true"
       data-aos-anchor-placement="bottom-bottom"
       className={`card-item ${props.filter__word} my-4  all col-12 col-md-6 col-lg-12`}
     >

@@ -10,9 +10,6 @@ import "./ServiceComponent.css";
 export default function ServiceComponent(props) {
   return (
     <article
-      data-aos="fade-up"
-      data-aos-duration="1500"
-      data-aos-once="true"
       className="col-sm-12 col-md-6 col-lg-5 my-2 mb-3"
     >
       <div className="service-item shadow-sm overflow-hidden position-relative">
