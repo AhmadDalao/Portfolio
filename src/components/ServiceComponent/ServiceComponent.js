@@ -19,6 +19,7 @@ export default function ServiceComponent(props) {
         </p>
         <figure className="px-3 m-3 mb-4 text-right">
           <img
+            loading="lazy"
             className="img-fluid "
             src={props.serviceImg}
             alt={props.serviceName}
