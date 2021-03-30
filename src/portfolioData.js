@@ -242,7 +242,7 @@ const contactData = {
   id: "contact",
   contactText: "contact me",
   submitButton: "Submit",
-  inputName: " Your name",
+  inputName: "Your name",
   inputEmail: "Email",
   inputSubject: "Subject",
   textArea: "message",
