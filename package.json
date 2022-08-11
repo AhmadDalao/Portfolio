@@ -1,5 +1,7 @@
 {
-  "name": "project-1",
+  "name": "Ahmad Dalao",
+  "homepage": "https://ahmaddalao.com/",
+  "description": "Ahmad Dalao a Software Engineer who loves building websites & loves programming.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
